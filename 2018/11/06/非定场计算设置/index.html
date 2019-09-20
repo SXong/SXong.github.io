@@ -55,18 +55,18 @@
   };
 </script>
 
-  <meta name="description" content="设置非定场计算参数在Analysis Type中勾选Transient,设置物理时间Total Time,每步的物理时间通过Timesteps设置。如果加算的话，还可以设置Initial Time。  设置Output Frequency因为非定场计算时间比较长，可能会有突发的意外，如果中途不保存结果，可能导致所有的计算都白费。在Output Control-&amp;gt;Trn Result中新建备份">
+  <meta name="description" content="设置非定场计算参数在Analysis Type中勾选Transient,设置物理时间Total Time,每步的物理时间通过Timesteps设置。如果加算的话，还可以设置Initial Time。设置Output Frequency因为非定场计算时间比较长，可能会有突发的意外，如果中途不保存结果，可能导致所有的计算都白费。在Output Control-&amp;gt;Trn Result中新建备份结果">
 <meta name="keywords" content="CFX">
 <meta property="og:type" content="article">
 <meta property="og:title" content="非定场计算设置">
 <meta property="og:url" content="http://yoursite.com/2018/11/06/非定场计算设置/index.html">
 <meta property="og:site_name" content="SXong">
-<meta property="og:description" content="设置非定场计算参数在Analysis Type中勾选Transient,设置物理时间Total Time,每步的物理时间通过Timesteps设置。如果加算的话，还可以设置Initial Time。  设置Output Frequency因为非定场计算时间比较长，可能会有突发的意外，如果中途不保存结果，可能导致所有的计算都白费。在Output Control-&amp;gt;Trn Result中新建备份">
+<meta property="og:description" content="设置非定场计算参数在Analysis Type中勾选Transient,设置物理时间Total Time,每步的物理时间通过Timesteps设置。如果加算的话，还可以设置Initial Time。设置Output Frequency因为非定场计算时间比较长，可能会有突发的意外，如果中途不保存结果，可能导致所有的计算都白费。在Output Control-&amp;gt;Trn Result中新建备份结果">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2018-11-06T03:28:07.793Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="非定场计算设置">
-<meta name="twitter:description" content="设置非定场计算参数在Analysis Type中勾选Transient,设置物理时间Total Time,每步的物理时间通过Timesteps设置。如果加算的话，还可以设置Initial Time。  设置Output Frequency因为非定场计算时间比较长，可能会有突发的意外，如果中途不保存结果，可能导致所有的计算都白费。在Output Control-&amp;gt;Trn Result中新建备份">
+<meta name="twitter:description" content="设置非定场计算参数在Analysis Type中勾选Transient,设置物理时间Total Time,每步的物理时间通过Timesteps设置。如果加算的话，还可以设置Initial Time。设置Output Frequency因为非定场计算时间比较长，可能会有突发的意外，如果中途不保存结果，可能导致所有的计算都白费。在Output Control-&amp;gt;Trn Result中新建备份结果">
   <link rel="canonical" href="http://yoursite.com/2018/11/06/非定场计算设置/">
 
 
@@ -164,17 +164,6 @@
       
       
         
-        <li class="menu-item menu-item-about">
-      
-    
-
-    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
-
-  </li>
-      
-      
-      
-        
         <li class="menu-item menu-item-tags">
       
     
@@ -202,39 +191,6 @@
     
 
     <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
-
-  </li>
-      
-      
-      
-        
-        <li class="menu-item menu-item-schedule">
-      
-    
-
-    <a href="/schedule/" rel="section"><i class="menu-item-icon fa fa-fw fa-calendar"></i> <br>日程表</a>
-
-  </li>
-      
-      
-      
-        
-        <li class="menu-item menu-item-sitemap">
-      
-    
-
-    <a href="/sitemap.xml" rel="section"><i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>站点地图</a>
-
-  </li>
-      
-      
-      
-        
-        <li class="menu-item menu-item-commonweal">
-      
-    
-
-    <a href="/404/" rel="section"><i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br>公益 404</a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -351,13 +307,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="设置非定场计算参数"><a href="#设置非定场计算参数" class="headerlink" title="设置非定场计算参数"></a>设置非定场计算参数</h1><p>在<code>Analysis Type</code>中勾选<code>Transient</code>,设置物理时间<code>Total Time</code>,每步的物理时间通过<code>Timesteps</code>设置。如果加算的话，还可以设置<code>Initial Time</code>。</p>
+        <h1 id="设置非定场计算参数"><a href="#设置非定场计算参数" class="headerlink" title="设置非定场计算参数"></a>设置非定场计算参数</h1><p>在<code>Analysis Type</code>中勾选<code>Transient</code>,设置物理时间<code>Total Time</code>,每步的物理时间通过<code>Timesteps</code>设置。如果加算的话，还可以设置<code>Initial Time</code>。<br></p><h1 id="设置Output-Frequency"><a href="#设置Output-Frequency" class="headerlink" title="设置Output Frequency"></a>设置Output Frequency</h1><p>因为非定场计算时间比较长，可能会有突发的意外，如果中途不保存结果，可能导致所有的计算都白费。在<code>Output Control-&gt;Trn Result</code>中新建备份结果，设置<code>Timestep Interval</code>的值，实现每隔多少步输出结果。在<code>Transient Result 1</code>中还可以勾选<code>Option-&gt;Selected Variables</code>，此时要使用备选结果进行加算需勾选<code>Include Mesh</code>。<br></p><a id="more"></a>
 
-<h1 id="设置Output-Frequency"><a href="#设置Output-Frequency" class="headerlink" title="设置Output Frequency"></a>设置Output Frequency</h1><p>因为非定场计算时间比较长，可能会有突发的意外，如果中途不保存结果，可能导致所有的计算都白费。在<code>Output Control-&gt;Trn Result</code>中新建备份结果，设置<code>Timestep Interval</code>的值，实现每隔多少步输出结果。在<code>Transient Result 1</code>中还可以勾选<code>Option-&gt;Selected Variables</code>，此时要使用备选结果进行加算需勾选<code>Include Mesh</code>。</p>
-
-<h1 id="设置内迭代步数"><a href="#设置内迭代步数" class="headerlink" title="设置内迭代步数"></a>设置内迭代步数</h1><p>在<code>Solver Control-&gt;Max.Coeff.Loops</code>设置内迭代步数，一般默认值就好，如果计算太大可以适当给小。</p>
-
-<h1 id="设置交接面"><a href="#设置交接面" class="headerlink" title="设置交接面"></a>设置交接面</h1><p>完成上述步骤，即可进行一般的非定场流场计算了。当如果计算旋转机械的非定场，还需要设置交接面，具体是将对应定场的<code>Frame Change-&gt;Frozen rotor</code>更改为<code>Transient Rotor Stator</code></p>
+<h1 id="设置内迭代步数"><a href="#设置内迭代步数" class="headerlink" title="设置内迭代步数"></a>设置内迭代步数</h1><p>在<code>Solver Control-&gt;Max.Coeff.Loops</code>设置内迭代步数，一般默认值就好，如果计算太大可以适当给小。<br></p>
+<h1 id="设置交接面"><a href="#设置交接面" class="headerlink" title="设置交接面"></a>设置交接面</h1><p>完成上述步骤，即可进行一般的非定场流场计算了。当如果计算旋转机械的非定场，还需要设置交接面，具体是将对应定场的<code>Frame Change-&gt;Frozen rotor</code>更改为<code>Transient Rotor Stator</code><br></p>
 
     </div>
 

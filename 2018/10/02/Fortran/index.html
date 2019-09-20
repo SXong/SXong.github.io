@@ -55,18 +55,18 @@
   };
 </script>
 
-  <meta name="description" content="代码迁移将利用Visual Studio13和Intel Fortran2015可编译运行的优化代码迁移到Code::Blocks和GNU Fortran平台上。期间出现的问题及解决方案如下：1、    原先的优化代码利用了Intel Fortran2015中IFPORT模块的SYSTEMQQ()函数改用为SYSTEM()函数。 2、    Fortran语法中FREE FORMAT 格式下每行可">
+  <meta name="description" content="代码迁移将利用Visual Studio13和Intel Fortran2015可编译运行的优化代码迁移到Code::Blocks和GNU Fortran平台上。期间出现的问题及解决方案如下：1、    原先的优化代码利用了Intel Fortran2015中IFPORT模块的SYSTEMQQ()函数改用为SYSTEM()函数。">
 <meta name="keywords" content="software">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Fortran风扇优化代码从Intel Fortran2015迁移到GNU Fortran">
 <meta property="og:url" content="http://yoursite.com/2018/10/02/Fortran/index.html">
 <meta property="og:site_name" content="SXong">
-<meta property="og:description" content="代码迁移将利用Visual Studio13和Intel Fortran2015可编译运行的优化代码迁移到Code::Blocks和GNU Fortran平台上。期间出现的问题及解决方案如下：1、    原先的优化代码利用了Intel Fortran2015中IFPORT模块的SYSTEMQQ()函数改用为SYSTEM()函数。 2、    Fortran语法中FREE FORMAT 格式下每行可">
+<meta property="og:description" content="代码迁移将利用Visual Studio13和Intel Fortran2015可编译运行的优化代码迁移到Code::Blocks和GNU Fortran平台上。期间出现的问题及解决方案如下：1、    原先的优化代码利用了Intel Fortran2015中IFPORT模块的SYSTEMQQ()函数改用为SYSTEM()函数。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2018-10-03T07:27:17.454Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Fortran风扇优化代码从Intel Fortran2015迁移到GNU Fortran">
-<meta name="twitter:description" content="代码迁移将利用Visual Studio13和Intel Fortran2015可编译运行的优化代码迁移到Code::Blocks和GNU Fortran平台上。期间出现的问题及解决方案如下：1、    原先的优化代码利用了Intel Fortran2015中IFPORT模块的SYSTEMQQ()函数改用为SYSTEM()函数。 2、    Fortran语法中FREE FORMAT 格式下每行可">
+<meta name="twitter:description" content="代码迁移将利用Visual Studio13和Intel Fortran2015可编译运行的优化代码迁移到Code::Blocks和GNU Fortran平台上。期间出现的问题及解决方案如下：1、    原先的优化代码利用了Intel Fortran2015中IFPORT模块的SYSTEMQQ()函数改用为SYSTEM()函数。">
   <link rel="canonical" href="http://yoursite.com/2018/10/02/Fortran/">
 
 
@@ -164,17 +164,6 @@
       
       
         
-        <li class="menu-item menu-item-about">
-      
-    
-
-    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
-
-  </li>
-      
-      
-      
-        
         <li class="menu-item menu-item-tags">
       
     
@@ -202,39 +191,6 @@
     
 
     <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
-
-  </li>
-      
-      
-      
-        
-        <li class="menu-item menu-item-schedule">
-      
-    
-
-    <a href="/schedule/" rel="section"><i class="menu-item-icon fa fa-fw fa-calendar"></i> <br>日程表</a>
-
-  </li>
-      
-      
-      
-        
-        <li class="menu-item menu-item-sitemap">
-      
-    
-
-    <a href="/sitemap.xml" rel="section"><i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>站点地图</a>
-
-  </li>
-      
-      
-      
-        
-        <li class="menu-item menu-item-commonweal">
-      
-    
-
-    <a href="/404/" rel="section"><i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br>公益 404</a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -359,7 +315,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p><strong><em>代码迁移</em></strong><br>将利用Visual Studio13和Intel Fortran2015可编译运行的优化代码迁移到Code::Blocks和GNU Fortran平台上。期间出现的问题及解决方案如下：<br>1、    原先的优化代码利用了Intel Fortran2015中IFPORT模块的SYSTEMQQ()函数改用为SYSTEM()函数。</p>
+        <p><strong><em>代码迁移</em></strong><br>将利用Visual Studio13和Intel Fortran2015可编译运行的优化代码迁移到Code::Blocks和GNU Fortran平台上。期间出现的问题及解决方案如下：<br>1、    原先的优化代码利用了Intel Fortran2015中IFPORT模块的SYSTEMQQ()函数改用为SYSTEM()函数。</p><a id="more"></a>
 <p>2、    Fortran语法中FREE FORMAT 格式下每行可以有132个字符，对超出限制的代码进行拆分，如kriging_train函数。</p>
 <p>3、    subs_kriging.f子程序中利用了dtime和etime函数，在当前平台上函数要求变量为单精度类型，将tarry变量改成real(4)型。</p>
 <p>4、    原先的代码利用了Intel Fortran中MKL数学库，现在将直接链接BLAS和LAPACK库。必须下载mingw32-gfortran.exe支持的库文件，在当前平台上只能实现动态链接。</p>
@@ -367,7 +323,7 @@
 <p>6、    不支持在function函数中调用Result=SYSTEM()函数，使用的SYSTEM()函数的function函数调整为subroutine子程序。</p>
 <p>7、    原先predict_x子程序未包含变量iregress等，对变量定义进行调整，在predict_x子程序中调用Proxyparameter模块。</p>
 <p>8、    编译后的程序在运行时会提示计算机中丢失libgfortran-3.dll等文件，将<br>该文件所在的路径(如“D:\codeblocks\MinGW\bin”)添加到环境变量中。</p>
-<p>9、    当找不到编译器时，可以在setting–compiler–Global compiler settings中设置Toolchain executables</p>
+<p>9、    当找不到编译器时，可以在setting—compiler—Global compiler settings中设置Toolchain executables</p>
 
     </div>
 

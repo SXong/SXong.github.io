@@ -55,18 +55,18 @@
   };
 </script>
 
-  <meta name="description" content="if判断在计算带旋转机械的流场时，如果直接给定转速，可能会导致计算发散。一般会选择计算没有转速或是转速很低的初场，然后再加算。可以将转速写成表达式，利用if判断，当时间步达到某一步数时，改变转速，避免加算，也可以利用函数。  函数在User Function中可以定义函数，例如可以实现每隔多少步更改时间步长，避免人一直在监控。">
+  <meta name="description" content="if判断在计算带旋转机械的流场时，如果直接给定转速，可能会导致计算发散。一般会选择计算没有转速或是转速很低的初场，然后再加算。可以将转速写成表达式，利用if判断，当时间步达到某一步数时，改变转速，避免加算，也可以利用函数。 函数在User Function中可以定义函数，例如可以实现每隔多少步更改时间步长，避免人一直在监控。">
 <meta name="keywords" content="CFX">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CFX表达式使用函数">
 <meta property="og:url" content="http://yoursite.com/2018/11/06/CFX表达式使用函数/index.html">
 <meta property="og:site_name" content="SXong">
-<meta property="og:description" content="if判断在计算带旋转机械的流场时，如果直接给定转速，可能会导致计算发散。一般会选择计算没有转速或是转速很低的初场，然后再加算。可以将转速写成表达式，利用if判断，当时间步达到某一步数时，改变转速，避免加算，也可以利用函数。  函数在User Function中可以定义函数，例如可以实现每隔多少步更改时间步长，避免人一直在监控。">
+<meta property="og:description" content="if判断在计算带旋转机械的流场时，如果直接给定转速，可能会导致计算发散。一般会选择计算没有转速或是转速很低的初场，然后再加算。可以将转速写成表达式，利用if判断，当时间步达到某一步数时，改变转速，避免加算，也可以利用函数。 函数在User Function中可以定义函数，例如可以实现每隔多少步更改时间步长，避免人一直在监控。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2018-11-06T07:52:11.256Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CFX表达式使用函数">
-<meta name="twitter:description" content="if判断在计算带旋转机械的流场时，如果直接给定转速，可能会导致计算发散。一般会选择计算没有转速或是转速很低的初场，然后再加算。可以将转速写成表达式，利用if判断，当时间步达到某一步数时，改变转速，避免加算，也可以利用函数。  函数在User Function中可以定义函数，例如可以实现每隔多少步更改时间步长，避免人一直在监控。">
+<meta name="twitter:description" content="if判断在计算带旋转机械的流场时，如果直接给定转速，可能会导致计算发散。一般会选择计算没有转速或是转速很低的初场，然后再加算。可以将转速写成表达式，利用if判断，当时间步达到某一步数时，改变转速，避免加算，也可以利用函数。 函数在User Function中可以定义函数，例如可以实现每隔多少步更改时间步长，避免人一直在监控。">
   <link rel="canonical" href="http://yoursite.com/2018/11/06/CFX表达式使用函数/">
 
 
@@ -164,17 +164,6 @@
       
       
         
-        <li class="menu-item menu-item-about">
-      
-    
-
-    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
-
-  </li>
-      
-      
-      
-        
         <li class="menu-item menu-item-tags">
       
     
@@ -202,39 +191,6 @@
     
 
     <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
-
-  </li>
-      
-      
-      
-        
-        <li class="menu-item menu-item-schedule">
-      
-    
-
-    <a href="/schedule/" rel="section"><i class="menu-item-icon fa fa-fw fa-calendar"></i> <br>日程表</a>
-
-  </li>
-      
-      
-      
-        
-        <li class="menu-item menu-item-sitemap">
-      
-    
-
-    <a href="/sitemap.xml" rel="section"><i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>站点地图</a>
-
-  </li>
-      
-      
-      
-        
-        <li class="menu-item menu-item-commonweal">
-      
-    
-
-    <a href="/404/" rel="section"><i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br>公益 404</a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -351,9 +307,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="if判断"><a href="#if判断" class="headerlink" title="if判断"></a>if判断</h1><p>在计算带旋转机械的流场时，如果直接给定转速，可能会导致计算发散。一般会选择计算没有转速或是转速很低的初场，然后再加算。可以将转速写成表达式，利用<code>if</code>判断，当时间步达到某一步数时，改变转速，避免加算，也可以利用函数。</p>
-
-<h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h1><p>在<code>User Function</code>中可以定义函数，例如可以实现每隔多少步更改时间步长，避免人一直在监控。</p>
+        <h1 id="if判断"><a href="#if判断" class="headerlink" title="if判断"></a>if判断</h1><p>在计算带旋转机械的流场时，如果直接给定转速，可能会导致计算发散。一般会选择计算没有转速或是转速很低的初场，然后再加算。可以将转速写成表达式，利用<code>if</code>判断，当时间步达到某一步数时，改变转速，避免加算，也可以利用函数。<br></p>
+<h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h1><p>在<code>User Function</code>中可以定义函数，例如可以实现每隔多少步更改时间步长，避免人一直在监控。<br></p>
 
     </div>
 

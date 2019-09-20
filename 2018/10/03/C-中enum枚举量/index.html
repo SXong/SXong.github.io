@@ -55,18 +55,18 @@
   };
 </script>
 
-  <meta name="description" content="enum枚举量1enum spectrum &amp;#123;red, orange, yellow, green, blue, violet, indigo, ultraviolet&amp;#125;  上述语法spectrum为枚举，被称为enumeration，red被称为enumerator。他们为符号常量，对应着从0开始的数值。枚举量是整型，可被提升为int类型，但int类型不能自动转换为枚举类型。">
+  <meta name="description" content="enum枚举量1enum spectrum &amp;#123;red, orange, yellow, green, blue, violet, indigo, ultraviolet&amp;#125;上述语法spectrum为枚举，被称为enumeration，red被称为enumerator。他们为符号常量，对应着从0开始的数值。枚举量是整型，可被提升为int类型，但int类型不能自动转换为枚举类型。如下">
 <meta name="keywords" content="C++,复合类型">
 <meta property="og:type" content="article">
 <meta property="og:title" content="C++中enum枚举量">
 <meta property="og:url" content="http://yoursite.com/2018/10/03/C-中enum枚举量/index.html">
 <meta property="og:site_name" content="SXong">
-<meta property="og:description" content="enum枚举量1enum spectrum &amp;#123;red, orange, yellow, green, blue, violet, indigo, ultraviolet&amp;#125;  上述语法spectrum为枚举，被称为enumeration，red被称为enumerator。他们为符号常量，对应着从0开始的数值。枚举量是整型，可被提升为int类型，但int类型不能自动转换为枚举类型。">
+<meta property="og:description" content="enum枚举量1enum spectrum &amp;#123;red, orange, yellow, green, blue, violet, indigo, ultraviolet&amp;#125;上述语法spectrum为枚举，被称为enumeration，red被称为enumerator。他们为符号常量，对应着从0开始的数值。枚举量是整型，可被提升为int类型，但int类型不能自动转换为枚举类型。如下">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2018-10-04T01:17:48.215Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C++中enum枚举量">
-<meta name="twitter:description" content="enum枚举量1enum spectrum &amp;#123;red, orange, yellow, green, blue, violet, indigo, ultraviolet&amp;#125;  上述语法spectrum为枚举，被称为enumeration，red被称为enumerator。他们为符号常量，对应着从0开始的数值。枚举量是整型，可被提升为int类型，但int类型不能自动转换为枚举类型。">
+<meta name="twitter:description" content="enum枚举量1enum spectrum &amp;#123;red, orange, yellow, green, blue, violet, indigo, ultraviolet&amp;#125;上述语法spectrum为枚举，被称为enumeration，red被称为enumerator。他们为符号常量，对应着从0开始的数值。枚举量是整型，可被提升为int类型，但int类型不能自动转换为枚举类型。如下">
   <link rel="canonical" href="http://yoursite.com/2018/10/03/C-中enum枚举量/">
 
 
@@ -164,17 +164,6 @@
       
       
         
-        <li class="menu-item menu-item-about">
-      
-    
-
-    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
-
-  </li>
-      
-      
-      
-        
         <li class="menu-item menu-item-tags">
       
     
@@ -202,39 +191,6 @@
     
 
     <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
-
-  </li>
-      
-      
-      
-        
-        <li class="menu-item menu-item-schedule">
-      
-    
-
-    <a href="/schedule/" rel="section"><i class="menu-item-icon fa fa-fw fa-calendar"></i> <br>日程表</a>
-
-  </li>
-      
-      
-      
-        
-        <li class="menu-item menu-item-sitemap">
-      
-    
-
-    <a href="/sitemap.xml" rel="section"><i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>站点地图</a>
-
-  </li>
-      
-      
-      
-        
-        <li class="menu-item menu-item-commonweal">
-      
-    
-
-    <a href="/404/" rel="section"><i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br>公益 404</a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -359,30 +315,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="enum枚举量"><a href="#enum枚举量" class="headerlink" title="enum枚举量"></a>enum枚举量</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">enum spectrum &#123;red, orange, yellow, green, blue, violet, indigo, ultraviolet&#125;</span><br></pre></td></tr></table></figure>
+        <h1 id="enum枚举量"><a href="#enum枚举量" class="headerlink" title="enum枚举量"></a>enum枚举量</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">enum spectrum &#123;red, orange, yellow, green, blue, violet, indigo, ultraviolet&#125;</span><br></pre></td></tr></table></figure><p>上述语法<code>spectrum</code>为枚举，被称为<code>enumeration</code>，<code>red</code>被称为<code>enumerator</code>。他们为符号常量，对应着从<code>0</code>开始的数值。<br>枚举量是整型，可被提升为int类型，但int类型不能自动转换为枚举类型。如下代码段所示：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">int color = blue;</span><br><span class="line">color =3 + blue;</span><br></pre></td></tr></table></figure></p><a id="more"></a>
 
-<p>上述语法<code>spectrum</code>为枚举，被称为<code>enumeration</code>，<code>red</code>被称为<code>enumerator</code>。他们为符号常量，对应着从<code>0</code>开始的数值。<br>枚举量是整型，可被提升为int类型，但int类型不能自动转换为枚举类型。如下代码段所示：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">int color = blue;</span><br><span class="line">color =3 + blue;</span><br></pre></td></tr></table></figure>
-
-<p>如果int值是有效的，则可以通过强制类型转换，将它赋给枚举变量：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">spectrum band;</span><br><span class="line">band = spectrum(3);</span><br></pre></td></tr></table></figure>
-
-<h2 id="设置枚举量的值"><a href="#设置枚举量的值" class="headerlink" title="设置枚举量的值"></a>设置枚举量的值</h2><p>可以使用赋值预算符显式地设置枚举量的值：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">enum bits&#123;one=1, two=2, four=4, eight=8&#125;;</span><br></pre></td></tr></table></figure>
-
-<p>指定值必须是整数。也可以显式地设置枚举量的值：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">enum bigstep&#123;first, second=100, third&#125;</span><br></pre></td></tr></table></figure>
-
-<p>可以创建多个值相同的枚举量</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">enum &#123;zero, null=0, one, numero_uno=1&#125;</span><br></pre></td></tr></table></figure>
-
+<p>如果int值是有效的，则可以通过强制类型转换，将它赋给枚举变量：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">spectrum band;</span><br><span class="line">band = spectrum(3);</span><br></pre></td></tr></table></figure></p>
+<h2 id="设置枚举量的值"><a href="#设置枚举量的值" class="headerlink" title="设置枚举量的值"></a>设置枚举量的值</h2><p>可以使用赋值预算符显式地设置枚举量的值：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">enum bits&#123;one=1, two=2, four=4, eight=8&#125;;</span><br></pre></td></tr></table></figure></p>
+<p>指定值必须是整数。也可以显式地设置枚举量的值：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">enum bigstep&#123;first, second=100, third&#125;</span><br></pre></td></tr></table></figure></p>
+<p>可以创建多个值相同的枚举量<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">enum &#123;zero, null=0, one, numero_uno=1&#125;</span><br></pre></td></tr></table></figure></p>
 <p>在<code>C++</code>早期的版本中，只能将<code>int</code>值赋给枚举量，但这种限制取消了，因此可以使用long甚至long long类型的值。</p>
-<h2 id="枚举的取值范围"><a href="#枚举的取值范围" class="headerlink" title="枚举的取值范围"></a>枚举的取值范围</h2><p>通过强制转换，可以将取值范围中的任意整数值赋给枚举变量，即使这个值不是枚举值。例如，假设bits和myflag的定义如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">enum bits&#123;one=1, two=2, four=4, eight=8&#125;;</span><br><span class="line">bits myflag;</span><br></pre></td></tr></table></figure>
-
-<p>则下面的代码将是合法的：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">myflag = bits(6)</span><br></pre></td></tr></table></figure>
-
+<h2 id="枚举的取值范围"><a href="#枚举的取值范围" class="headerlink" title="枚举的取值范围"></a>枚举的取值范围</h2><p>通过强制转换，可以将取值范围中的任意整数值赋给枚举变量，即使这个值不是枚举值。例如，假设bits和myflag的定义如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">enum bits&#123;one=1, two=2, four=4, eight=8&#125;;</span><br><span class="line">bits myflag;</span><br></pre></td></tr></table></figure></p>
+<p>则下面的代码将是合法的：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">myflag = bits(6)</span><br></pre></td></tr></table></figure></p>
 <p>取值范围的定义如下。首先，要找出上限，需要知道枚举量的最大值。找到大于这个最大值的、最小的2的幂，将它减去1，得到的便是取值范围的上限。要计算下限，需要知道枚举量的最小值。如果它不小于0，则取值范围的下限为0；否则，采取与寻找上限方式相同的方式，但加上负号。</p>
 
     </div>

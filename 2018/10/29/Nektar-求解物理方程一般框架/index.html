@@ -55,18 +55,18 @@
   };
 </script>
 
-  <meta name="description" content="Create session reader12LibUtilities::SessionReaderSharedPtr session;session = LibUtilities::SessionReader::CreateInstance(argc, argv);  Create MeshGraph1graph = SpatialDomains::MeshGraph::Read(session">
+  <meta name="description" content="Create session reader12LibUtilities::SessionReaderSharedPtr session;session = LibUtilities::SessionReader::CreateInstance(argc, argv);Create MeshGraph1graph = SpatialDomains::MeshGraph::Read(session);">
 <meta name="keywords" content="FEM">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Nektar++求解物理方程一般框架">
 <meta property="og:url" content="http://yoursite.com/2018/10/29/Nektar-求解物理方程一般框架/index.html">
 <meta property="og:site_name" content="SXong">
-<meta property="og:description" content="Create session reader12LibUtilities::SessionReaderSharedPtr session;session = LibUtilities::SessionReader::CreateInstance(argc, argv);  Create MeshGraph1graph = SpatialDomains::MeshGraph::Read(session">
+<meta property="og:description" content="Create session reader12LibUtilities::SessionReaderSharedPtr session;session = LibUtilities::SessionReader::CreateInstance(argc, argv);Create MeshGraph1graph = SpatialDomains::MeshGraph::Read(session);">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2018-10-29T12:29:44.167Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Nektar++求解物理方程一般框架">
-<meta name="twitter:description" content="Create session reader12LibUtilities::SessionReaderSharedPtr session;session = LibUtilities::SessionReader::CreateInstance(argc, argv);  Create MeshGraph1graph = SpatialDomains::MeshGraph::Read(session">
+<meta name="twitter:description" content="Create session reader12LibUtilities::SessionReaderSharedPtr session;session = LibUtilities::SessionReader::CreateInstance(argc, argv);Create MeshGraph1graph = SpatialDomains::MeshGraph::Read(session);">
   <link rel="canonical" href="http://yoursite.com/2018/10/29/Nektar-求解物理方程一般框架/">
 
 
@@ -164,17 +164,6 @@
       
       
         
-        <li class="menu-item menu-item-about">
-      
-    
-
-    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
-
-  </li>
-      
-      
-      
-        
         <li class="menu-item menu-item-tags">
       
     
@@ -202,39 +191,6 @@
     
 
     <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
-
-  </li>
-      
-      
-      
-        
-        <li class="menu-item menu-item-schedule">
-      
-    
-
-    <a href="/schedule/" rel="section"><i class="menu-item-icon fa fa-fw fa-calendar"></i> <br>日程表</a>
-
-  </li>
-      
-      
-      
-        
-        <li class="menu-item menu-item-sitemap">
-      
-    
-
-    <a href="/sitemap.xml" rel="section"><i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>站点地图</a>
-
-  </li>
-      
-      
-      
-        
-        <li class="menu-item menu-item-commonweal">
-      
-    
-
-    <a href="/404/" rel="section"><i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br>公益 404</a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -351,16 +307,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="Create-session-reader"><a href="#Create-session-reader" class="headerlink" title="Create session reader"></a>Create session reader</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">LibUtilities::SessionReaderSharedPtr session;</span><br><span class="line">session = LibUtilities::SessionReader::CreateInstance(argc, argv);</span><br></pre></td></tr></table></figure>
-
-<h1 id="Create-MeshGraph"><a href="#Create-MeshGraph" class="headerlink" title="Create MeshGraph"></a>Create MeshGraph</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">graph = SpatialDomains::MeshGraph::Read(session);</span><br></pre></td></tr></table></figure>
+        <h1 id="Create-session-reader"><a href="#Create-session-reader" class="headerlink" title="Create session reader"></a>Create session reader</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">LibUtilities::SessionReaderSharedPtr session;</span><br><span class="line">session = LibUtilities::SessionReader::CreateInstance(argc, argv);</span><br></pre></td></tr></table></figure><h1 id="Create-MeshGraph"><a href="#Create-MeshGraph" class="headerlink" title="Create MeshGraph"></a>Create MeshGraph</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">graph = SpatialDomains::MeshGraph::Read(session);</span><br></pre></td></tr></table></figure><a id="more"></a>
 
 <h1 id="Create-driver"><a href="#Create-driver" class="headerlink" title="Create driver"></a>Create driver</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">session-&gt;LoadSolverInfo(&quot;Driver&quot;,vDriverModule, &quot;Standard&quot;);</span><br><span class="line">drv = GetDriverFactory().CreateInstance(vDriverModule,session,graph);</span><br></pre></td></tr></table></figure>
-
 <h1 id="Execute-driver"><a href="#Execute-driver" class="headerlink" title="Execute driver"></a>Execute driver</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">drv-&gt;Execute();</span><br></pre></td></tr></table></figure>
-
 <h1 id="Finalise-session"><a href="#Finalise-session" class="headerlink" title="Finalise session"></a>Finalise session</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">session-&gt;Finalise();</span><br></pre></td></tr></table></figure>
-
 
     </div>
 

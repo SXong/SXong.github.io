@@ -164,17 +164,6 @@
       
       
         
-        <li class="menu-item menu-item-about">
-      
-    
-
-    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
-
-  </li>
-      
-      
-      
-        
         <li class="menu-item menu-item-tags">
       
     
@@ -202,39 +191,6 @@
     
 
     <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
-
-  </li>
-      
-      
-      
-        
-        <li class="menu-item menu-item-schedule">
-      
-    
-
-    <a href="/schedule/" rel="section"><i class="menu-item-icon fa fa-fw fa-calendar"></i> <br>日程表</a>
-
-  </li>
-      
-      
-      
-        
-        <li class="menu-item menu-item-sitemap">
-      
-    
-
-    <a href="/sitemap.xml" rel="section"><i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>站点地图</a>
-
-  </li>
-      
-      
-      
-        
-        <li class="menu-item menu-item-commonweal">
-      
-    
-
-    <a href="/404/" rel="section"><i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br>公益 404</a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -351,7 +307,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="Nektar"><a href="#Nektar" class="headerlink" title="Nektar++"></a>Nektar++</h1><p>Nektar++ is an open-source software framework designed to support the<br>development of high-performance scalable solvers for partial differential<br>equations (PDEs) using the spectral/hp element method.</p>
+        <h1 id="Nektar"><a href="#Nektar" class="headerlink" title="Nektar++"></a>Nektar++</h1><p>Nektar++ is an open-source software framework designed to support the<br>development of high-performance scalable solvers for partial differential<br>equations (PDEs) using the spectral/hp element method.</p><a id="more"></a>
 <p>This package consists of a set of libraries (the framework) and a number of<br>pre-written PDE solvers for a selection of application domains.</p>
 <p>The software and User Guide is available for download from<br><a href="http://www.nektar.info/" target="_blank" rel="noopener">http://www.nektar.info/</a>.</p>
 <h2 id="User-Guide"><a href="#User-Guide" class="headerlink" title="User Guide"></a>User Guide</h2><p>Detailed information on compiling, installing and using the software is<br>available in the User Guide. This document is available as a pre-compiled PDF<br>from the downloads section of the project website.</p>
@@ -368,10 +324,12 @@
 <pre><code>mkdir build
 cd build
 cmake ..
-make</code></pre><p>To alter the build configuration (for example, to enable parallel execution<br>support) we recommend using the <code>ccmake</code> command instead of <code>cmake</code>. </p>
+make
+</code></pre><p>To alter the build configuration (for example, to enable parallel execution<br>support) we recommend using the <code>ccmake</code> command instead of <code>cmake</code>. </p>
 <p>For more detailed operating-system specific instructions, please see the<br>User Guide.</p>
 <h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><p>The default installation location is in a <code>dist</code> subdirectory of the <code>build</code><br>directory. This can be changed by setting the <code>CMAKE_INSTALL_PREFIX</code> option<br>using <code>ccmake</code>. To install the compiled libraries, solvers and header files, on<br>UNIX-based systems run:</p>
-<pre><code>make install</code></pre>
+<pre><code>make install
+</code></pre>
     </div>
 
     

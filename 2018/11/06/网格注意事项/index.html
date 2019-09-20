@@ -55,18 +55,18 @@
   };
 </script>
 
-  <meta name="description" content="对称面网格如果存在设置对称边界条件的面，在导入网格时，确保对称面在同一平面上。ICEM生成的网格，因为几何或者映射的关系可能会出现不在对称面上的网格点，在导出网格时，可以使Edit Mesh-&amp;gt;Move Nodes功能将网格点强制平移到对称面上。  负体积CFX和ICEM判断负体积的方式不太一样，从使用经验上看，ICEM正体积的网格导入CFX中计算没哟太大的问题，网格拓扑和过渡很好的网格导入">
+  <meta name="description" content="对称面网格如果存在设置对称边界条件的面，在导入网格时，确保对称面在同一平面上。ICEM生成的网格，因为几何或者映射的关系可能会出现不在对称面上的网格点，在导出网格时，可以使Edit Mesh-&amp;gt;Move Nodes功能将网格点强制平移到对称面上。负体积CFX和ICEM判断负体积的方式不太一样，从使用经验上看，ICEM正体积的网格导入CFX中计算没哟太大的问题，网格拓扑和过渡很好的网格导入CF">
 <meta name="keywords" content="CFX">
 <meta property="og:type" content="article">
 <meta property="og:title" content="网格注意事项">
 <meta property="og:url" content="http://yoursite.com/2018/11/06/网格注意事项/index.html">
 <meta property="og:site_name" content="SXong">
-<meta property="og:description" content="对称面网格如果存在设置对称边界条件的面，在导入网格时，确保对称面在同一平面上。ICEM生成的网格，因为几何或者映射的关系可能会出现不在对称面上的网格点，在导出网格时，可以使Edit Mesh-&amp;gt;Move Nodes功能将网格点强制平移到对称面上。  负体积CFX和ICEM判断负体积的方式不太一样，从使用经验上看，ICEM正体积的网格导入CFX中计算没哟太大的问题，网格拓扑和过渡很好的网格导入">
+<meta property="og:description" content="对称面网格如果存在设置对称边界条件的面，在导入网格时，确保对称面在同一平面上。ICEM生成的网格，因为几何或者映射的关系可能会出现不在对称面上的网格点，在导出网格时，可以使Edit Mesh-&amp;gt;Move Nodes功能将网格点强制平移到对称面上。负体积CFX和ICEM判断负体积的方式不太一样，从使用经验上看，ICEM正体积的网格导入CFX中计算没哟太大的问题，网格拓扑和过渡很好的网格导入CF">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2018-11-06T07:10:26.053Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="网格注意事项">
-<meta name="twitter:description" content="对称面网格如果存在设置对称边界条件的面，在导入网格时，确保对称面在同一平面上。ICEM生成的网格，因为几何或者映射的关系可能会出现不在对称面上的网格点，在导出网格时，可以使Edit Mesh-&amp;gt;Move Nodes功能将网格点强制平移到对称面上。  负体积CFX和ICEM判断负体积的方式不太一样，从使用经验上看，ICEM正体积的网格导入CFX中计算没哟太大的问题，网格拓扑和过渡很好的网格导入">
+<meta name="twitter:description" content="对称面网格如果存在设置对称边界条件的面，在导入网格时，确保对称面在同一平面上。ICEM生成的网格，因为几何或者映射的关系可能会出现不在对称面上的网格点，在导出网格时，可以使Edit Mesh-&amp;gt;Move Nodes功能将网格点强制平移到对称面上。负体积CFX和ICEM判断负体积的方式不太一样，从使用经验上看，ICEM正体积的网格导入CFX中计算没哟太大的问题，网格拓扑和过渡很好的网格导入CF">
   <link rel="canonical" href="http://yoursite.com/2018/11/06/网格注意事项/">
 
 
@@ -164,17 +164,6 @@
       
       
         
-        <li class="menu-item menu-item-about">
-      
-    
-
-    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
-
-  </li>
-      
-      
-      
-        
         <li class="menu-item menu-item-tags">
       
     
@@ -202,39 +191,6 @@
     
 
     <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
-
-  </li>
-      
-      
-      
-        
-        <li class="menu-item menu-item-schedule">
-      
-    
-
-    <a href="/schedule/" rel="section"><i class="menu-item-icon fa fa-fw fa-calendar"></i> <br>日程表</a>
-
-  </li>
-      
-      
-      
-        
-        <li class="menu-item menu-item-sitemap">
-      
-    
-
-    <a href="/sitemap.xml" rel="section"><i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>站点地图</a>
-
-  </li>
-      
-      
-      
-        
-        <li class="menu-item menu-item-commonweal">
-      
-    
-
-    <a href="/404/" rel="section"><i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br>公益 404</a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -351,9 +307,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="对称面"><a href="#对称面" class="headerlink" title="对称面"></a>对称面</h1><p>网格如果存在设置对称边界条件的面，在导入网格时，确保对称面在同一平面上。<code>ICEM</code>生成的网格，因为几何或者映射的关系可能会出现不在对称面上的网格点，在导出网格时，可以使<code>Edit Mesh-&gt;Move Nodes</code>功能将网格点强制平移到对称面上。</p>
+        <h1 id="对称面"><a href="#对称面" class="headerlink" title="对称面"></a>对称面</h1><p>网格如果存在设置对称边界条件的面，在导入网格时，确保对称面在同一平面上。<code>ICEM</code>生成的网格，因为几何或者映射的关系可能会出现不在对称面上的网格点，在导出网格时，可以使<code>Edit Mesh-&gt;Move Nodes</code>功能将网格点强制平移到对称面上。<br></p><h1 id="负体积"><a href="#负体积" class="headerlink" title="负体积"></a>负体积</h1><p><code>CFX</code>和<code>ICEM</code>判断负体积的方式不太一样，从使用经验上看，<code>ICEM</code>正体积的网格导入<code>CFX</code>中计算没哟太大的问题，网格拓扑和过渡很好的网格导入CFX中纵使边界层第一层高度为<code>1e-6</code>，出现负体积的概率也较低。建议将网格边界层第一层高度适当给大到<code>1e-5</code>量级，如此能规避很多问题。如果出现负体积，将出现负体积的点坐标输入到<code>tin</code>文件中，观察该点处的网格，拉扯边界层，或者适当调整边界层高度。</p><a id="more"></a>
 
-<h1 id="负体积"><a href="#负体积" class="headerlink" title="负体积"></a>负体积</h1><p><code>CFX</code>和<code>ICEM</code>判断负体积的方式不太一样，从使用经验上看，<code>ICEM</code>正体积的网格导入<code>CFX</code>中计算没哟太大的问题，网格拓扑和过渡很好的网格导入CFX中纵使边界层第一层高度为<code>1e-6</code>，出现负体积的概率也较低。建议将网格边界层第一层高度适当给大到<code>1e-5</code>量级，如此能规避很多问题。如果出现负体积，将出现负体积的点坐标输入到<code>tin</code>文件中，观察该点处的网格，拉扯边界层，或者适当调整边界层高度。</p>
 <h1 id="大马赫数"><a href="#大马赫数" class="headerlink" title="大马赫数"></a>大马赫数</h1><p>计算时流场中可能会出现大马赫数的问题，可以减小时间步长，解决该问题。如果调整时间步长不能解决问题，需要根据程序运行输出的<code>*.out</code>文件判断<code>Large Mach Number</code>出现的步数，然后重新计算，在该时间步写出<code>*.res</code>结果，观察流场，大马赫数出现的位置，继而调整网格。</p>
 
     </div>
