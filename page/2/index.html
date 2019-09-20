@@ -241,6 +241,92 @@
   
   
   <div class="post-block home">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/10/Kriging代理模型/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="SXong">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/touxiang.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SXong">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/2018/11/10/Kriging代理模型/" class="post-title-link" itemprop="url">Kriging代理模型</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2018-11-10 14:57:54 / 修改时间：17:51:20" itemprop="dateCreated datePublished" datetime="2018-11-10T14:57:54+08:00">2018-11-10</time>
+            </span>
+          
+            
+
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/理论学习/" itemprop="url" rel="index"><span itemprop="name">理论学习</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>程序：<code>python.scikit</code>,<code>matlab.DACE</code></p>
+
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+        <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block home">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/09/AcousticSolver求解器代码阅读/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -587,8 +673,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="if判断"><a href="#if判断" class="headerlink" title="if判断"></a>if判断</h1><p>在计算带旋转机械的流场时，如果直接给定转速，可能会导致计算发散。一般会选择计算没有转速或是转速很低的初场，然后再加算。可以将转速写成表达式，利用<code>if</code>判断，当时间步达到某一步数时，改变转速，避免加算，也可以利用函数。<br></p>
-<h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h1><p>在<code>User Function</code>中可以定义函数，例如可以实现每隔多少步更改时间步长，避免人一直在监控。<br></p>
+          <h1 id="if判断"><a href="#if判断" class="headerlink" title="if判断"></a>if判断</h1><p>在计算带旋转机械的流场时，如果直接给定转速，可能会导致计算发散。一般会选择计算没有转速或是转速很低的初场，然后再加算。可以将转速写成表达式，利用<code>if</code>判断，当时间步达到某一步数时，改变转速，避免加算，也可以利用函数。<br><img src="/2018/11/06/CFX表达式使用函数/if.png" title="[if]"></p>
+<h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h1><p>在<code>User Function</code>中可以定义函数，例如可以实现每隔多少步更改时间步长，避免人一直在监控。<br><img src="/2018/11/06/CFX表达式使用函数/function.png" title="[function]"></p>
 
         
       
@@ -674,7 +760,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="对称面"><a href="#对称面" class="headerlink" title="对称面"></a>对称面</h1><p>网格如果存在设置对称边界条件的面，在导入网格时，确保对称面在同一平面上。<code>ICEM</code>生成的网格，因为几何或者映射的关系可能会出现不在对称面上的网格点，在导出网格时，可以使<code>Edit Mesh-&gt;Move Nodes</code>功能将网格点强制平移到对称面上。<br></p><h1 id="负体积"><a href="#负体积" class="headerlink" title="负体积"></a>负体积</h1><p><code>CFX</code>和<code>ICEM</code>判断负体积的方式不太一样，从使用经验上看，<code>ICEM</code>正体积的网格导入<code>CFX</code>中计算没哟太大的问题，网格拓扑和过渡很好的网格导入CFX中纵使边界层第一层高度为<code>1e-6</code>，出现负体积的概率也较低。建议将网格边界层第一层高度适当给大到<code>1e-5</code>量级，如此能规避很多问题。如果出现负体积，将出现负体积的点坐标输入到<code>tin</code>文件中，观察该点处的网格，拉扯边界层，或者适当调整边界层高度。</p>
+          <h1 id="对称面"><a href="#对称面" class="headerlink" title="对称面"></a>对称面</h1><p>网格如果存在设置对称边界条件的面，在导入网格时，确保对称面在同一平面上。<code>ICEM</code>生成的网格，因为几何或者映射的关系可能会出现不在对称面上的网格点，在导出网格时，可以使<code>Edit Mesh-&gt;Move Nodes</code>功能将网格点强制平移到对称面上。<br><img src="/2018/11/06/网格注意事项/sym.png" title="[sym]"></p><h1 id="负体积"><a href="#负体积" class="headerlink" title="负体积"></a>负体积</h1><p><code>CFX</code>和<code>ICEM</code>判断负体积的方式不太一样，从使用经验上看，<code>ICEM</code>正体积的网格导入<code>CFX</code>中计算没哟太大的问题，网格拓扑和过渡很好的网格导入CFX中纵使边界层第一层高度为<code>1e-6</code>，出现负体积的概率也较低。建议将网格边界层第一层高度适当给大到<code>1e-5</code>量级，如此能规避很多问题。如果出现负体积，将出现负体积的点坐标输入到<code>tin</code>文件中，观察该点处的网格，拉扯边界层，或者适当调整边界层高度。</p>
           <!--noindex-->
           
             <div class="post-button text-center">
@@ -736,11 +822,19 @@
                 
               
 
-              <time title="创建时间：2018-11-06 11:28:52 / 修改时间：11:49:17" itemprop="dateCreated datePublished" datetime="2018-11-06T11:28:52+08:00">2018-11-06</time>
+              <time title="创建时间：2018-11-06 11:28:52" itemprop="dateCreated datePublished" datetime="2018-11-06T11:28:52+08:00">2018-11-06</time>
             </span>
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-09-20 21:24:47" itemprop="dateModified" datetime="2019-09-20T21:24:47+08:00">2019-09-20</time>
+              </span>
             
           
             <span class="post-meta-item">
@@ -768,7 +862,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="全湍计算"><a href="#全湍计算" class="headerlink" title="全湍计算"></a>全湍计算</h1><p>主要设置在<code>Domain</code>的<code>Fluid Models</code>中，一般计算选择<code>Total Energy</code>，计算有粘流动需要勾选<code>Incl. Viscous Work Term</code>，湍流模型选择<code>Shear Stress Transport</code>。勾选<code>Transitional Turbulence-&gt;Fully Turbulent</code>，如下图所示。<br><br>设置完后，在<code>inlet</code>和<code>open</code>边界条件里面勾选<code>Boundary Details-&gt;Turbulence-&gt;Low</code><br></p>
+          <h1 id="全湍计算"><a href="#全湍计算" class="headerlink" title="全湍计算"></a>全湍计算</h1><p>主要设置在<code>Domain</code>的<code>Fluid Models</code>中，一般计算选择<code>Total Energy</code>，计算有粘流动需要勾选<code>Incl. Viscous Work Term</code>，湍流模型选择<code>Shear Stress Transport</code>。勾选<code>Transitional Turbulence-&gt;Fully Turbulent</code>，如下图所示。<br><img src="/2018/11/06/全湍和转捩计算/ft.png" title="[ft]"><br>设置完后，在<code>inlet</code>和<code>open</code>边界条件里面勾选<code>Boundary Details-&gt;Turbulence-&gt;Low</code><br><img src="/2018/11/06/全湍和转捩计算/ftin.png" title="[ftin]"></p>
           <!--noindex-->
           
             <div class="post-button text-center">
@@ -862,7 +956,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="设置非定场计算参数"><a href="#设置非定场计算参数" class="headerlink" title="设置非定场计算参数"></a>设置非定场计算参数</h1><p>在<code>Analysis Type</code>中勾选<code>Transient</code>,设置物理时间<code>Total Time</code>,每步的物理时间通过<code>Timesteps</code>设置。如果加算的话，还可以设置<code>Initial Time</code>。<br></p><h1 id="设置Output-Frequency"><a href="#设置Output-Frequency" class="headerlink" title="设置Output Frequency"></a>设置Output Frequency</h1><p>因为非定场计算时间比较长，可能会有突发的意外，如果中途不保存结果，可能导致所有的计算都白费。在<code>Output Control-&gt;Trn Result</code>中新建备份结果，设置<code>Timestep Interval</code>的值，实现每隔多少步输出结果。在<code>Transient Result 1</code>中还可以勾选<code>Option-&gt;Selected Variables</code>，此时要使用备选结果进行加算需勾选<code>Include Mesh</code>。<br></p>
+          <h1 id="设置非定场计算参数"><a href="#设置非定场计算参数" class="headerlink" title="设置非定场计算参数"></a>设置非定场计算参数</h1><p>在<code>Analysis Type</code>中勾选<code>Transient</code>,设置物理时间<code>Total Time</code>,每步的物理时间通过<code>Timesteps</code>设置。如果加算的话，还可以设置<code>Initial Time</code>。<br><img src="/2018/11/06/非定场计算设置/basic.png" title="[basic]"></p><h1 id="设置Output-Frequency"><a href="#设置Output-Frequency" class="headerlink" title="设置Output Frequency"></a>设置Output Frequency</h1><p>因为非定场计算时间比较长，可能会有突发的意外，如果中途不保存结果，可能导致所有的计算都白费。在<code>Output Control-&gt;Trn Result</code>中新建备份结果，设置<code>Timestep Interval</code>的值，实现每隔多少步输出结果。在<code>Transient Result 1</code>中还可以勾选<code>Option-&gt;Selected Variables</code>，此时要使用备选结果进行加算需勾选<code>Include Mesh</code>。<br><img src="/2018/11/06/非定场计算设置/output.png" title="[output]"></p>
           <!--noindex-->
           
             <div class="post-button text-center">
@@ -1078,92 +1172,6 @@
   </article>
 
     
-        <article itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block home">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/06/在cfx里面转网格旋转轴的设置/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="SXong">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/touxiang.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SXong">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-            
-            <a href="/2018/11/06/在cfx里面转网格旋转轴的设置/" class="post-title-link" itemprop="url">在cfx里面转网格旋转轴的设置</a>
-          
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              
-                
-              
-
-              <time title="创建时间：2018-11-06 10:30:05 / 修改时间：10:32:42" itemprop="dateCreated datePublished" datetime="2018-11-06T10:30:05+08:00">2018-11-06</time>
-            </span>
-          
-            
-
-            
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/使用帮助/" itemprop="url" rel="index"><span itemprop="name">使用帮助</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>在icem里面做网格定义周期边界时，我们会得到旋转轴和基点。当旋转轴不是正XYZ时，在CFX里面需要给定旋转轴的两点，此时可以通过测量icem里面轴上两点的坐标得到。但icem测量得到的结果精度不够，此时可以通过看旋转周期边界设置中基点坐标来提高精度<br></p>
-
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-          <div class="post-eof"></div>
-        
-      </footer>
-  </div>
-  
-  
-  
-  </article>
-
-    
   </div>
 
   
@@ -1216,7 +1224,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">31</span>
+          <span class="site-state-item-count">32</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1242,7 +1250,7 @@
             <a href="/tags/">
           
         
-        <span class="site-state-item-count">17</span>
+        <span class="site-state-item-count">18</span>
         <span class="site-state-item-name">标签</span>
         </a>
       </div>

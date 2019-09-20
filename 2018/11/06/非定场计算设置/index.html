@@ -63,10 +63,15 @@
 <meta property="og:site_name" content="SXong">
 <meta property="og:description" content="设置非定场计算参数在Analysis Type中勾选Transient,设置物理时间Total Time,每步的物理时间通过Timesteps设置。如果加算的话，还可以设置Initial Time。设置Output Frequency因为非定场计算时间比较长，可能会有突发的意外，如果中途不保存结果，可能导致所有的计算都白费。在Output Control-&amp;gt;Trn Result中新建备份结果">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/2018/11/06/非定场计算设置/basic.png">
+<meta property="og:image" content="http://yoursite.com/2018/11/06/非定场计算设置/output.png">
+<meta property="og:image" content="http://yoursite.com/2018/11/06/非定场计算设置/solver.png">
+<meta property="og:image" content="http://yoursite.com/2018/11/06/非定场计算设置/interface.png">
 <meta property="og:updated_time" content="2018-11-06T03:28:07.793Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="非定场计算设置">
 <meta name="twitter:description" content="设置非定场计算参数在Analysis Type中勾选Transient,设置物理时间Total Time,每步的物理时间通过Timesteps设置。如果加算的话，还可以设置Initial Time。设置Output Frequency因为非定场计算时间比较长，可能会有突发的意外，如果中途不保存结果，可能导致所有的计算都白费。在Output Control-&amp;gt;Trn Result中新建备份结果">
+<meta name="twitter:image" content="http://yoursite.com/2018/11/06/非定场计算设置/basic.png">
   <link rel="canonical" href="http://yoursite.com/2018/11/06/非定场计算设置/">
 
 
@@ -307,10 +312,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="设置非定场计算参数"><a href="#设置非定场计算参数" class="headerlink" title="设置非定场计算参数"></a>设置非定场计算参数</h1><p>在<code>Analysis Type</code>中勾选<code>Transient</code>,设置物理时间<code>Total Time</code>,每步的物理时间通过<code>Timesteps</code>设置。如果加算的话，还可以设置<code>Initial Time</code>。<br></p><h1 id="设置Output-Frequency"><a href="#设置Output-Frequency" class="headerlink" title="设置Output Frequency"></a>设置Output Frequency</h1><p>因为非定场计算时间比较长，可能会有突发的意外，如果中途不保存结果，可能导致所有的计算都白费。在<code>Output Control-&gt;Trn Result</code>中新建备份结果，设置<code>Timestep Interval</code>的值，实现每隔多少步输出结果。在<code>Transient Result 1</code>中还可以勾选<code>Option-&gt;Selected Variables</code>，此时要使用备选结果进行加算需勾选<code>Include Mesh</code>。<br></p><a id="more"></a>
+        <h1 id="设置非定场计算参数"><a href="#设置非定场计算参数" class="headerlink" title="设置非定场计算参数"></a>设置非定场计算参数</h1><p>在<code>Analysis Type</code>中勾选<code>Transient</code>,设置物理时间<code>Total Time</code>,每步的物理时间通过<code>Timesteps</code>设置。如果加算的话，还可以设置<code>Initial Time</code>。<br><img src="/2018/11/06/非定场计算设置/basic.png" title="[basic]"></p><h1 id="设置Output-Frequency"><a href="#设置Output-Frequency" class="headerlink" title="设置Output Frequency"></a>设置Output Frequency</h1><p>因为非定场计算时间比较长，可能会有突发的意外，如果中途不保存结果，可能导致所有的计算都白费。在<code>Output Control-&gt;Trn Result</code>中新建备份结果，设置<code>Timestep Interval</code>的值，实现每隔多少步输出结果。在<code>Transient Result 1</code>中还可以勾选<code>Option-&gt;Selected Variables</code>，此时要使用备选结果进行加算需勾选<code>Include Mesh</code>。<br><img src="/2018/11/06/非定场计算设置/output.png" title="[output]"></p><a id="more"></a>
 
-<h1 id="设置内迭代步数"><a href="#设置内迭代步数" class="headerlink" title="设置内迭代步数"></a>设置内迭代步数</h1><p>在<code>Solver Control-&gt;Max.Coeff.Loops</code>设置内迭代步数，一般默认值就好，如果计算太大可以适当给小。<br></p>
-<h1 id="设置交接面"><a href="#设置交接面" class="headerlink" title="设置交接面"></a>设置交接面</h1><p>完成上述步骤，即可进行一般的非定场流场计算了。当如果计算旋转机械的非定场，还需要设置交接面，具体是将对应定场的<code>Frame Change-&gt;Frozen rotor</code>更改为<code>Transient Rotor Stator</code><br></p>
+<h1 id="设置内迭代步数"><a href="#设置内迭代步数" class="headerlink" title="设置内迭代步数"></a>设置内迭代步数</h1><p>在<code>Solver Control-&gt;Max.Coeff.Loops</code>设置内迭代步数，一般默认值就好，如果计算太大可以适当给小。<br><img src="/2018/11/06/非定场计算设置/solver.png" title="[solver]"></p>
+<h1 id="设置交接面"><a href="#设置交接面" class="headerlink" title="设置交接面"></a>设置交接面</h1><p>完成上述步骤，即可进行一般的非定场流场计算了。当如果计算旋转机械的非定场，还需要设置交接面，具体是将对应定场的<code>Frame Change-&gt;Frozen rotor</code>更改为<code>Transient Rotor Stator</code><br><img src="/2018/11/06/非定场计算设置/interface.png" title="[output]"></p>
 
     </div>
 
@@ -397,7 +402,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#设置非定场计算参数"><span class="nav-number">1.</span> <span class="nav-text">设置非定场计算参数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设置Output-Frequency"><span class="nav-number">2.</span> <span class="nav-text">设置Output Frequency</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设置内迭代步数"><span class="nav-number">3.</span> <span class="nav-text">设置内迭代步数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设置交接面"><span class="nav-number">4.</span> <span class="nav-text">设置交接面</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#设置非定场计算参数"><span class="nav-text">设置非定场计算参数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设置Output-Frequency"><span class="nav-text">设置Output Frequency</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设置内迭代步数"><span class="nav-text">设置内迭代步数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设置交接面"><span class="nav-text">设置交接面</span></a></li></ol></div>
         
       </div>
       <!--/noindex-->
@@ -415,7 +420,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">31</span>
+          <span class="site-state-item-count">32</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -441,7 +446,7 @@
             <a href="/tags/">
           
         
-        <span class="site-state-item-count">17</span>
+        <span class="site-state-item-count">18</span>
         <span class="site-state-item-name">标签</span>
         </a>
       </div>

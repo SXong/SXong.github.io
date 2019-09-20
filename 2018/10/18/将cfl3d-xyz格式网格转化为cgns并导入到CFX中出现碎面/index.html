@@ -63,10 +63,14 @@
 <meta property="og:site_name" content="SXong">
 <meta property="og:description" content="这是个悲伤的故事。。。先说一下问题出现的大背景，我将ICEM导出的cfl3d.xyz格式的网格转化为cgns格式，并将cgns格式的网格导入CFX计算。为什么要转化网格，而不是直接导出CFX支持的网格呢？这是因为动网格程序读入读出的3d格式，其实一本万利的应该是为程序写个cgns输入输出的接口，懒人总是会遭报应的。。。下图是cgns格式叶片网格导入CFX的结果，看似没有问题，，，我也兴冲冲的算了，">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/2018/10/18/将cfl3d-xyz格式网格转化为cgns并导入到CFX中出现碎面/defwhole.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/18/将cfl3d-xyz格式网格转化为cgns并导入到CFX中出现碎面/deflarge.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/18/将cfl3d-xyz格式网格转化为cgns并导入到CFX中出现碎面/grid.jpg">
 <meta property="og:updated_time" content="2018-10-18T08:04:53.649Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="将cfl3d.xyz格式网格转化为cgns并导入到CFX中出现碎面">
 <meta name="twitter:description" content="这是个悲伤的故事。。。先说一下问题出现的大背景，我将ICEM导出的cfl3d.xyz格式的网格转化为cgns格式，并将cgns格式的网格导入CFX计算。为什么要转化网格，而不是直接导出CFX支持的网格呢？这是因为动网格程序读入读出的3d格式，其实一本万利的应该是为程序写个cgns输入输出的接口，懒人总是会遭报应的。。。下图是cgns格式叶片网格导入CFX的结果，看似没有问题，，，我也兴冲冲的算了，">
+<meta name="twitter:image" content="http://yoursite.com/2018/10/18/将cfl3d-xyz格式网格转化为cgns并导入到CFX中出现碎面/defwhole.png">
   <link rel="canonical" href="http://yoursite.com/2018/10/18/将cfl3d-xyz格式网格转化为cgns并导入到CFX中出现碎面/">
 
 
@@ -307,8 +311,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>这是个悲伤的故事。。。<br>先说一下问题出现的大背景，我将ICEM导出的cfl3d.xyz格式的网格转化为cgns格式，并将cgns格式的网格导入CFX计算。为什么要转化网格，而不是直接导出CFX支持的网格呢？这是因为动网格程序读入读出的3d格式，其实一本万利的应该是为程序写个cgns输入输出的接口，懒人总是会遭报应的。。。<br>下图是cgns格式叶片网格导入CFX的结果，看似没有问题，，，我也兴冲冲的算了，然后细节决定成败。。。<br></p><a id="more"></a>
-<p>把边界条件都设置好后，会出现不在边界上的碎面。碎面是属于空间网格，不应该设置边界条件，然后不设置边界条件CFX会默认物面边界条件，很矛盾。下图给出了碎面出现的位置<br><br>原以为翼尖曲率比较大，叶片扭转比较厉害导致这里网格质量差，所以出现了碎面，稍微移一移点就好了，可是并无卵用。尝试补了几刀还是没用。网格若是导成cfx5格式导入CFX是完全没有问题的。仔细分析了可能出现的原因，把目标锁定在前缘展向的edge，尝试了打断，无济于事。最后发现展向中间的一刀没有切透到两边，如下图所示。控制比较弱，将该刀透了就好。。。一上午的时间浪费了。。。<br></p>
+        <p>这是个悲伤的故事。。。<br>先说一下问题出现的大背景，我将ICEM导出的cfl3d.xyz格式的网格转化为cgns格式，并将cgns格式的网格导入CFX计算。为什么要转化网格，而不是直接导出CFX支持的网格呢？这是因为动网格程序读入读出的3d格式，其实一本万利的应该是为程序写个cgns输入输出的接口，懒人总是会遭报应的。。。<br>下图是cgns格式叶片网格导入CFX的结果，看似没有问题，，，我也兴冲冲的算了，然后细节决定成败。。。<br><img src="/2018/10/18/将cfl3d-xyz格式网格转化为cgns并导入到CFX中出现碎面/defwhole.png" title="[defpic]"></p><a id="more"></a>
+<p>把边界条件都设置好后，会出现不在边界上的碎面。碎面是属于空间网格，不应该设置边界条件，然后不设置边界条件CFX会默认物面边界条件，很矛盾。下图给出了碎面出现的位置<br><img src="/2018/10/18/将cfl3d-xyz格式网格转化为cgns并导入到CFX中出现碎面/deflarge.png" title="[defpic]"><br>原以为翼尖曲率比较大，叶片扭转比较厉害导致这里网格质量差，所以出现了碎面，稍微移一移点就好了，可是并无卵用。尝试补了几刀还是没用。网格若是导成cfx5格式导入CFX是完全没有问题的。仔细分析了可能出现的原因，把目标锁定在前缘展向的edge，尝试了打断，无济于事。最后发现展向中间的一刀没有切透到两边，如下图所示。控制比较弱，将该刀透了就好。。。一上午的时间浪费了。。。<br><img src="/2018/10/18/将cfl3d-xyz格式网格转化为cgns并导入到CFX中出现碎面/grid.jpg" title="[grid]"></p>
 
     </div>
 
@@ -411,7 +415,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">31</span>
+          <span class="site-state-item-count">32</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -437,7 +441,7 @@
             <a href="/tags/">
           
         
-        <span class="site-state-item-count">17</span>
+        <span class="site-state-item-count">18</span>
         <span class="site-state-item-name">标签</span>
         </a>
       </div>
