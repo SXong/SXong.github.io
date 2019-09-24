@@ -1751,7 +1751,7 @@ article:last-child .post-eof {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #f1bd5c;
+  background: #d96159;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2784,6 +2784,7 @@ body {
   color: #000;
 }
 .site-title {
+  font-family: 'Comic Sans MS', sans-serif;
   font-size: 2em;
   font-weight: bold;
 }
