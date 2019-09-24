@@ -63,7 +63,7 @@
 <meta property="og:site_name" content="SXong">
 <meta property="og:description" content="1. boost安装1.1. yum安装进入root帐户，运行以下三行命令即可123yum install boostyum install boost-develyum install boost-doc安装完毕后，可以在usr/include里面找到头文件，cmake配置好后一直没找到库文件，Boost_LIBRARIES的值一直为空，值为空的原因是我只是find_package(Boost)">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-21T06:38:41.174Z">
+<meta property="og:updated_time" content="2019-09-23T15:34:18.335Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="boost::format使用">
 <meta name="twitter:description" content="1. boost安装1.1. yum安装进入root帐户，运行以下三行命令即可123yum install boostyum install boost-develyum install boost-doc安装完毕后，可以在usr/include里面找到头文件，cmake配置好后一直没找到库文件，Boost_LIBRARIES的值一直为空，值为空的原因是我只是find_package(Boost)">
@@ -286,7 +286,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-09-21 14:38:41" itemprop="dateModified" datetime="2019-09-21T14:38:41+08:00">2019-09-21</time>
+                <time title="修改时间：2019-09-23 23:34:18" itemprop="dateModified" datetime="2019-09-23T23:34:18+08:00">2019-09-23</time>
               </span>
             
           
@@ -377,7 +377,7 @@
 <p>通过设置BOOST_ROOT来设置首选的搜索路径<br>通过MESSAGE函数把查找的结果都打印了出来<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">-- Boost_INCLUDE_DIRS = /usr/local/install/boost_1_61_0/include.</span><br><span class="line">-- Boost_LIBRARIES = /usr/local/install/boost_1_61_0/lib/libboost_regex.so;/usr/local/install/boost_1_61_0/lib/libboost_system.so.</span><br><span class="line">-- Boost_LIB_VERSION = 1_61.</span><br></pre></td></tr></table></figure></p>
 <p>编译过程需要用到的头文件搜索路径保存在变量Boost_INCLUDE_DIRS中，所需要link的库文件路径保存在变量Boost_LIBRARIES中</p>
 <p>参考链接<a href="https://cmake.org/cmake/help/v3.0/module/FindBoost.html" target="_blank" rel="noopener">FindBoost</a> </p>
-<h1 id="3-boost-format使用"><a href="#3-boost-format使用" class="headerlink" title="3. boost::format使用"></a>3. boost::format使用</h1><p>目的是得到文件名格式为14E5形式的时间序列文件</p>
+<h1 id="3-boost-format使用"><a href="#3-boost-format使用" class="headerlink" title="3. boost::format使用"></a>3. boost::format使用</h1><p>安装好boost，配置好cmake之后，引入头文件format.cpp<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;boost/format.hpp&gt;</span><br></pre></td></tr></table></figure></p>
 
     </div>
 
