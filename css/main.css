@@ -1751,7 +1751,7 @@ article:last-child .post-eof {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #d96159;
+  background: #de30ac;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2768,7 +2768,7 @@ body {
   margin-top: 60px;
   padding: 60px 60px 60px 60px;
   background: #fff;
-  opacity: 0.8;
+  opacity: 0.9;
   min-height: 500px;
 }
 .post {
@@ -2779,12 +2779,11 @@ body {
   -webkit-box-shadow: 0 0 0.5em rgba(202,203,203,0.5);
 }
 .site-subtitle {
-  font-family: 'Comic Sans MS', STXingkai;
+  font-family: 'STXingkai', sans-serif;
   font-size: 1em;
   color: #000;
 }
 .site-title {
-  font-family: 'Comic Sans MS', sans-serif;
   font-size: 2em;
   font-weight: bold;
 }
@@ -2801,20 +2800,13 @@ body {
   border-radius: 1em;
 }
 .menu .menu-item a {
-  color: #000;
-}
-.menu .menu-item a:hover {
-  color: #ff106c;
-  border-bottom-color: #ff106c;
-}
-.menu .menu-item a {
+  font-family: 'STXingkai', sans-serif;
+  font-size: 1.5em;
   color: #fff;
 }
-.menu .menu-item a {
-  font-size: 1.4em;
-}
 .menu .menu-item a:hover {
-  border-bottom-color: #ff106c;
+  color: #1e90ff;
+  border-bottom-color: #1e90ff;
 }
 .menu .menu-item .badge {
   display: inline-block;
