@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>声衬模拟</title>
+      <link href="/2020/03/21/%E5%A3%B0%E8%A1%AC%E6%A8%A1%E6%8B%9F/"/>
+      <url>/2020/03/21/%E5%A3%B0%E8%A1%AC%E6%A8%A1%E6%8B%9F/</url>
+      
+        <content type="html"><![CDATA[<h1 id="1-频率下线化欧拉方程推导"><a href="#1-频率下线化欧拉方程推导" class="headerlink" title="1.频率下线化欧拉方程推导"></a>1.频率下线化欧拉方程推导</h1><p><strong>有量纲形式的线化欧拉方程可以表示为</strong></p><script type="math/tex; mode=display">\rho_{0}^{*}\left(\frac{\partial}{\partial t^{*}}+U^{*} \frac{\partial}{\partial x^{*}}\right) u^{*}+\rho_{0}^{*} \frac{\mathrm{d} U^{*}}{\mathrm{d} y^{*}} v^{*}=-\frac{\partial p^{*}}{\partial x^{*}}</script><a id="more"></a><script type="math/tex; mode=display">\rho_{0}^{*}\left(\frac{\partial}{\partial t^{*}}+U^{*} \frac{\partial}{\partial x^{*}}\right) v^{*}=-\frac{\partial p^{*}}{\partial y^{*}}</script><script type="math/tex; mode=display">\frac{1}{\rho_{0}^{*} c_{0}^{* 2}}\left(\frac{\partial}{\partial t^{*}}+U^{*} \frac{\partial}{\partial x^{*}}\right) p^{*}=-\left(\frac{\partial u^{*}}{\partial x^{*}}+\frac{\partial v^{*}}{\partial y^{*}}\right)</script><p><strong>用来无量纲的变量</strong></p><script type="math/tex; mode=display">p=\frac{p^{*}}{\rho_{0}^{*} c_{0}^{* 2}}, \quad(x, y)=\left(\frac{x^{*}}{H^{*}}, \frac{y^{*}}{H^{*}}\right), \quad(u, v)=\left(\frac{u^{*}}{c_{0}^{*}}, \frac{v^{*}}{c_{0}^{*}}\right)</script><script type="math/tex; mode=display">\omega=\frac{\omega^{*} H^{*}}{c_{0}^{*}}, \quad M(y)=M_{0} f(y)=\frac{U^{*}(y)}{c_{0}^{*}}, \quad t=\frac{t^{*} c_{0}^{*}}{H^{*}}</script><p><strong>无量纲线化欧拉方程推导：</strong><br>动量方程x：</p><script type="math/tex; mode=display">\begin{array}{l} \frac{H^{*}}{\rho_{0}^{*} c_{0}^{* 2}}\left\{\rho_{0}^{*}\left(\frac{\partial}{\partial t^{*}}+U^{*} \frac{\partial}{\partial x^{*}}\right) u^{*}+\rho_{0}^{*} \frac{\mathrm{d} U^{*}}{\mathrm{d} y^{*}} v^{*}\right\}=-\frac{\partial p^{*}}{\partial x^{*}} \frac{H^{*}}{\rho_{0}^{*} c_{0}^{* 2}}=-\frac{\partial p}{\partial x} \\\Leftrightarrow\left(\frac{\partial}{\partial t}+M(y) \frac{\partial}{\partial x}\right) u+v \frac{\mathrm{d} M(y)}{\mathrm{d} y}=-\frac{\partial p}{\partial x}\end{array}</script><p>动量方程y：</p><script type="math/tex; mode=display">\left( \frac{\partial }{\partial t}\text{+}M\left( y \right)\frac{\partial }{\partial x} \right)v\text{=}-\frac{\partial p}{\partial y}</script><p>能量方程：</p><script type="math/tex; mode=display">\begin{array}{l} \frac{1}{\rho_{0} c_{0}^{2}}\left(\frac{\partial}{\partial t^{*}}+U^{*} \frac{\partial}{\partial x^{*}}\right) p^{*}=-\left(\frac{\partial u^{*}}{\partial x^{*}}+\frac{\partial v^{*}}{\partial y^{*}}\right) \\\Leftrightarrow \frac{H^{*}}{c_{0}^{*}}\left\{\frac{1}{\rho_{0}^{*} c_{0}^{* 2}}\left(\frac{\partial}{\partial t^{*}}+U^{*} \frac{\partial}{\partial x^{*}}\right) p^{*}\right\}=-\frac{H^{*}}{c_{0}^{*}}\left(\frac{\partial u^{*}}{\partial x^{*}}+\frac{\partial v^{*}}{\partial y^{*}}\right) \\\Leftrightarrow\left(\frac{\partial}{\partial t}+M(y) \frac{\partial}{\partial x}\right) p=-\left(\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}\right)\end{array}</script><p>考虑均匀流动<script type="math/tex">M(y)=M_0 f(y)</script>，则有：</p><script type="math/tex; mode=display">\begin{array}{c}\left(\frac{\partial}{\partial t}+M_{0} f(y) \frac{\partial}{\partial x}\right) u+M_{0} \frac{\mathrm{d} f(y)}{\mathrm{d} y} v=-\frac{\partial p}{\partial x} \\\left(\frac{\partial}{\partial t}+M_{0} f(y) \frac{\partial}{\partial x}\right) v=-\frac{\partial p}{\partial y} \\\left(\frac{\partial}{\partial t}+M_{0} f(y) \frac{\partial}{\partial x}\right) p=-\left(\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}\right)\end{array}</script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 理论学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 声衬 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo配置</title>
       <link href="/2019/09/21/hexo%E9%85%8D%E7%BD%AE/"/>
       <url>/2019/09/21/hexo%E9%85%8D%E7%BD%AE/</url>
