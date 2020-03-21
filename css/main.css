@@ -1751,7 +1751,7 @@ article:last-child .post-eof {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ff9df9;
+  background: #6cff1a;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2754,16 +2754,6 @@ hr {
     width: auto;
   }
 }
-body {
-  background: url("https://source.unsplash.com/random/1600x900");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 50% 50%;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  -moz-background-size: cover;
-  -ms-background-size: cover;
-}
 .main-inner {
   margin-top: 60px;
   padding: 60px 60px 60px 60px;
@@ -2776,7 +2766,6 @@ body {
   margin-top: 1em;
   margin-bottom: 3em;
   padding: 1em;
-  -webkit-box-shadow: 0 0 0.5em rgba(202,203,203,0.5);
 }
 .site-subtitle {
   font-family: 'STXingkai', sans-serif;
