@@ -63,10 +63,13 @@
 <meta property="og:site_name" content="SXong">
 <meta property="og:description" content="1.频率下线化欧拉方程推导有量纲形式的线化欧拉方程可以表示为\rho_{0}^{*}\left(\frac{\partial}{\partial t^{*}}+U^{*} \frac{\partial}{\partial x^{*}}\right) u^{*}+\rho_{0}^{*} \frac{\mathrm{d} U^{*}}{\mathrm{d} y^{*}} v^{*}=-\frac{\">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-03-21T08:19:25.452Z">
+<meta property="og:image" content="https://sxong.github.io/2020/03/21/声衬模拟/cavity-cavity.png">
+<meta property="og:image" content="https://sxong.github.io/2020/03/21/声衬模拟/散射矩阵all.png">
+<meta property="og:updated_time" content="2020-03-24T07:33:02.250Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="声衬模拟">
 <meta name="twitter:description" content="1.频率下线化欧拉方程推导有量纲形式的线化欧拉方程可以表示为\rho_{0}^{*}\left(\frac{\partial}{\partial t^{*}}+U^{*} \frac{\partial}{\partial x^{*}}\right) u^{*}+\rho_{0}^{*} \frac{\mathrm{d} U^{*}}{\mathrm{d} y^{*}} v^{*}=-\frac{\">
+<meta name="twitter:image" content="https://sxong.github.io/2020/03/21/声衬模拟/cavity-cavity.png">
   <link rel="canonical" href="https://sxong.github.io/2020/03/21/声衬模拟/">
 
 
@@ -275,11 +278,19 @@
                 
               
 
-              <time title="创建时间：2020-03-21 14:26:06 / 修改时间：16:19:25" itemprop="dateCreated datePublished" datetime="2020-03-21T14:26:06+08:00">2020-03-21</time>
+              <time title="创建时间：2020-03-21 14:26:06" itemprop="dateCreated datePublished" datetime="2020-03-21T14:26:06+08:00">2020-03-21</time>
             </span>
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-03-24 15:33:02" itemprop="dateModified" datetime="2020-03-24T15:33:02+08:00">2020-03-24</time>
+              </span>
             
           
             <span class="post-meta-item">
@@ -327,7 +338,7 @@
               
                 <span class="post-meta-item-text">本文字数：</span>
               
-              <span>9.1k</span>
+              <span>15k</span>
             </span>
           
             <span class="post-meta-item" title="阅读时长">
@@ -337,7 +348,7 @@
               
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
               
-              <span>15 分钟</span>
+              <span>25 分钟</span>
             </span>
           
 
@@ -384,7 +395,29 @@ f^{2} & 0 & \cdots & 0 \\
 \vdots & \vdots & \ddots & \vdots \\
 0 & 0 & \cdots & \mathrm{d} f / \mathrm{d} y
 \end{array}\right]
-\end{aligned}</script>
+\end{aligned}</script><h1 id="2-散射矩阵如何构造"><a href="#2-散射矩阵如何构造" class="headerlink" title="2.散射矩阵如何构造"></a>2.散射矩阵如何构造</h1><p>本小节试着构造一个区域的散射矩阵，由多个区域组成的散射矩阵</p>
+<h2 id="2-1-单一区域中散射矩阵的构造"><a href="#2-1-单一区域中散射矩阵的构造" class="headerlink" title="2.1 单一区域中散射矩阵的构造"></a>2.1 单一区域中散射矩阵的构造</h2><p>在给出了求解的广义特征值问题后，现在针对带空腔细节结构的管道进行分析，考虑如下图所示的管道<br><img src="/2020/03/21/声衬模拟/cavity-cavity.png" title="[cavity]"><br>区域j中的第n个特征向量，可以表示为<script type="math/tex">\left(\boldsymbol{Q}_{n}^{j}, \boldsymbol{V}_{n}^{j}, \boldsymbol{P}_{n}^{j}\right) ^T</script><br>在每个区域内，模态解可以通过区域内各个特征向量的线性组合得到：<br>\begin{equation}<br>\left.\begin{array}{rl}<br>Q^{j}(x) &amp; =\sum_{n=1}^{N} C_{n}^{j} Q_{n}^{j} \exp \left(-\mathrm{i} k_{n}^{j} x\right) \\<br>P^{j}(x) &amp; =\sum_{n=1}^{N} C_{n}^{j} P_{n}^{j} \exp \left(-\mathrm{i} k_{n}^{j} x\right) \\<br>V^{j}(x) &amp; =\sum_{n=1}^{N} C_{n}^{j} V_{n}^{j} \exp \left(-\mathrm{i} k_{n}^{j} x\right)<br>\end{array}\right\}<br>\end{equation}</p>
+<p>管道中I区域采用<script type="math/tex">N_1</script>个点离散，区域II采用<script type="math/tex">N_2</script>个点离散。假设空腔中没有速度扰动，所以区域I中有<script type="math/tex">N=3N_1</script>个模态，区域II中有<script type="math/tex">N=2N_2+N_1</script>个模态。<br>The modes in each duct segment are then matched using <span style="color:red;"><strong><em>the continuity of pressure $p$, velocity $v$ and $\partial {p}/\partial{x}$ at the interfaces between zones I and II, and $\partial {p}/\partial{x}=0$ on the vertical walls inside the cavity.</em></strong></span> The continuity and wall conditions can be put in the form of a large matrix that links all the incoming waves in the cell to outgoing waves and to all the internal variables. From this large matrix, the scattering matrix is written:<br>\begin{equation}<br>\left(\begin{array}{c}<br>\boldsymbol{C}_{2}^{+} \\<br>\boldsymbol{C}_{1}^{-}<br>\end{array}\right)=\boldsymbol{S}\left(\begin{array}{c}<br>\boldsymbol{C}_{1}^{+} \\<br>\boldsymbol{C}_{2}^{-}<br>\end{array}\right) \label{散射矩阵}<br>\end{equation}</p>
+<p>矢量<script type="math/tex">C_{1}^{\pm}</script>包含了$x=0$处沿流动方向（与流动方向相反）传播的波的模态系数，矢量<script type="math/tex">C_{2}^{\pm}</script>表征$x=W$的模态系数。<br>\begin{equation}<br>S=\left(\begin{array}{cc}<br>T^{+} &amp; R^{-} \\<br>R^{+} &amp; T^{-}<br>\end{array}\right)<br>\end{equation}<br>$T^{+}\left(2 N_{1} \times 2 N_{1}\right)$,$R^{+}\left(N_{1} \times 2 N_{1}\right)$,$T^{-}\left(N_{1} \times N_{1}\right)$和$R^{-}\left(2 N_{1} \times N_{1}\right)$为沿流动方向和与流动方向相反的传输和反射矩阵。在区域I中共存在$3N_{1}$个模态，$N_{1}$个声学模态沿x正方向传播，$N_{1}$个升邪模态沿x负方向传播，$N_{1}$个流动模态沿x方向传播。</p>
+<ul>
+<li>$ C_{2}^{+}$表示的是$x=W$处往下游传播的波的系数，它包含了$N_{1}$个声学模态和$N_{1}$个流动模态，所以沿流动方向的传输矩阵$T^{+}\left(2 N_{1} \times 2 N_{1}\right)$和反射矩阵$R^{-}\left(2 N_{1} \times N_{1}\right)$的行维度为$2N_{1}$。</li>
+<li>$ C_{1}^{-}$表示的是$x=0$处往上游传播的波的系数，它只有声学模态，由$x=0$处传输的波和$x=W$传输回来的声波决定，所以$R^{+}\left(N_{1} \times 2 N_{1}\right)$和$T^{-}\left(N_{1} \times N_{1}\right)$的行维度为$N_{1}$</li>
+<li>T和R列维度的大小由$ C_{1}^{+}$和$ C_{2}^{-}$决定。</li>
+</ul>
+<h2 id="2-2-多个区域中散射矩阵的构造"><a href="#2-2-多个区域中散射矩阵的构造" class="headerlink" title="2.2 多个区域中散射矩阵的构造"></a>2.2 多个区域中散射矩阵的构造</h2><p>经过多个区域的散射矩阵可以由各个区域里的散射矩阵$\mathbf{S}^{(1)}$、$\mathbf{S}^{(2)}$组成：<br>\begin{equation}<br>\mathbf{S}^{(1+2)}=\left(\begin{array}{cc}<br>\boldsymbol{T}^{+(2)} \boldsymbol{E} \boldsymbol{T}^{+(1)} &amp; \boldsymbol{R}^{-(2)}+\boldsymbol{T}^{+(2)} \boldsymbol{R}^{-(1)} \boldsymbol{F} \boldsymbol{T}^{-(2)} \\<br>\boldsymbol{R}^{+(1)}+\boldsymbol{T}^{-(1)} \boldsymbol{R}^{+(2)} \boldsymbol{E} \boldsymbol{T}^{+(1)} &amp; \boldsymbol{T}^{-(1)} \boldsymbol{F} \boldsymbol{T}^{-(2)}<br>\end{array}\right)<br>\end{equation}<br>其中$\boldsymbol{E}$，$\boldsymbol{F}$的具体形式如下：<br>\begin{equation}<br>\begin{aligned}<br>&amp;\boldsymbol{E}=\left(\boldsymbol{I}-\boldsymbol{R}^{-(1)} \boldsymbol{R}^{+(2)}\right)^{-1}\\<br>&amp;\boldsymbol{F}=\left(\boldsymbol{I}-\boldsymbol{R}^{+(2)} \boldsymbol{R}^{-(1)}\right)^{-1}<br>\end{aligned}<br>\end{equation}</p>
+<h2 id="2-3-经过一个周期后散射矩阵的构造（Bloch-modes-of-the-periodic-system）"><a href="#2-3-经过一个周期后散射矩阵的构造（Bloch-modes-of-the-periodic-system）" class="headerlink" title="2.3 经过一个周期后散射矩阵的构造（Bloch modes of the periodic system）"></a>2.3 经过一个周期后散射矩阵的构造（Bloch modes of the periodic system）</h2><p>当几何、边界条件和控制方程在x方向关于长度W周期对称时，Floquet–Bloch理论认为任何的物理量可以表示成：<br>\begin{equation}<br>\phi(x+W, y)=\phi_{B}(x+W, y) \mathrm{e}^{-\mathrm{i} k_{B}(x+W)}=\phi_{B}(x, y) \mathrm{e}^{-\mathrm{i} k_{B}(x+W)}=\phi(x, y) \mathrm{e}^{-\mathrm{i} k_{B} W}<br>\end{equation}<br>$\phi_{B}(x, y)$为在x方向上关于长度W对称的物理场。在研究的周期结构上下游边界处（$x=0$,$x=W$）,存在以下的关系式：<br>\begin{equation}<br>\phi(W, y)=\phi(0, y) \mathrm{e}^{-i k_{B} W}<br>\end{equation}<br>其矩阵形式为：<br>\begin{equation}<br>\left(\begin{array}{l}<br>\boldsymbol{C}_{2}^{+} \\<br>\boldsymbol{C}_{2}^{2}<br>\end{array}\right)=\mathrm{e}^{-\mathrm{i} \boldsymbol{k}_{\boldsymbol{B}} \mathrm{W}}\left(\begin{array}{l}<br>\boldsymbol{C}_{1}^{+} \\<br>\boldsymbol{C}_{1}^{1}<br>\end{array}\right) \label{周期关系}<br>\end{equation}<br>考虑式\eqref{散射矩阵}所示的散射矩阵，将\eqref{散射矩阵}重写成：<br>\begin{equation}<br>M_{1}\left(\begin{array}{c}<br>C_{1}^{+} \\<br>C_{1}^{-}<br>\end{array}\right)=M_{2}\left(\begin{array}{c}<br>C_{2}^{+} \\<br>C_{2}^{-}<br>\end{array}\right) \label{散射矩阵重写}<br>\end{equation}<br>其中<br>\begin{equation}<br>M_{1}=\left(\begin{array}{cc}<br>T^{+} &amp; 0 \\<br>-R^{+} &amp; I<br>\end{array}\right), \quad M_{2}=\left(\begin{array}{cc}<br>I &amp; -R^{-} \\<br>0 &amp; T^{-}<br>\end{array}\right)<br>\end{equation}<br>结合\eqref{散射矩阵重写}和\eqref{周期关系}，可以得到经过一个周期结构后的散射矩阵：<br>\begin{equation}<br>M_{1}\left(\begin{array}{c}<br>\boldsymbol{C}_{1}^{+} \\<br>\boldsymbol{C}_{1}^{-}<br>\end{array}\right)=\mathrm{e}^{-\mathrm{i} k_{B} W} \boldsymbol{M}_{2}\left(\begin{array}{c}<br>\boldsymbol{C}_{1}^{+} \\<br>\boldsymbol{C}_{1}^{-}<br>\end{array}\right)<br>\end{equation}</p>
+<h2 id="2-4-散射矩阵中-boldsymbol-S-的构造——Mode-matching"><a href="#2-4-散射矩阵中-boldsymbol-S-的构造——Mode-matching" class="headerlink" title="2.4 散射矩阵中$\boldsymbol{S}$的构造——Mode matching"></a>2.4 散射矩阵中$\boldsymbol{S}$的构造——Mode matching</h2><ul>
+<li>区域交界面处满足连续性条件</li>
+<li>空腔内部垂直壁面上满足$\partial {p}/\partial{x}=0$</li>
+</ul>
+<img src="/2020/03/21/声衬模拟/散射矩阵all.png" title="[ft]">
+<p>\begin{equation}<br>\underbrace{\left(\begin{array}{cc}<br>-\mathbf{Q}_{1}^{-} &amp; \mathbf{Q}_{2}^{+} \\<br>\mathbf{0} &amp; \mathbf{V}_{2}^{+} \\<br>-\mathbf{V}_{1}^{-} &amp; \mathbf{P}_{2}^{+}\left(1: N_{1},:\right)<br>\end{array}\right)}_{\mathbf{S}_{1}}\left(\begin{array}{c}<br>\mathbf{C}_{1}^{-} \\<br>\mathbf{C}_{2}^{+}<br>\end{array}\right)=\underbrace{\left(\begin{array}{cc}<br>\mathbf{Q}_{1}^{+} &amp; -\mathbf{Q}_{2}^{-} \\<br>\mathbf{0} &amp; -\mathbf{V}_{2}^{-} \\<br>\mathbf{V}_{1}^{+} &amp; -\mathbf{P}_{2}^{-}\left(1: N_{1},:\right)<br>\end{array}\right)}_{\mathbf{S}_{2}}\left(\begin{array}{c}<br>\mathbf{C}_{1}^{+} \\<br>\mathbf{C}_{2}^{-}<br>\end{array}\right)<br>\end{equation}</p>
+<p>\begin{equation}<br>\begin{array}{l}<br>R^{+}=\frac{\mathbf{C}_{1}^{-}(1)}{\mathbf{C}_{1}^{+}(1)}=\mathbf{S}(1,1), \quad T^{-}=\frac{\mathbf{C}_{1}^{-}(1)}{\mathbf{C}_{2}^{-(1)}}=\mathbf{S}\left(1,2 N_{1}+1\right) \\<br>T^{+}=\frac{\mathbf{C}_{2}^{+}(1)}{\mathbf{C}_{1}^{+}(1)}=\mathbf{S}\left(N_{1}+1,1\right), \quad R^{-}=\frac{\mathbf{C}_{2}^{+}(1)}{\mathbf{C}_{2}^{-}(1)}=\mathbf{S}\left(N_{1}+1,2 N_{1}+1\right)<br>\end{array}<br>\end{equation}</p>
+<h1 id="3-Multimodal-method"><a href="#3-Multimodal-method" class="headerlink" title="3.Multimodal method"></a>3.Multimodal method</h1><ul>
+<li><em>By matching the pressure and axial velocity at the interface between different uniform segments, scattering matrices are obtained for each individual segment;</em></li>
+<li><em>these are then combined to construct a global scattering matrix for multiple segments.</em> </li>
+</ul>
+
     </div>
 
     
@@ -418,6 +451,10 @@ f^{2} & 0 & \cdots & 0 \\
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
+              
+                <a href="/2020/10/12/单通道模型周期对称设置/" rel="prev" title="单通道模型周期对称设置">
+                  单通道模型周期对称设置 <i class="fa fa-chevron-right"></i>
+                </a>
               
             </div>
           </div>
@@ -469,7 +506,7 @@ f^{2} & 0 & \cdots & 0 \\
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-频率下线化欧拉方程推导"><span class="nav-text">1.频率下线化欧拉方程推导</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-频率下线化欧拉方程推导"><span class="nav-text">1.频率下线化欧拉方程推导</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-散射矩阵如何构造"><span class="nav-text">2.散射矩阵如何构造</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-单一区域中散射矩阵的构造"><span class="nav-text">2.1 单一区域中散射矩阵的构造</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-多个区域中散射矩阵的构造"><span class="nav-text">2.2 多个区域中散射矩阵的构造</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3-经过一个周期后散射矩阵的构造（Bloch-modes-of-the-periodic-system）"><span class="nav-text">2.3 经过一个周期后散射矩阵的构造（Bloch modes of the periodic system）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-4-散射矩阵中-boldsymbol-S-的构造——Mode-matching"><span class="nav-text">2.4 散射矩阵中$\boldsymbol{S}$的构造——Mode matching</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-Multimodal-method"><span class="nav-text">3.Multimodal method</span></a></li></ol></div>
         
       </div>
       <!--/noindex-->
@@ -487,7 +524,7 @@ f^{2} & 0 & \cdots & 0 \\
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">34</span>
+          <span class="site-state-item-count">35</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -556,12 +593,12 @@ f^{2} & 0 & \cdots & 0 \\
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="站点总字数">41k</span>
+    <span title="站点总字数">47k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">1:08</span>
+    <span title="站点阅读时长">1:18</span>
 </div>
 
         
