@@ -241,7 +241,7 @@
   
   
   <div class="post-block home">
-    <link itemprop="mainEntityOfPage" href="https://sxong.github.io/2018/11/06/非定场计算设置/">
+    <link itemprop="mainEntityOfPage" href="https://sxong.github.io/2019/02/22/linux远程登陆/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="SXong">
@@ -255,7 +255,7 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
             
-            <a href="/2018/11/06/非定场计算设置/" class="post-title-link" itemprop="url">非定场计算设置</a>
+            <a href="/2019/02/22/linux远程登陆/" class="post-title-link" itemprop="url">linux远程登陆</a>
           
         </h1>
 
@@ -270,11 +270,19 @@
                 
               
 
-              <time title="创建时间：2018-11-06 11:02:24 / 修改时间：11:28:07" itemprop="dateCreated datePublished" datetime="2018-11-06T11:02:24+08:00">2018-11-06</time>
+              <time title="创建时间：2019-02-22 10:43:19" itemprop="dateCreated datePublished" datetime="2019-02-22T10:43:19+08:00">2019-02-22</time>
             </span>
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-02-23 17:01:01" itemprop="dateModified" datetime="2019-02-23T17:01:01+08:00">2019-02-23</time>
+              </span>
             
           
             <span class="post-meta-item">
@@ -302,7 +310,7 @@
       
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2018/11/06/非定场计算设置/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/2018/11/06/非定场计算设置/" itemprop="commentCount"></span></a>
+    <a title="valine" href="/2019/02/22/linux远程登陆/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/2019/02/22/linux远程登陆/" itemprop="commentCount"></span></a>
   </span>
   
   
@@ -314,7 +322,7 @@
               
                 <span class="post-meta-item-text">本文字数：</span>
               
-              <span>504</span>
+              <span>200</span>
             </span>
           
             <span class="post-meta-item" title="阅读时长">
@@ -337,11 +345,14 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="设置非定场计算参数"><a href="#设置非定场计算参数" class="headerlink" title="设置非定场计算参数"></a>设置非定场计算参数</h1><p>在<code>Analysis Type</code>中勾选<code>Transient</code>,设置物理时间<code>Total Time</code>,每步的物理时间通过<code>Timesteps</code>设置。如果加算的话，还可以设置<code>Initial Time</code>。<br><img src="/2018/11/06/非定场计算设置/basic.png" title="[basic]"></p><h1 id="设置Output-Frequency"><a href="#设置Output-Frequency" class="headerlink" title="设置Output Frequency"></a>设置Output Frequency</h1><p>因为非定场计算时间比较长，可能会有突发的意外，如果中途不保存结果，可能导致所有的计算都白费。在<code>Output Control-&gt;Trn Result</code>中新建备份结果，设置<code>Timestep Interval</code>的值，实现每隔多少步输出结果。在<code>Transient Result 1</code>中还可以勾选<code>Option-&gt;Selected Variables</code>，此时要使用备选结果进行加算需勾选<code>Include Mesh</code>。<br><img src="/2018/11/06/非定场计算设置/output.png" title="[output]"></p>
+          <h1 id="连接远程服务器"><a href="#连接远程服务器" class="headerlink" title="连接远程服务器"></a>连接远程服务器</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install openssh-client</span><br><span class="line">ssh user@192.168.1.111 -p 1234</span><br></pre></td></tr></table></figure><h1 id="图形化"><a href="#图形化" class="headerlink" title="图形化"></a>图形化</h1><ul>
+<li>安装x11<br><code>sudo apt install x11-common</code></li>
+<li>连接服务器<br><code>ssh -X user@192.168.1.111 -p 1234</code></li>
+</ul><h1 id="本地文件夹形式访问远程服务器"><a href="#本地文件夹形式访问远程服务器" class="headerlink" title="本地文件夹形式访问远程服务器"></a>本地文件夹形式访问远程服务器</h1>
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/2018/11/06/非定场计算设置/#more" rel="contents">
+              <a class="btn" href="/2019/02/22/linux远程登陆/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -370,7 +381,7 @@
   
   
   <div class="post-block home">
-    <link itemprop="mainEntityOfPage" href="https://sxong.github.io/2018/11/06/流体介质设定/">
+    <link itemprop="mainEntityOfPage" href="https://sxong.github.io/2019/02/21/ubuntu常用快捷键/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="SXong">
@@ -384,7 +395,7 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
             
-            <a href="/2018/11/06/流体介质设定/" class="post-title-link" itemprop="url">流体介质设定</a>
+            <a href="/2019/02/21/ubuntu常用快捷键/" class="post-title-link" itemprop="url">ubuntu常用快捷键</a>
           
         </h1>
 
@@ -399,7 +410,7 @@
                 
               
 
-              <time title="创建时间：2018-11-06 10:59:49 / 修改时间：11:01:30" itemprop="dateCreated datePublished" datetime="2018-11-06T10:59:49+08:00">2018-11-06</time>
+              <time title="创建时间：2019-02-21 21:15:28 / 修改时间：21:23:33" itemprop="dateCreated datePublished" datetime="2019-02-21T21:15:28+08:00">2019-02-21</time>
             </span>
           
             
@@ -431,7 +442,7 @@
       
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2018/11/06/流体介质设定/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/2018/11/06/流体介质设定/" itemprop="commentCount"></span></a>
+    <a title="valine" href="/2019/02/21/ubuntu常用快捷键/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/2019/02/21/ubuntu常用快捷键/" itemprop="commentCount"></span></a>
   </span>
   
   
@@ -443,7 +454,7 @@
               
                 <span class="post-meta-item-text">本文字数：</span>
               
-              <span>51</span>
+              <span>31</span>
             </span>
           
             <span class="post-meta-item" title="阅读时长">
@@ -466,7 +477,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>当使用Air at 25c介质时，全流场的密度不会发生改变，当我们涉及到增压时，最好是设置成理想气体。</p>
+          <p><code>Ctrl+Shirt+T</code>打开终端<br><code>Ctrl+L</code>查看当前文件夹路径</p>
 
         
       
@@ -491,7 +502,7 @@
   
   
   <div class="post-block home">
-    <link itemprop="mainEntityOfPage" href="https://sxong.github.io/2018/11/06/CFX常用脚本/">
+    <link itemprop="mainEntityOfPage" href="https://sxong.github.io/2019/02/20/EI加点准则/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="SXong">
@@ -505,7 +516,7 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
             
-            <a href="/2018/11/06/CFX常用脚本/" class="post-title-link" itemprop="url">CFX常用脚本</a>
+            <a href="/2019/02/20/EI加点准则/" class="post-title-link" itemprop="url">EI加点准则</a>
           
         </h1>
 
@@ -520,7 +531,7 @@
                 
               
 
-              <time title="创建时间：2018-11-06 10:35:37" itemprop="dateCreated datePublished" datetime="2018-11-06T10:35:37+08:00">2018-11-06</time>
+              <time title="创建时间：2019-02-20 23:15:12" itemprop="dateCreated datePublished" datetime="2019-02-20T23:15:12+08:00">2019-02-20</time>
             </span>
           
             
@@ -531,8 +542,128 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2018-11-07 14:59:09" itemprop="dateModified" datetime="2018-11-07T14:59:09+08:00">2018-11-07</time>
+                <time title="修改时间：2019-02-21 21:13:41" itemprop="dateModified" datetime="2019-02-21T21:13:41+08:00">2019-02-21</time>
               </span>
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/理论学习/" itemprop="url" rel="index"><span itemprop="name">理论学习</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+        
+      
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2019/02/20/EI加点准则/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/2019/02/20/EI加点准则/" itemprop="commentCount"></span></a>
+  </span>
+  
+  
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">本文字数：</span>
+              
+              <span>0</span>
+            </span>
+          
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              
+              <span>1 分钟</span>
+            </span>
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+        <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block home">
+    <link itemprop="mainEntityOfPage" href="https://sxong.github.io/2018/12/05/Code-Blocks注释快捷键/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="SXong">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/touxiang.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SXong">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/2018/12/05/Code-Blocks注释快捷键/" class="post-title-link" itemprop="url">Code::Blocks注释快捷键</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2018-12-05 09:24:49 / 修改时间：09:27:14" itemprop="dateCreated datePublished" datetime="2018-12-05T09:24:49+08:00">2018-12-05</time>
+            </span>
+          
+            
+
             
           
             <span class="post-meta-item">
@@ -560,7 +691,7 @@
       
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2018/11/06/CFX常用脚本/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/2018/11/06/CFX常用脚本/" itemprop="commentCount"></span></a>
+    <a title="valine" href="/2018/12/05/Code-Blocks注释快捷键/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/2018/12/05/Code-Blocks注释快捷键/" itemprop="commentCount"></span></a>
   </span>
   
   
@@ -572,7 +703,632 @@
               
                 <span class="post-meta-item-text">本文字数：</span>
               
-              <span>1.3k</span>
+              <span>34</span>
+            </span>
+          
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              
+              <span>1 分钟</span>
+            </span>
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><code>Ctrl+Shirt+c</code>快速注释多行<br><code>Ctrl+Shirt+x</code>取消注释</p>
+
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+        <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block home">
+    <link itemprop="mainEntityOfPage" href="https://sxong.github.io/2018/11/29/设置visualstudio的默认环境设置/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="SXong">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/touxiang.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SXong">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/2018/11/29/设置visualstudio的默认环境设置/" class="post-title-link" itemprop="url">设置visualstudio的默认环境设置</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2018-11-29 20:13:57 / 修改时间：20:21:34" itemprop="dateCreated datePublished" datetime="2018-11-29T20:13:57+08:00">2018-11-29</time>
+            </span>
+          
+            
+
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/使用帮助/" itemprop="url" rel="index"><span itemprop="name">使用帮助</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+        
+      
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2018/11/29/设置visualstudio的默认环境设置/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/2018/11/29/设置visualstudio的默认环境设置/" itemprop="commentCount"></span></a>
+  </span>
+  
+  
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">本文字数：</span>
+              
+              <span>31</span>
+            </span>
+          
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              
+              <span>1 分钟</span>
+            </span>
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="在工具中找到导入和导出设置："><a href="#在工具中找到导入和导出设置：" class="headerlink" title="在工具中找到导入和导出设置："></a>在工具中找到导入和导出设置：</h1><img src="/2018/11/29/设置visualstudio的默认环境设置/1.png" title="[APE1]">
+<h1 id="重置所有设置："><a href="#重置所有设置：" class="headerlink" title="重置所有设置："></a>重置所有设置：</h1><img src="/2018/11/29/设置visualstudio的默认环境设置/2.png" title="[APE1]">
+<h1 id="选择想要的开发设置："><a href="#选择想要的开发设置：" class="headerlink" title="选择想要的开发设置："></a>选择想要的开发设置：</h1><img src="/2018/11/29/设置visualstudio的默认环境设置/3.png" title="[APE1]">
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+        <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block home">
+    <link itemprop="mainEntityOfPage" href="https://sxong.github.io/2018/11/13/Aerodynamically-Generated-Noise-From-Fluent/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="SXong">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/touxiang.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SXong">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/2018/11/13/Aerodynamically-Generated-Noise-From-Fluent/" class="post-title-link" itemprop="url">Aerodynamically_Generated_Noise_From_Fluent</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2018-11-13 21:52:36 / 修改时间：22:57:14" itemprop="dateCreated datePublished" datetime="2018-11-13T21:52:36+08:00">2018-11-13</time>
+            </span>
+          
+            
+
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/理论学习/" itemprop="url" rel="index"><span itemprop="name">理论学习</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+        
+      
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2018/11/13/Aerodynamically-Generated-Noise-From-Fluent/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/2018/11/13/Aerodynamically-Generated-Noise-From-Fluent/" itemprop="commentCount"></span></a>
+  </span>
+  
+  
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">本文字数：</span>
+              
+              <span>3.2k</span>
+            </span>
+          
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              
+              <span>5 分钟</span>
+            </span>
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>The discipline of acoustics is intimately related to fluid dynamics.Many sounds that are technologically important in industrial applications are generated by and propagated in fluid flows. The phenomena associated with sounds can therefore be understood and analyzed in the general framework of fluid dynamics. (The governing equations for acoustics are indeed the same as the ones governing fluid flows.)<br>The main challenge in numerically predicting sound waves stems from the well-recognized fact that sounds have much lower energy than fluid flows, typically by several orders of magnitude. This poses a great challenge to the computation of sounds in terms of difficulty of numerically resolving sound waves, especially when one is interested in predicting sound propagation to the far field. Another challenge comes from the difficulty of predicting the very flow phenomena (for example, turbulence) in the near field that are responsible for generating sounds.</p>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/11/13/Aerodynamically-Generated-Noise-From-Fluent/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+        <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block home">
+    <link itemprop="mainEntityOfPage" href="https://sxong.github.io/2018/11/10/Kriging代理模型/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="SXong">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/touxiang.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SXong">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/2018/11/10/Kriging代理模型/" class="post-title-link" itemprop="url">Kriging代理模型</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2018-11-10 14:57:54 / 修改时间：17:51:20" itemprop="dateCreated datePublished" datetime="2018-11-10T14:57:54+08:00">2018-11-10</time>
+            </span>
+          
+            
+
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/理论学习/" itemprop="url" rel="index"><span itemprop="name">理论学习</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+        
+      
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2018/11/10/Kriging代理模型/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/2018/11/10/Kriging代理模型/" itemprop="commentCount"></span></a>
+  </span>
+  
+  
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">本文字数：</span>
+              
+              <span>28</span>
+            </span>
+          
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              
+              <span>1 分钟</span>
+            </span>
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>程序：<code>python.scikit</code>,<code>matlab.DACE</code></p>
+
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+        <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block home">
+    <link itemprop="mainEntityOfPage" href="https://sxong.github.io/2018/11/09/AcousticSolver求解器代码阅读/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="SXong">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/touxiang.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SXong">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/2018/11/09/AcousticSolver求解器代码阅读/" class="post-title-link" itemprop="url">AcousticSolver求解器代码阅读</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2018-11-09 15:31:18 / 修改时间：20:32:53" itemprop="dateCreated datePublished" datetime="2018-11-09T15:31:18+08:00">2018-11-09</time>
+            </span>
+          
+            
+
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/硕士毕业/" itemprop="url" rel="index"><span itemprop="name">硕士毕业</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+        
+      
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2018/11/09/AcousticSolver求解器代码阅读/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/2018/11/09/AcousticSolver求解器代码阅读/" itemprop="commentCount"></span></a>
+  </span>
+  
+  
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">本文字数：</span>
+              
+              <span>2.8k</span>
+            </span>
+          
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              
+              <span>5 分钟</span>
+            </span>
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="EquationSystems-gt-AcousticSystem-cpp"><a href="#EquationSystems-gt-AcousticSystem-cpp" class="headerlink" title="EquationSystems-&gt;AcousticSystem.cpp"></a>EquationSystems-&gt;AcousticSystem.cpp</h1><ul>
+<li>AcousticSystem::v_InitObject()<br>m_bfNames背景流场变量名<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">m_bfNames.push_back(&quot;c0sq&quot;);</span><br><span class="line">m_bfNames.push_back(&quot;rho0&quot;);</span><br><span class="line">m_bfNames.push_back(&quot;u0&quot;);</span><br><span class="line">m_bfNames.push_back(&quot;v0&quot;);</span><br><span class="line">m_bfNames.push_back(&quot;w0&quot;);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/11/09/AcousticSolver求解器代码阅读/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+        <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block home">
+    <link itemprop="mainEntityOfPage" href="https://sxong.github.io/2018/11/07/APE-variant-4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="SXong">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/touxiang.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SXong">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/2018/11/07/APE-variant-4/" class="post-title-link" itemprop="url">APE variant 4</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2018-11-07 16:21:02 / 修改时间：17:41:50" itemprop="dateCreated datePublished" datetime="2018-11-07T16:21:02+08:00">2018-11-07</time>
+            </span>
+          
+            
+
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/理论学习/" itemprop="url" rel="index"><span itemprop="name">理论学习</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+        
+      
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2018/11/07/APE-variant-4/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/2018/11/07/APE-variant-4/" itemprop="commentCount"></span></a>
+  </span>
+  
+  
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">本文字数：</span>
+              
+              <span>957</span>
             </span>
           
             <span class="post-meta-item" title="阅读时长">
@@ -595,11 +1351,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="计算"><a href="#计算" class="headerlink" title="计算"></a>计算</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&quot;C:\Program Files\ANSYS Inc\v140\CFX\bin\cfx5solve&quot; -batch -def example.def -ccl example.ccl   -fullname example</span><br></pre></td></tr></table></figure><h1 id="加算"><a href="#加算" class="headerlink" title="加算"></a>加算</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&quot;C:\Program Files\ANSYS Inc\v140\CFX\bin\cfx5solve&quot; -batch -initial example.res -def example.def -ccl example.ccl   -fullname example</span><br></pre></td></tr></table></figure>
+          <p><strong><em>Ewert, R. and W. Schröder, Acoustic perturbation equations based on flow decomposition via source filtering. Journal of Computational Physics, 2003. 188(2): p. 365-398.</em></strong></p>
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/2018/11/06/CFX常用脚本/#more" rel="contents">
+              <a class="btn" href="/2018/11/07/APE-variant-4/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -628,7 +1384,7 @@
   
   
   <div class="post-block home">
-    <link itemprop="mainEntityOfPage" href="https://sxong.github.io/2018/11/06/在cfx里面转网格旋转轴的设置/">
+    <link itemprop="mainEntityOfPage" href="https://sxong.github.io/2018/11/06/计算状态匹配/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="SXong">
@@ -642,7 +1398,7 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
             
-            <a href="/2018/11/06/在cfx里面转网格旋转轴的设置/" class="post-title-link" itemprop="url">在cfx里面转网格旋转轴的设置</a>
+            <a href="/2018/11/06/计算状态匹配/" class="post-title-link" itemprop="url">计算状态匹配</a>
           
         </h1>
 
@@ -657,7 +1413,7 @@
                 
               
 
-              <time title="创建时间：2018-11-06 10:30:05 / 修改时间：10:32:42" itemprop="dateCreated datePublished" datetime="2018-11-06T10:30:05+08:00">2018-11-06</time>
+              <time title="创建时间：2018-11-06 15:53:52 / 修改时间：16:06:55" itemprop="dateCreated datePublished" datetime="2018-11-06T15:53:52+08:00">2018-11-06</time>
             </span>
           
             
@@ -689,7 +1445,7 @@
       
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2018/11/06/在cfx里面转网格旋转轴的设置/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/2018/11/06/在cfx里面转网格旋转轴的设置/" itemprop="commentCount"></span></a>
+    <a title="valine" href="/2018/11/06/计算状态匹配/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/2018/11/06/计算状态匹配/" itemprop="commentCount"></span></a>
   </span>
   
   
@@ -701,7 +1457,7 @@
               
                 <span class="post-meta-item-text">本文字数：</span>
               
-              <span>125</span>
+              <span>235</span>
             </span>
           
             <span class="post-meta-item" title="阅读时长">
@@ -724,778 +1480,16 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>在icem里面做网格定义周期边界时，我们会得到旋转轴和基点。当旋转轴不是正XYZ时，在CFX里面需要给定旋转轴的两点，此时可以通过测量icem里面轴上两点的坐标得到。但icem测量得到的结果精度不够，此时可以通过看旋转周期边界设置中基点坐标来提高精度<br><img src="/2018/11/06/在cfx里面转网格旋转轴的设置/AXIAL.png" title="[AXIALpic]"></p>
-
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-          <div class="post-eof"></div>
-        
-      </footer>
-  </div>
-  
-  
-  
-  </article>
-
-    
-        <article itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block home">
-    <link itemprop="mainEntityOfPage" href="https://sxong.github.io/2018/10/30/Nektar关于APE和LEE控制方程的一点疑惑/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="SXong">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/touxiang.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SXong">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-            
-            <a href="/2018/10/30/Nektar关于APE和LEE控制方程的一点疑惑/" class="post-title-link" itemprop="url">Nektar关于APE和LEE控制方程的一点疑惑</a>
-          
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              
-                
-              
-
-              <time title="创建时间：2018-10-30 15:17:59" itemprop="dateCreated datePublished" datetime="2018-10-30T15:17:59+08:00">2018-10-30</time>
-            </span>
-          
-            
-
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2018-11-05 17:13:21" itemprop="dateModified" datetime="2018-11-05T17:13:21+08:00">2018-11-05</time>
-              </span>
-            
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/硕士毕业/" itemprop="url" rel="index"><span itemprop="name">硕士毕业</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
-      </span>
-        
-      
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2018/10/30/Nektar关于APE和LEE控制方程的一点疑惑/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/2018/10/30/Nektar关于APE和LEE控制方程的一点疑惑/" itemprop="commentCount"></span></a>
-  </span>
-  
-  
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">本文字数：</span>
-              
-              <span>501</span>
-            </span>
-          
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              
-              <span>1 分钟</span>
-            </span>
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="线性欧拉方程里面的c0"><a href="#线性欧拉方程里面的c0" class="headerlink" title="线性欧拉方程里面的c0"></a>线性欧拉方程里面的c0</h1><p>Nektar++中算例<code>LEE_2DVariableC_WeakDG_MODIFIED.xml</code>输入文件里面给出了c0sq<br>，但线性欧拉方程是没有C0项的，这里还是个变量，这一变量最后是怎么处理的？<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;FUNCTION NAME=&quot;Baseflow&quot;&gt;</span><br><span class="line">  &lt;E VAR=&quot;c0sq&quot; VALUE=&quot;(1 + 0.25 * tanh(3*(x-5))) * 1.4 * Pinfinity / Rho0&quot;/&gt;</span><br><span class="line">  &lt;E VAR=&quot;rho0&quot; VALUE=&quot;Rho0&quot;/&gt;</span><br><span class="line">  &lt;E VAR=&quot;u0&quot;   VALUE=&quot;100&quot; /&gt;</span><br><span class="line">  &lt;E VAR=&quot;v0&quot;   VALUE=&quot;0&quot; /&gt;</span><br><span class="line">  &lt;E VAR=&quot;gamma&quot;   VALUE=&quot;1.4&quot; /&gt;</span><br><span class="line">&lt;/FUNCTION&gt;</span><br></pre></td></tr></table></figure></p>
-
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-          <div class="post-eof"></div>
-        
-      </footer>
-  </div>
-  
-  
-  
-  </article>
-
-    
-        <article itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block home">
-    <link itemprop="mainEntityOfPage" href="https://sxong.github.io/2018/10/29/Nektar-求解物理方程一般框架/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="SXong">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/touxiang.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SXong">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-            
-            <a href="/2018/10/29/Nektar-求解物理方程一般框架/" class="post-title-link" itemprop="url">Nektar++求解物理方程一般框架</a>
-          
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              
-                
-              
-
-              <time title="创建时间：2018-10-29 17:22:03 / 修改时间：20:29:44" itemprop="dateCreated datePublished" datetime="2018-10-29T17:22:03+08:00">2018-10-29</time>
-            </span>
-          
-            
-
-            
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/硕士毕业/" itemprop="url" rel="index"><span itemprop="name">硕士毕业</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
-      </span>
-        
-      
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2018/10/29/Nektar-求解物理方程一般框架/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/2018/10/29/Nektar-求解物理方程一般框架/" itemprop="commentCount"></span></a>
-  </span>
-  
-  
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">本文字数：</span>
-              
-              <span>440</span>
-            </span>
-          
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              
-              <span>1 分钟</span>
-            </span>
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="Create-session-reader"><a href="#Create-session-reader" class="headerlink" title="Create session reader"></a>Create session reader</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">LibUtilities::SessionReaderSharedPtr session;</span><br><span class="line">session = LibUtilities::SessionReader::CreateInstance(argc, argv);</span><br></pre></td></tr></table></figure><h1 id="Create-MeshGraph"><a href="#Create-MeshGraph" class="headerlink" title="Create MeshGraph"></a>Create MeshGraph</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">graph = SpatialDomains::MeshGraph::Read(session);</span><br></pre></td></tr></table></figure>
+          <p>如果我们有准确的飞行高度等参数时，我们可以根据<code>大气参数查询软件.exe</code>小程序得到温度、压力等参数，但有时文献中并没有给出这些参数，这时我们需要设置参数匹配给定的马赫数和雷诺数。可以以下通过两种方式实现</p><h1 id="调整高度"><a href="#调整高度" class="headerlink" title="调整高度"></a>调整高度</h1><p>在已知模型几何参数的前提下，我们确定弦长，然后调整高度来改变温度、压强和粘性系数达到所要的雷诺数。</p>
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/2018/10/29/Nektar-求解物理方程一般框架/#more" rel="contents">
+              <a class="btn" href="/2018/11/06/计算状态匹配/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
           
           <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-          <div class="post-eof"></div>
-        
-      </footer>
-  </div>
-  
-  
-  
-  </article>
-
-    
-        <article itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block home">
-    <link itemprop="mainEntityOfPage" href="https://sxong.github.io/2018/10/18/将cfl3d-xyz格式网格转化为cgns并导入到CFX中出现碎面/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="SXong">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/touxiang.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SXong">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-            
-            <a href="/2018/10/18/将cfl3d-xyz格式网格转化为cgns并导入到CFX中出现碎面/" class="post-title-link" itemprop="url">将cfl3d.xyz格式网格转化为cgns并导入到CFX中出现碎面</a>
-          
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              
-                
-              
-
-              <time title="创建时间：2018-10-18 15:10:48 / 修改时间：16:04:53" itemprop="dateCreated datePublished" datetime="2018-10-18T15:10:48+08:00">2018-10-18</time>
-            </span>
-          
-            
-
-            
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/使用帮助/" itemprop="url" rel="index"><span itemprop="name">使用帮助</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
-      </span>
-        
-      
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2018/10/18/将cfl3d-xyz格式网格转化为cgns并导入到CFX中出现碎面/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/2018/10/18/将cfl3d-xyz格式网格转化为cgns并导入到CFX中出现碎面/" itemprop="commentCount"></span></a>
-  </span>
-  
-  
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">本文字数：</span>
-              
-              <span>476</span>
-            </span>
-          
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              
-              <span>1 分钟</span>
-            </span>
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>这是个悲伤的故事。。。<br>先说一下问题出现的大背景，我将ICEM导出的cfl3d.xyz格式的网格转化为cgns格式，并将cgns格式的网格导入CFX计算。为什么要转化网格，而不是直接导出CFX支持的网格呢？这是因为动网格程序读入读出的3d格式，其实一本万利的应该是为程序写个cgns输入输出的接口，懒人总是会遭报应的。。。<br>下图是cgns格式叶片网格导入CFX的结果，看似没有问题，，，我也兴冲冲的算了，然后细节决定成败。。。<br><img src="/2018/10/18/将cfl3d-xyz格式网格转化为cgns并导入到CFX中出现碎面/defwhole.png" title="[defpic]"></p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2018/10/18/将cfl3d-xyz格式网格转化为cgns并导入到CFX中出现碎面/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-          <div class="post-eof"></div>
-        
-      </footer>
-  </div>
-  
-  
-  
-  </article>
-
-    
-        <article itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block home">
-    <link itemprop="mainEntityOfPage" href="https://sxong.github.io/2018/10/05/成员函数后面加一个冒号/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="SXong">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/touxiang.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SXong">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-            
-            <a href="/2018/10/05/成员函数后面加一个冒号/" class="post-title-link" itemprop="url">成员函数后面加一个冒号</a>
-          
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              
-                
-              
-
-              <time title="创建时间：2018-10-05 15:46:39 / 修改时间：15:51:34" itemprop="dateCreated datePublished" datetime="2018-10-05T15:46:39+08:00">2018-10-05</time>
-            </span>
-          
-            
-
-            
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/程序学习/" itemprop="url" rel="index"><span itemprop="name">程序学习</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
-      </span>
-        
-      
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2018/10/05/成员函数后面加一个冒号/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/2018/10/05/成员函数后面加一个冒号/" itemprop="commentCount"></span></a>
-  </span>
-  
-  
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">本文字数：</span>
-              
-              <span>625</span>
-            </span>
-          
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              
-              <span>1 分钟</span>
-            </span>
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>成员函数在定义的时候常常遇到下面的状态，对于我这个小白，完全不明白这一个冒号后面跟着这么一坨是为啥。其实，他的意图很简单，相当于初始化的作用<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">template &lt;int dim&gt;</span><br><span class="line">ConservationLaw&lt;dim&gt;::ConservationLaw (const char *input_filename)</span><br><span class="line">  :</span><br><span class="line">  mapping (),</span><br><span class="line">  fe (FE_Q&lt;dim&gt;(1), EulerEquations&lt;dim&gt;::n_components),</span><br><span class="line">  dof_handler (triangulation),</span><br><span class="line">  quadrature (2),</span><br><span class="line">  face_quadrature (2),</span><br><span class="line">  verbose_cout (std::cout, false)</span><br><span class="line">&#123;</span><br><span class="line">  ParameterHandler prm;</span><br><span class="line">  Parameters::AllParameters&lt;dim&gt;::declare_parameters (prm);</span><br><span class="line">  prm.parse_input (input_filename);</span><br><span class="line">  parameters.parse_parameters (prm);</span><br><span class="line">  verbose_cout.set_condition (parameters.output == Parameters::Solver::verbose);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-          <div class="post-eof"></div>
-        
-      </footer>
-  </div>
-  
-  
-  
-  </article>
-
-    
-        <article itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block home">
-    <link itemprop="mainEntityOfPage" href="https://sxong.github.io/2018/10/03/C-中enum枚举量/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="SXong">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/touxiang.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SXong">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-            
-            <a href="/2018/10/03/C-中enum枚举量/" class="post-title-link" itemprop="url">C++中enum枚举量</a>
-          
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              
-                
-              
-
-              <time title="创建时间：2018-10-03 17:41:52" itemprop="dateCreated datePublished" datetime="2018-10-03T17:41:52+08:00">2018-10-03</time>
-            </span>
-          
-            
-
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2018-10-04 09:17:48" itemprop="dateModified" datetime="2018-10-04T09:17:48+08:00">2018-10-04</time>
-              </span>
-            
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/程序学习/" itemprop="url" rel="index"><span itemprop="name">程序学习</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
-      </span>
-        
-      
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2018/10/03/C-中enum枚举量/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/2018/10/03/C-中enum枚举量/" itemprop="commentCount"></span></a>
-  </span>
-  
-  
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">本文字数：</span>
-              
-              <span>871</span>
-            </span>
-          
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              
-              <span>1 分钟</span>
-            </span>
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="enum枚举量"><a href="#enum枚举量" class="headerlink" title="enum枚举量"></a>enum枚举量</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">enum spectrum &#123;red, orange, yellow, green, blue, violet, indigo, ultraviolet&#125;</span><br></pre></td></tr></table></figure><p>上述语法<code>spectrum</code>为枚举，被称为<code>enumeration</code>，<code>red</code>被称为<code>enumerator</code>。他们为符号常量，对应着从<code>0</code>开始的数值。<br>枚举量是整型，可被提升为int类型，但int类型不能自动转换为枚举类型。如下代码段所示：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">int color = blue;</span><br><span class="line">color =3 + blue;</span><br></pre></td></tr></table></figure></p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2018/10/03/C-中enum枚举量/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-          <div class="post-eof"></div>
-        
-      </footer>
-  </div>
-  
-  
-  
-  </article>
-
-    
-        <article itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block home">
-    <link itemprop="mainEntityOfPage" href="https://sxong.github.io/2018/10/03/C-关于类的学习/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="SXong">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/touxiang.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SXong">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-            
-            <a href="/2018/10/03/C-关于类的学习/" class="post-title-link" itemprop="url">C++关于类的学习</a>
-          
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              
-                
-              
-
-              <time title="创建时间：2018-10-03 16:51:39 / 修改时间：17:02:14" itemprop="dateCreated datePublished" datetime="2018-10-03T16:51:39+08:00">2018-10-03</time>
-            </span>
-          
-            
-
-            
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/程序学习/" itemprop="url" rel="index"><span itemprop="name">程序学习</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
-      </span>
-        
-      
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2018/10/03/C-关于类的学习/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/2018/10/03/C-关于类的学习/" itemprop="commentCount"></span></a>
-  </span>
-  
-  
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">本文字数：</span>
-              
-              <span>110</span>
-            </span>
-          
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              
-              <span>1 分钟</span>
-            </span>
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="类继承"><a href="#类继承" class="headerlink" title="类继承"></a>类继承</h1><h2 id="派生类"><a href="#派生类" class="headerlink" title="派生类"></a>派生类</h2><p>派生类继承了私有的成员，但是不能直接访问；公有成员被继承，可以通过公有函数间接访问私有成员。</p>
-<ul>
-<li>派生类对象存储了基类的数据程序（派生类继承了基类的实现）；</li>
-<li>派生类对象可以使用基类的方法（派生类继承了基类的接口）。<h3 id><a href="#" class="headerlink" title=" "></a> </h3></li>
-</ul>
-
         
       
     </div>
@@ -1518,7 +1512,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -1566,7 +1560,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">35</span>
+          <span class="site-state-item-count">48</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1579,7 +1573,7 @@
             <a href="/categories/">
           
         
-        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">分类</span>
         </a>
       </div>
@@ -1592,7 +1586,7 @@
             <a href="/tags/">
           
         
-        <span class="site-state-item-count">19</span>
+        <span class="site-state-item-count">21</span>
         <span class="site-state-item-name">标签</span>
         </a>
       </div>
@@ -1635,12 +1629,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="站点总字数">47k</span>
+    <span title="站点总字数">50k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">1:19</span>
+    <span title="站点阅读时长">1:23</span>
 </div>
 
         
