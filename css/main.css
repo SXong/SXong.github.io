@@ -1751,7 +1751,7 @@ article:last-child .post-eof {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #5dbd41;
+  background: #912dff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2790,7 +2790,7 @@ hr {
 }
 .menu .menu-item a {
   font-family: 'STXingkai', sans-serif;
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: #fff;
 }
 .menu .menu-item a:hover {
