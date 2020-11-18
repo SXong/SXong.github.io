@@ -1751,7 +1751,7 @@ article:last-child .post-eof {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #b9ff70;
+  background: #d9ffb9;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2784,13 +2784,13 @@ hr {
   padding-left: 0;
   text-align: center;
   background: rgba(0,0,0,0.5);
-  margin-left: 2em;
-  margin-right: -1em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
   border-radius: 1em;
 }
 .menu .menu-item a {
   font-family: 'STXingkai', sans-serif;
-  font-size: 1.2em;
+  font-size: 1.5em;
   color: #fff;
 }
 .menu .menu-item a:hover {
