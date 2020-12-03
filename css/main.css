@@ -1751,7 +1751,7 @@ article:last-child .post-eof {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #6b378b;
+  background: #3c49c8;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2754,8 +2754,19 @@ hr {
     width: auto;
   }
 }
+@font-face {
+  font-family: mySTXingKai;
+  src: url("/fonts/STXINGKA.TTF");
+  font-weight: normal;
+}
+@font-face {
+  font-family: mySTXinwei;
+  src: url("/fonts/STXINWEI.TTF");
+  font-weight: normal;
+}
 .post-body {
-  font-family: 'STXingkai', sans-serif;
+  font-family: 'mySTXINWEI', sans-serif;
+  font-size: 1.2em;
   color: #000;
 }
 .posts-expand .post-meta {
@@ -2766,7 +2777,7 @@ hr {
   text-align: center;
 }
 .site-subtitle {
-  font-family: 'STXingkai', sans-serif;
+  font-family: 'mySTXingkai', sans-serif;
   font-size: 1em;
   color: #000;
 }
@@ -2787,7 +2798,7 @@ hr {
   border-radius: 1em;
 }
 .menu .menu-item a {
-  font-family: 'STXingkai', sans-serif;
+  font-family: 'mySTXingkai', sans-serif;
   font-size: 1.5em;
   color: #fff;
 }
