@@ -1210,7 +1210,7 @@ pre .javascript .function {
 .post-body {
   overflow-wrap: break-word;
   word-wrap: break-word;
-  font-family: 'STXINWEI', 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 @media (min-width: 1200px) {
   .post-body {
@@ -1496,7 +1496,7 @@ article:last-child .post-eof {
 }
 .posts-expand .post-meta {
   color: #999;
-  font-family: 'STXINWEI', 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
   margin: 3px 0 60px 0;
   text-align: center;
 }
@@ -1751,7 +1751,7 @@ article:last-child .post-eof {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ff37b1;
+  background: #530d4b;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2753,16 +2753,6 @@ hr {
     text-align: center;
     width: auto;
   }
-}
-@font-face {
-  font-family: STXingKai;
-  src: url("/fonts/STXINGKA.TTF");
-  font-weight: normal;
-}
-@font-face {
-  font-family: STXinwei;
-  src: url("/fonts/STXINWEI.TTF");
-  font-weight: normal;
 }
 .post-body {
   font-family: 'STXINWEI', sans-serif;
