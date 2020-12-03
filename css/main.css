@@ -1751,7 +1751,7 @@ article:last-child .post-eof {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #3cc7b0;
+  background: #cdffff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2755,17 +2755,17 @@ hr {
   }
 }
 @font-face {
-  font-family: mySTXingKai;
+  font-family: my1;
   src: url("/fonts/STXINGKA.TTF");
   font-weight: normal;
 }
 @font-face {
-  font-family: mySTXinwei;
+  font-family: my2;
   src: url("/fonts/STXINWEI.TTF");
   font-weight: normal;
 }
 .post-body {
-  font-family: 'mySTXINWEI', sans-serif;
+  font-family: 'my2', sans-serif;
   font-size: 1.2em;
   color: #000;
 }
@@ -2777,7 +2777,7 @@ hr {
   text-align: center;
 }
 .site-subtitle {
-  font-family: 'mySTXingkai', sans-serif;
+  font-family: 'my1', sans-serif;
   font-size: 1em;
   color: #000;
 }
@@ -2798,7 +2798,7 @@ hr {
   border-radius: 1em;
 }
 .menu .menu-item a {
-  font-family: 'mySTXingkai', sans-serif;
+  font-family: 'my1', sans-serif;
   font-size: 1.5em;
   color: #fff;
 }
