@@ -1751,7 +1751,7 @@ article:last-child .post-eof {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #24d9f5;
+  background: #ffe4ff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2756,7 +2756,7 @@ hr {
 }
 .post-body {
   font-family: 'STXINWEI', sans-serif;
-  font-size: 1.2em;
+  font-size: 1.5em;
   color: #000;
 }
 .posts-expand .post-meta {
