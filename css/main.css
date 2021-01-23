@@ -1751,7 +1751,7 @@ article:last-child .post-eof {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #1fdeff;
+  background: #fff66c;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2763,7 +2763,7 @@ hr {
   margin: 0.3em 0 0.6em 0;
   color: #000;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-size: 1.2em;
+  font-size: 1em;
   text-align: center;
 }
 .site-subtitle {
@@ -2809,6 +2809,11 @@ hr {
 .site-author-name {
   font-family: 'Comic Sans MS', sans-serif;
   font-size: 1.5em;
+}
+移动端优化-解决移动端按钮被遮挡,
+.site-nav-toggle {
+  top: 0;
+  transform: translateY(75%);
 }
 .posts-expand .post-body img {
   border: none;
