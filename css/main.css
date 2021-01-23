@@ -1751,7 +1751,7 @@ article:last-child .post-eof {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ffff54;
+  background: #1fdeff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2809,10 +2809,6 @@ hr {
 .site-author-name {
   font-family: 'Comic Sans MS', sans-serif;
   font-size: 1.5em;
-}
-.site-nav-toggle {
-  top: 0;
-  transform: translateY(78%);
 }
 .posts-expand .post-body img {
   border: none;
