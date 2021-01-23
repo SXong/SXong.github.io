@@ -1751,7 +1751,7 @@ article:last-child .post-eof {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #fff66c;
+  background: #30ffff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2756,7 +2756,7 @@ hr {
 }
 .post-body {
   font-family: 'STXINWEI', sans-serif;
-  font-size: 1.5em;
+  font-size: 1em;
   color: #000;
 }
 .posts-expand .post-meta {
@@ -2810,7 +2810,6 @@ hr {
   font-family: 'Comic Sans MS', sans-serif;
   font-size: 1.5em;
 }
-移动端优化-解决移动端按钮被遮挡,
 .site-nav-toggle {
   top: 0;
   transform: translateY(75%);
