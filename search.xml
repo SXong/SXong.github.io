@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>win10采用Microsoft帐户登录无反应</title>
+      <link href="/2021/04/20/win10%E9%87%87%E7%94%A8Microsoft%E5%B8%90%E6%88%B7%E7%99%BB%E5%BD%95%E6%97%A0%E5%8F%8D%E5%BA%94/"/>
+      <url>/2021/04/20/win10%E9%87%87%E7%94%A8Microsoft%E5%B8%90%E6%88%B7%E7%99%BB%E5%BD%95%E6%97%A0%E5%8F%8D%E5%BA%94/</url>
+      
+        <content type="html"><![CDATA[<p>如果网络没有什么问题，修改一下DNS服务器就好了。<br>在右击网络图标，然后选择“网络和Internet设置”-“更改适配器设置”，此时右击当前的网络连接并点击属性。<br>在弹出的窗口中，选中Internet协议版本4（TCP/IPV4）并点击属性，在首选DNS服务器中输入4.2.2.1，在备用DNS服务器中输入4.2.2.2，并点击确定。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 使用帮助 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> software </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>win10上MPICH安装</title>
       <link href="/2021/03/15/win10%E4%B8%8AMPICH%E5%AE%89%E8%A3%85/"/>
       <url>/2021/03/15/win10%E4%B8%8AMPICH%E5%AE%89%E8%A3%85/</url>
@@ -174,9 +199,9 @@
             
             <tag> MATLAB </tag>
             
-            <tag> tecplot </tag>
-            
             <tag> cfl3d </tag>
+            
+            <tag> tecplot </tag>
             
         </tags>
       
