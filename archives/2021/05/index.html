@@ -55,24 +55,14 @@
   };
 </script>
 
-  <meta name="description" content="背景需要测量一批阻尼材料的损失因子和阻尼，采用GB/T 16406-1996《声学 声学材料阻尼性能的弯曲共振测试方法》进行测量。实验做完后，需要对曲线进行处理，挑选出一、二、三阶的固有频率，并要算出各阶共振峰的宽度（ 宽度是按照幅值下降到原数值的\sqrt{2}计算得到的带宽，换成dB就是峰值下降3dB对应的带宽  ）。因为数据量比较大，一个个观察输入不太友好，所以需要通过命令将数据游标点击的数">
-<meta name="keywords" content="MATLAB">
-<meta property="og:type" content="article">
-<meta property="og:title" content="MATLAB中通过命令将数据游标的数据存到数组">
-<meta property="og:url" content="https://sxong.github.io/2020/10/13/MATLAB中通过命令将数据游标的数据存到数组/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="SXong">
+<meta property="og:url" content="https://sxong.github.io/archives/2021/05/index.html">
 <meta property="og:site_name" content="SXong">
-<meta property="og:description" content="背景需要测量一批阻尼材料的损失因子和阻尼，采用GB/T 16406-1996《声学 声学材料阻尼性能的弯曲共振测试方法》进行测量。实验做完后，需要对曲线进行处理，挑选出一、二、三阶的固有频率，并要算出各阶共振峰的宽度（ 宽度是按照幅值下降到原数值的\sqrt{2}计算得到的带宽，换成dB就是峰值下降3dB对应的带宽  ）。因为数据量比较大，一个个观察输入不太友好，所以需要通过命令将数据游标点击的数">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://sxong.github.io/2020/10/13/MATLAB中通过命令将数据游标的数据存到数组/1.png">
-<meta property="og:image" content="https://sxong.github.io/2020/10/13/MATLAB中通过命令将数据游标的数据存到数组/2.png">
-<meta property="og:image" content="https://sxong.github.io/2020/10/13/MATLAB中通过命令将数据游标的数据存到数组/3.png">
-<meta property="og:image" content="https://sxong.github.io/2020/10/13/MATLAB中通过命令将数据游标的数据存到数组/4.png">
-<meta property="og:updated_time" content="2020-10-13T03:37:14.082Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MATLAB中通过命令将数据游标的数据存到数组">
-<meta name="twitter:description" content="背景需要测量一批阻尼材料的损失因子和阻尼，采用GB/T 16406-1996《声学 声学材料阻尼性能的弯曲共振测试方法》进行测量。实验做完后，需要对曲线进行处理，挑选出一、二、三阶的固有频率，并要算出各阶共振峰的宽度（ 宽度是按照幅值下降到原数值的\sqrt{2}计算得到的带宽，换成dB就是峰值下降3dB对应的带宽  ）。因为数据量比较大，一个个观察输入不太友好，所以需要通过命令将数据游标点击的数">
-<meta name="twitter:image" content="https://sxong.github.io/2020/10/13/MATLAB中通过命令将数据游标的数据存到数组/1.png">
-  <link rel="canonical" href="https://sxong.github.io/2020/10/13/MATLAB中通过命令将数据游标的数据存到数组/">
+<meta name="twitter:title" content="SXong">
+  <link rel="canonical" href="https://sxong.github.io/archives/2021/05/">
 
 
 <script id="page-configurations">
@@ -80,13 +70,13 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: true,
+    isPost: false,
     isPage: false,
-    isArchive: false
+    isArchive: true
   };
 </script>
 
-  <title>MATLAB中通过命令将数据游标的数据存到数组 | SXong</title>
+  <title>归档 | SXong</title>
   
 
 
@@ -208,6 +198,21 @@
 
     
 
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+  
+
 </nav>
   <div class="site-search">
     <div class="popup search-popup">
@@ -246,176 +251,69 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
-      <article itemscope itemtype="http://schema.org/Article">
   
   
   
-  <div class="post-block post">
-    <link itemprop="mainEntityOfPage" href="https://sxong.github.io/2020/10/13/MATLAB中通过命令将数据游标的数据存到数组/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="SXong">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/touxiang.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SXong">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">MATLAB中通过命令将数据游标的数据存到数组
-
-          
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              
-                
-              
-
-              <time title="创建时间：2020-10-13 10:31:05 / 修改时间：11:37:14" itemprop="dateCreated datePublished" datetime="2020-10-13T10:31:05+08:00">2020-10-13</time>
-            </span>
-          
-            
-
-            
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/使用帮助/" itemprop="url" rel="index"><span itemprop="name">使用帮助</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span id="busuanzi_value_page_pv"></span>
-            </span>
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
-      </span>
+  <div class="post-block archive">
+    <div id="posts" class="posts-collapse">
+      <div class="collection-title">
         
+        
+         
+          
+        <span class="collection-header">不错! 目前共计 66 篇日志。 继续努力。</span>
+      </div>
       
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2020/10/13/MATLAB中通过命令将数据游标的数据存到数组/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/2020/10/13/MATLAB中通过命令将数据游标的数据存到数组/" itemprop="commentCount"></span></a>
-  </span>
-  
-  
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">本文字数：</span>
-              
-              <span>519</span>
-            </span>
-          
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              
-              <span>1 分钟</span>
-            </span>
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>需要测量一批阻尼材料的损失因子和阻尼，采用GB/T 16406-1996《声学 声学材料阻尼性能的弯曲共振测试方法》进行测量。实验做完后，需要对曲线进行处理，挑选出一、二、三阶的固有频率，并要算出各阶共振峰的宽度（<font color="red" face="黑体"><strong> 宽度是按照幅值下降到原数值的<script type="math/tex">\sqrt{2}</script>计算得到的带宽，换成dB就是峰值下降3dB对应的带宽 </strong> </font>）。因为数据量比较大，一个个观察输入不太友好，所以需要通过命令将数据游标点击的数据存到数组进行计算处理（<strong> 利用数据游标功能时，按住shift键可以选择多个点的数据，如此可以将多个峰值存放到同一结构体中 </strong>）。</p><a id="more"></a>
-<h1 id="计算方法"><a href="#计算方法" class="headerlink" title="计算方法"></a>计算方法</h1><p>不想敲公式了，上图，详情参见GB/T 16406-1996《声学 声学材料阻尼性能的弯曲共振测试方法》<br><img src="/2020/10/13/MATLAB中通过命令将数据游标的数据存到数组/1.png" title="[Buildoptions]"><br><img src="/2020/10/13/MATLAB中通过命令将数据游标的数据存到数组/2.png" title="[Buildoptions]"><br><img src="/2020/10/13/MATLAB中通过命令将数据游标的数据存到数组/3.png" title="[Buildoptions]"><br><img src="/2020/10/13/MATLAB中通过命令将数据游标的数据存到数组/4.png" title="[Buildoptions]"></p>
-<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><p>代码比较简单，可以参照MATLAB帮助中<code>datacursormode</code>的介绍，这里给出示例，以便参考<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">dcm=datacursormode;</span><br><span class="line">dcm,Enable=&apos;on&apos;;       %打开数据游标功能</span><br><span class="line">pause;                %等待数据点击完毕，回车键结束</span><br><span class="line">info=getCursorInfo(dcm);  %得到存放峰值、频率及数据index的结构体</span><br></pre></td></tr></table></figure></p>
 
+  
+  
+
+  
+    
+    <div class="collection-year">
+      <h1 class="collection-header">2021</h1>
     </div>
-
-    
-    
-    
-        
-      
-
-      <footer class="post-footer">
-          
-            
-          
-          <div class="post-tags">
-            
-              <a href="/tags/MATLAB/" rel="tag"># MATLAB</a>
-            
-          </div>
-        
-
-        
-
-          <div class="post-nav">
-            <div class="post-nav-next post-nav-item">
-              
-                <a href="/2020/10/12/单通道模型周期对称设置/" rel="next" title="单通道模型周期对称设置">
-                  <i class="fa fa-chevron-left"></i> 单通道模型周期对称设置
-                </a>
-              
-            </div>
-
-            <span class="post-nav-divider"></span>
-
-            <div class="post-nav-prev post-nav-item">
-              
-                <a href="/2020/11/09/成长/" rel="prev" title="成长">
-                  成长 <i class="fa fa-chevron-right"></i>
-                </a>
-              
-            </div>
-          </div>
-        
-      </footer>
-    
-  </div>
   
-  
-  
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
+          <a class="post-title-link" href="/2021/05/09/需要给你找到成长的空间/" itemprop="url">
+            <span itemprop="name">需要给你找到成长的空间</span>
+          </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2021-05-09T21:51:49+08:00"
+              content="2021-05-09">
+          05-09
+        </time>
+      </div>
+
+    </header>
   </article>
 
+
+
+
+    </div>
   </div>
+  
+  
+  
+
+  
+
 
 
           </div>
           
-    
-    <div class="comments" id="comments"></div>
-  
 
         </div>
           
@@ -430,11 +328,6 @@
 
   <aside class="sidebar">
     <div class="sidebar-inner">
-        
-        
-        
-        
-      
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
@@ -447,8 +340,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#背景"><span class="nav-text">背景</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#计算方法"><span class="nav-text">计算方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代码"><span class="nav-text">代码</span></a></li></ol></div>
-        
       </div>
       <!--/noindex-->
 

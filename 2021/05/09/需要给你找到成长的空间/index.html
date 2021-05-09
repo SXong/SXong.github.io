@@ -55,24 +55,19 @@
   };
 </script>
 
-  <meta name="description" content="背景需要测量一批阻尼材料的损失因子和阻尼，采用GB/T 16406-1996《声学 声学材料阻尼性能的弯曲共振测试方法》进行测量。实验做完后，需要对曲线进行处理，挑选出一、二、三阶的固有频率，并要算出各阶共振峰的宽度（ 宽度是按照幅值下降到原数值的\sqrt{2}计算得到的带宽，换成dB就是峰值下降3dB对应的带宽  ）。因为数据量比较大，一个个观察输入不太友好，所以需要通过命令将数据游标点击的数">
-<meta name="keywords" content="MATLAB">
+  <meta name="description" content="最近难得有段时间心静了下来，看了一些书，找到了一些以前的感觉。不得不说读书还是有用的，可能最后并不能详细记住什么，但如果思考了还是有点感悟的。感慨比较多的是《鳗鱼的旅行》，全书奇数章节讲述了鳗鱼整个人生旅行以及人类对它们习性研究的历程，偶数章节是作者帕特里克·斯文松和其父亲之间的故事。本身鳗鱼从柳叶体到玻璃鳗，再到黄色鳗和银色鳗的传奇经历就很引人入胜了，无数研究工作者前赴后继地从事鳗鱼的研究中，这">
+<meta name="keywords" content="随笔">
 <meta property="og:type" content="article">
-<meta property="og:title" content="MATLAB中通过命令将数据游标的数据存到数组">
-<meta property="og:url" content="https://sxong.github.io/2020/10/13/MATLAB中通过命令将数据游标的数据存到数组/index.html">
+<meta property="og:title" content="需要给你找到成长的空间">
+<meta property="og:url" content="https://sxong.github.io/2021/05/09/需要给你找到成长的空间/index.html">
 <meta property="og:site_name" content="SXong">
-<meta property="og:description" content="背景需要测量一批阻尼材料的损失因子和阻尼，采用GB/T 16406-1996《声学 声学材料阻尼性能的弯曲共振测试方法》进行测量。实验做完后，需要对曲线进行处理，挑选出一、二、三阶的固有频率，并要算出各阶共振峰的宽度（ 宽度是按照幅值下降到原数值的\sqrt{2}计算得到的带宽，换成dB就是峰值下降3dB对应的带宽  ）。因为数据量比较大，一个个观察输入不太友好，所以需要通过命令将数据游标点击的数">
+<meta property="og:description" content="最近难得有段时间心静了下来，看了一些书，找到了一些以前的感觉。不得不说读书还是有用的，可能最后并不能详细记住什么，但如果思考了还是有点感悟的。感慨比较多的是《鳗鱼的旅行》，全书奇数章节讲述了鳗鱼整个人生旅行以及人类对它们习性研究的历程，偶数章节是作者帕特里克·斯文松和其父亲之间的故事。本身鳗鱼从柳叶体到玻璃鳗，再到黄色鳗和银色鳗的传奇经历就很引人入胜了，无数研究工作者前赴后继地从事鳗鱼的研究中，这">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://sxong.github.io/2020/10/13/MATLAB中通过命令将数据游标的数据存到数组/1.png">
-<meta property="og:image" content="https://sxong.github.io/2020/10/13/MATLAB中通过命令将数据游标的数据存到数组/2.png">
-<meta property="og:image" content="https://sxong.github.io/2020/10/13/MATLAB中通过命令将数据游标的数据存到数组/3.png">
-<meta property="og:image" content="https://sxong.github.io/2020/10/13/MATLAB中通过命令将数据游标的数据存到数组/4.png">
-<meta property="og:updated_time" content="2020-10-13T03:37:14.082Z">
+<meta property="og:updated_time" content="2021-05-09T14:51:28.217Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MATLAB中通过命令将数据游标的数据存到数组">
-<meta name="twitter:description" content="背景需要测量一批阻尼材料的损失因子和阻尼，采用GB/T 16406-1996《声学 声学材料阻尼性能的弯曲共振测试方法》进行测量。实验做完后，需要对曲线进行处理，挑选出一、二、三阶的固有频率，并要算出各阶共振峰的宽度（ 宽度是按照幅值下降到原数值的\sqrt{2}计算得到的带宽，换成dB就是峰值下降3dB对应的带宽  ）。因为数据量比较大，一个个观察输入不太友好，所以需要通过命令将数据游标点击的数">
-<meta name="twitter:image" content="https://sxong.github.io/2020/10/13/MATLAB中通过命令将数据游标的数据存到数组/1.png">
-  <link rel="canonical" href="https://sxong.github.io/2020/10/13/MATLAB中通过命令将数据游标的数据存到数组/">
+<meta name="twitter:title" content="需要给你找到成长的空间">
+<meta name="twitter:description" content="最近难得有段时间心静了下来，看了一些书，找到了一些以前的感觉。不得不说读书还是有用的，可能最后并不能详细记住什么，但如果思考了还是有点感悟的。感慨比较多的是《鳗鱼的旅行》，全书奇数章节讲述了鳗鱼整个人生旅行以及人类对它们习性研究的历程，偶数章节是作者帕特里克·斯文松和其父亲之间的故事。本身鳗鱼从柳叶体到玻璃鳗，再到黄色鳗和银色鳗的传奇经历就很引人入胜了，无数研究工作者前赴后继地从事鳗鱼的研究中，这">
+  <link rel="canonical" href="https://sxong.github.io/2021/05/09/需要给你找到成长的空间/">
 
 
 <script id="page-configurations">
@@ -86,7 +81,7 @@
   };
 </script>
 
-  <title>MATLAB中通过命令将数据游标的数据存到数组 | SXong</title>
+  <title>需要给你找到成长的空间 | SXong</title>
   
 
 
@@ -252,7 +247,7 @@
   
   
   <div class="post-block post">
-    <link itemprop="mainEntityOfPage" href="https://sxong.github.io/2020/10/13/MATLAB中通过命令将数据游标的数据存到数组/">
+    <link itemprop="mainEntityOfPage" href="https://sxong.github.io/2021/05/09/需要给你找到成长的空间/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="SXong">
@@ -264,7 +259,7 @@
       <meta itemprop="name" content="SXong">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">MATLAB中通过命令将数据游标的数据存到数组
+        <h1 class="post-title" itemprop="name headline">需要给你找到成长的空间
 
           
         </h1>
@@ -280,7 +275,7 @@
                 
               
 
-              <time title="创建时间：2020-10-13 10:31:05 / 修改时间：11:37:14" itemprop="dateCreated datePublished" datetime="2020-10-13T10:31:05+08:00">2020-10-13</time>
+              <time title="创建时间：2021-05-09 21:51:49 / 修改时间：22:51:28" itemprop="dateCreated datePublished" datetime="2021-05-09T21:51:49+08:00">2021-05-09</time>
             </span>
           
             
@@ -293,7 +288,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/使用帮助/" itemprop="url" rel="index"><span itemprop="name">使用帮助</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/生活/" itemprop="url" rel="index"><span itemprop="name">生活</span></a></span>
 
                 
                 
@@ -320,7 +315,7 @@
       
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2020/10/13/MATLAB中通过命令将数据游标的数据存到数组/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/2020/10/13/MATLAB中通过命令将数据游标的数据存到数组/" itemprop="commentCount"></span></a>
+    <a title="valine" href="/2021/05/09/需要给你找到成长的空间/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/2021/05/09/需要给你找到成长的空间/" itemprop="commentCount"></span></a>
   </span>
   
   
@@ -332,7 +327,7 @@
               
                 <span class="post-meta-item-text">本文字数：</span>
               
-              <span>519</span>
+              <span>940</span>
             </span>
           
             <span class="post-meta-item" title="阅读时长">
@@ -342,7 +337,7 @@
               
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
               
-              <span>1 分钟</span>
+              <span>2 分钟</span>
             </span>
           
 
@@ -355,9 +350,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>需要测量一批阻尼材料的损失因子和阻尼，采用GB/T 16406-1996《声学 声学材料阻尼性能的弯曲共振测试方法》进行测量。实验做完后，需要对曲线进行处理，挑选出一、二、三阶的固有频率，并要算出各阶共振峰的宽度（<font color="red" face="黑体"><strong> 宽度是按照幅值下降到原数值的<script type="math/tex">\sqrt{2}</script>计算得到的带宽，换成dB就是峰值下降3dB对应的带宽 </strong> </font>）。因为数据量比较大，一个个观察输入不太友好，所以需要通过命令将数据游标点击的数据存到数组进行计算处理（<strong> 利用数据游标功能时，按住shift键可以选择多个点的数据，如此可以将多个峰值存放到同一结构体中 </strong>）。</p><a id="more"></a>
-<h1 id="计算方法"><a href="#计算方法" class="headerlink" title="计算方法"></a>计算方法</h1><p>不想敲公式了，上图，详情参见GB/T 16406-1996《声学 声学材料阻尼性能的弯曲共振测试方法》<br><img src="/2020/10/13/MATLAB中通过命令将数据游标的数据存到数组/1.png" title="[Buildoptions]"><br><img src="/2020/10/13/MATLAB中通过命令将数据游标的数据存到数组/2.png" title="[Buildoptions]"><br><img src="/2020/10/13/MATLAB中通过命令将数据游标的数据存到数组/3.png" title="[Buildoptions]"><br><img src="/2020/10/13/MATLAB中通过命令将数据游标的数据存到数组/4.png" title="[Buildoptions]"></p>
-<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><p>代码比较简单，可以参照MATLAB帮助中<code>datacursormode</code>的介绍，这里给出示例，以便参考<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">dcm=datacursormode;</span><br><span class="line">dcm,Enable=&apos;on&apos;;       %打开数据游标功能</span><br><span class="line">pause;                %等待数据点击完毕，回车键结束</span><br><span class="line">info=getCursorInfo(dcm);  %得到存放峰值、频率及数据index的结构体</span><br></pre></td></tr></table></figure></p>
+        <p>最近难得有段时间心静了下来，看了一些书，找到了一些以前的感觉。不得不说读书还是有用的，可能最后并不能详细记住什么，但如果思考了还是有点感悟的。<br>感慨比较多的是《鳗鱼的旅行》，全书奇数章节讲述了鳗鱼整个人生旅行以及人类对它们习性研究的历程，偶数章节是作者帕特里克·斯文松和其父亲之间的故事。本身鳗鱼从柳叶体到玻璃鳗，再到黄色鳗和银色鳗的传奇经历就很引人入胜了，无数研究工作者前赴后继地从事鳗鱼的研究中，这是一项科学研究，也是人类对生命情感的敬畏，人类不明白是何种力量使得鳗鱼奔波千里去成长，又是何种力量使得它以生命为代价回归出生地去繁衍。关于子与父的故事也充满了温情，直接触碰心里最柔软的地方，甚至会想起很多小时候与父亲的故事，可惜我与父亲相处的经历不是特别的多，但也是现实中家庭无奈的选择。我很幸运，我的父亲虽不善言语但对于我的爱渗入到我生活中的诸多细节，巧合的是在我很小的时候，我便能感受到这种爱意，可能我的父亲、母亲和姐姐的善良与温柔或多或少地影响着我怎么去感受这个世界。我很感激，虽然有时会感觉有些沉重，但人不能贪得无厌。朱自清的父亲在临别时诸多不舍，翻过月台买来了橘子。而我的父亲在母亲各种劝阻下还是偷偷地买来了烟花，当母亲笑骂捧着烟花满脸微笑逗我开心的父亲时，五岁的我突然意识到烟花也不是那么的重要。当我上大学时，每次远行时书包和行李箱里面会被父母亲偷偷放满了硬币，被我姐塞满了新的衣物与各种各样的零食，要知道这些硬币除了解决旅途中突发的窘迫外可能并没有多大的用途，但这些东西属实支撑着我勇敢地面对困境，乃至不怯弱地去担当。每个人都有自己的故事，每个人都有自己的梦想，每个人都有自己的成长，鳗鱼的路无论是情感还是命运在操纵，它们乃至研究它们的科学家们至少找到了人生的使命，同样我们也要时刻问问自己有没有找到自己的使命，有没有给自己找到你希望的成长空间，人生漫长，从心就好。对于书中子与父在小溪旁的故事，说实话我是很羡慕的，但也只是如此而已。就像鳗鱼一样，每一条鳗鱼都有一个传奇的人生，有的甚至在深井中等数十年去寻求蜕变与归途，但最后它们一样向马尾藻海前进，我们同样的幸福。<br>我又要重新出发了，哈哈。还是要不停地调整自己的状态去努力的，没有全身心的投入是事实，我会努力的！！！</p>
 
     </div>
 
@@ -373,7 +366,7 @@
           
           <div class="post-tags">
             
-              <a href="/tags/MATLAB/" rel="tag"># MATLAB</a>
+              <a href="/tags/随笔/" rel="tag"># 随笔</a>
             
           </div>
         
@@ -383,8 +376,8 @@
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
-                <a href="/2020/10/12/单通道模型周期对称设置/" rel="next" title="单通道模型周期对称设置">
-                  <i class="fa fa-chevron-left"></i> 单通道模型周期对称设置
+                <a href="/2021/04/20/win10采用Microsoft帐户登录无反应/" rel="next" title="win10采用Microsoft帐户登录无反应">
+                  <i class="fa fa-chevron-left"></i> win10采用Microsoft帐户登录无反应
                 </a>
               
             </div>
@@ -392,10 +385,6 @@
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-              
-                <a href="/2020/11/09/成长/" rel="prev" title="成长">
-                  成长 <i class="fa fa-chevron-right"></i>
-                </a>
               
             </div>
           </div>
@@ -447,8 +436,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#背景"><span class="nav-text">背景</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#计算方法"><span class="nav-text">计算方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代码"><span class="nav-text">代码</span></a></li></ol></div>
-        
       </div>
       <!--/noindex-->
 
