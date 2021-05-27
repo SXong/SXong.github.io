@@ -4,11 +4,63 @@
   
     
     <entry>
+      <title>管道声场模拟</title>
+      <link href="/2021/05/26/%E7%AE%A1%E9%81%93%E5%A3%B0%E5%9C%BA%E6%A8%A1%E6%8B%9F/"/>
+      <url>/2021/05/26/%E7%AE%A1%E9%81%93%E5%A3%B0%E5%9C%BA%E6%A8%A1%E6%8B%9F/</url>
+      
+        <content type="html"><![CDATA[<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>管道中反射系数与传输系数的计算一直与实验有很大的偏差，但计算得到的实验测点处声压级和实验测量值契合良好。考虑采用有限元方法对相当物理问题进行计算，并比较声场，以验证计算的可靠性。如果声场具有较高的一致性，可以进一步搜索实验测试的标准文件计算系数。目前，将利用COMSOL软件求解带声衬的管道声场，声场控制方程为Helmholtz方程，声衬用阻抗边界条件代替，暂考虑流动静止的情形，利用COMSOL的压力声学模块进行求解，后续再考虑复杂流动的情形。</p><a id="more"></a><h1 id="COMSOL模拟"><a href="#COMSOL模拟" class="headerlink" title="COMSOL模拟"></a>COMSOL模拟</h1><p>对比的实验为NASA Langley Research Center在2005年发表文章<a href="https://arc.aiaa.org/doi/abs/10.2514/6.2005-2853" target="_blank" rel="noopener">“Benchmark Data for Evaluation of Aeroacoustic Propagation Codes with Grazing Flow”</a>中的Grazing Impedance Tube实验，GIT管道如下所示，其中声衬采用NASA CT57声衬。以下将介绍利用COMSOL求解带声衬管道声场的操作流程。</p><center><img src="/2021/05/26/管道声场模拟/CT57.png"></center><h2 id="新建模型"><a href="#新建模型" class="headerlink" title="新建模型"></a>新建模型</h2><p>打开COMSOL后，“文件”中选择“新建”，然后点击“模型向导”，选择“二维”空间维度。在选择物理场中，点击声学——压力声学——压力声学，频域（acpr）；在选择研究时，点击一般研究——频域。</p><h2 id="参数定义"><a href="#参数定义" class="headerlink" title="参数定义"></a>参数定义</h2><p>在进入COMSOL界面后，在“全局定义”中可以给定参数，主要设置参数为背景流动的密度、声速、阻抗、管道入口处长度、声衬长度、管道出口处长度和PML完美匹配层长度等参数。</p><div class="table-container"><table><thead><tr><th style="text-align:center">名称</th><th style="text-align:center">表达式</th></tr></thead><tbody><tr><td style="text-align:center">rho0</td><td style="text-align:center">1.29[kg/m^3]</td></tr><tr><td style="text-align:center">c0</td><td style="text-align:center">344.283[m/s]</td></tr><tr><td style="text-align:center">Zw</td><td style="text-align:center">0.48+0.03*i</td></tr><tr><td style="text-align:center">L_in</td><td style="text-align:center">8[in]</td></tr><tr><td style="text-align:center">L_Liner</td><td style="text-align:center">16[in]</td></tr><tr><td style="text-align:center">L_out</td><td style="text-align:center">8[in]</td></tr><tr><td style="text-align:center">L_pml</td><td style="text-align:center">2[in]</td></tr><tr><td style="text-align:center">H</td><td style="text-align:center">2[in]</td></tr><tr><td style="text-align:center">f</td><td style="text-align:center">1000[Hz]</td></tr></tbody></table></div><h2 id="几何"><a href="#几何" class="headerlink" title="几何"></a>几何</h2><p>几何是在COMSOL中定义的，根据定义中的参数可以在几何中添加矩形，下图为按照尺寸定义的几何，红色箭头和文字标记了计算区域的各个模块，其中PML为完美吸收区域，主要为防止边界反射，声源定义区为给定实验要求的平面波，除在管道下面布置的声衬外，其他边界皆为硬壁面边界条件。</p><center><img src="/2021/05/26/管道声场模拟/geo.jpg"></center><h2 id="材料"><a href="#材料" class="headerlink" title="材料"></a>材料</h2><p>材料的定义比较简单，右击材料，然后从库中添加材料，选择Air即可。</p><h2 id="物理场"><a href="#物理场" class="headerlink" title="物理场"></a>物理场</h2><p>在新建模型的时候，物理场已经选择为“压力声学，频域”。如果之前没有选择，可以在物理场中添加物理场，然后选择对应的模块。在压力声学模块中，“压力声学 1”中域选择所有域，右击插入阻抗并设定温度、压力和阻抗，无量纲阻抗需要利用密度和声速换算到有量纲的阻抗，其实边界需要设置为硬声场边界。在“背景压力场”中，域选择声源定义区，压力场类型为平面波，压力幅值按照130dB计算，表达式为<code>2e-5[Pa]*sqrt(2)*10^(130/20)</code>。</p><h2 id="研究"><a href="#研究" class="headerlink" title="研究"></a>研究</h2><p>在“研究-步骤1：频域”中，给定关心的频率，点击计算，即可得到最后的声场和声压级。</p><h2 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h2><h3 id="云图对比"><a href="#云图对比" class="headerlink" title="云图对比"></a>云图对比</h3><p>因为计算域包含了完美吸收区域，而实际作图时候并不需要该区域的声压及声压级，此时可以右击“数据集-研究1/解1”，点击“选择”，选择所有需要作图的区域。下图为COMSOL计算声压级和采用模态匹配法计算的结果，其中COMSOL结果没有按照入口处声压级130dB进行平移，云图的峰值有点差异。</p><center><img src="/2021/05/26/管道声场模拟/comsolspl.png"><img src="/2021/05/26/管道声场模拟/minespl.png"></center><h3 id="声衬对面壁面处沿x方向声压级曲线对比"><a href="#声衬对面壁面处沿x方向声压级曲线对比" class="headerlink" title="声衬对面壁面处沿x方向声压级曲线对比"></a>声衬对面壁面处沿x方向声压级曲线对比</h3><p>首先右击“数据集”，选择二维截线，通过管道上壁面的两点，定义线并提取数据。然后，插入“一维绘图组”，选择二维截线，右击“一维绘图组”插入“线图”，输入声压级表达式<code>acpr.Lp</code>，点击绘制，由此可得到声衬对面壁面处沿x方向声压级曲线。将该数据导出并将结果与实验和模态匹配法结果对比，如下图所示。</p><center><img src="/2021/05/26/管道声场模拟/mmmspl.png"></center>]]></content>
+      
+      
+      <categories>
+          
+          <category> 使用帮助 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> software </tag>
+            
+            <tag> COMSOL </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Android每次编译时下载gradle</title>
+      <link href="/2021/05/12/Android%E6%AF%8F%E6%AC%A1%E7%BC%96%E8%AF%91%E6%97%B6%E4%B8%8B%E8%BD%BDgradle/"/>
+      <url>/2021/05/12/Android%E6%AF%8F%E6%AC%A1%E7%BC%96%E8%AF%91%E6%97%B6%E4%B8%8B%E8%BD%BDgradle/</url>
+      
+        <content type="html"><![CDATA[<p>在编译时一直在下载gradle，导致编译时间特别的长，可以从官网中将需要的gradle文件给下载好，然后将解压后的文件复制到指定路径。<br>文件下载链接：<br><a href="https://services.gradle.org/distributions/gradle-6.5-bin.zip" target="_blank" rel="noopener">gradle-6.5-bin.zip</a><br><a href="https://services.gradle.org/distributions/gradle-6.7.1-bin.zip" target="_blank" rel="noopener">gradle-6.7.1-bin.zip</a><br>压缩包解压后文件复制到路径：<br>C:\Users\SXong.gradle\wrapper\dists\gradle-6.5-bin\6nifqtx7604sqp1q6g8wikw7p<br>C:\Users\SXong.gradle\wrapper\dists\gradle-6.7.1-bin\bwlcbys1h7rz3272sye1xwiv6</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 使用帮助 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> software </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>需要给你找到成长的空间</title>
       <link href="/2021/05/09/%E9%9C%80%E8%A6%81%E7%BB%99%E4%BD%A0%E6%89%BE%E5%88%B0%E6%88%90%E9%95%BF%E7%9A%84%E7%A9%BA%E9%97%B4/"/>
       <url>/2021/05/09/%E9%9C%80%E8%A6%81%E7%BB%99%E4%BD%A0%E6%89%BE%E5%88%B0%E6%88%90%E9%95%BF%E7%9A%84%E7%A9%BA%E9%97%B4/</url>
       
-        <content type="html"><![CDATA[<p>最近难得有段时间心静了下来，看了一些书，找到了一些以前的感觉。不得不说读书还是有用的，可能最后并不能详细记住什么，但如果思考了还是有点感悟的。<br>感慨比较多的是《鳗鱼的旅行》，全书奇数章节讲述了鳗鱼整个人生旅行以及人类对它们习性研究的历程，偶数章节是作者帕特里克·斯文松和其父亲之间的故事。本身鳗鱼从柳叶体到玻璃鳗，再到黄色鳗和银色鳗的传奇经历就很引人入胜了，无数研究工作者前赴后继地从事鳗鱼的研究中，这是一项科学研究，也是人类对生命情感的敬畏，人类不明白是何种力量使得鳗鱼奔波千里去成长，又是何种力量使得它以生命为代价回归出生地去繁衍。关于子与父的故事也充满了温情，直接触碰心里最柔软的地方，甚至会想起很多小时候与父亲的故事，可惜我与父亲相处的经历不是特别的多，但也是现实中家庭无奈的选择。我很幸运，我的父亲虽不善言语但对于我的爱渗入到我生活中的诸多细节，巧合的是在我很小的时候，我便能感受到这种爱意，可能我的父亲、母亲和姐姐的善良与温柔或多或少地影响着我怎么去感受这个世界。我很感激，虽然有时会感觉有些沉重，但人不能贪得无厌。朱自清的父亲在临别时诸多不舍，翻过月台买来了橘子。而我的父亲在母亲各种劝阻下还是偷偷地买来了烟花，当母亲笑骂捧着烟花满脸微笑逗我开心的父亲时，五岁的我突然意识到烟花也不是那么的重要。当我上大学时，每次远行时书包和行李箱里面会被父母亲偷偷放满了硬币，被我姐塞满了新的衣物与各种各样的零食，要知道这些硬币除了解决旅途中突发的窘迫外可能并没有多大的用途，但这些东西属实支撑着我勇敢地面对困境，乃至不怯弱地去担当。每个人都有自己的故事，每个人都有自己的梦想，每个人都有自己的成长，鳗鱼的路无论是情感还是命运在操纵，它们乃至研究它们的科学家们至少找到了人生的使命，同样我们也要时刻问问自己有没有找到自己的使命，有没有给自己找到你希望的成长空间，人生漫长，从心就好。对于书中子与父在小溪旁的故事，说实话我是很羡慕的，但也只是如此而已。就像鳗鱼一样，每一条鳗鱼都有一个传奇的人生，有的甚至在深井中等数十年去寻求蜕变与归途，但最后它们一样向马尾藻海前进，我们同样的幸福。<br>我又要重新出发了，哈哈。还是要不停地调整自己的状态去努力的，没有全身心的投入是事实，我会努力的！！！</p>]]></content>
+        <content type="html"><![CDATA[<p>最近难得有段时间心静了下来，看了一些书，找到了一些以前的感觉。不得不说读书还是有用的，可能最后并不能详细记住什么，但如果思考了还是有点感悟的。<br>感慨比较多的是《鳗鱼的旅行》，全书奇数章节讲述了鳗鱼整个人生旅行以及人类对它们习性研究的历程，偶数章节是作者帕特里克·斯文松和其父亲之间的故事。本身鳗鱼从柳叶体到玻璃鳗，再到黄色鳗和银色鳗的传奇经历就很引人入胜了，无数研究工作者前赴后继地从事鳗鱼的研究中，这是一项科学研究，也是人类对生命情感的敬畏，人类不明白是何种力量使得鳗鱼奔波千里去成长，又是何种力量使得它以生命为代价回归出生地去繁衍。关于子与父的故事也充满了温情，直接触碰心里最柔软的地方，甚至会想起很多小时候与父亲的故事，可惜我与父亲相处的经历不是特别的多，但也是现实中家庭无奈的选择。我很幸运，我的父亲虽不善言语但对于我的爱渗入到我生活中的诸多细节，巧合的是在我很小的时候，我便能感受到这种爱意，可能我的父亲、母亲和姐姐的善良与温柔或多或少地影响着我怎么去感受这个世界。我很感激，虽然有时会感觉有些沉重，但人不能贪得无厌。朱自清的父亲在临别时诸多不舍，翻过月台买来了橘子。而我的父亲在母亲各种劝阻下还是偷偷地买来了烟花，当母亲笑骂捧着烟花满脸微笑逗我开心的父亲时，五岁的我突然意识到烟花也不是那么的重要。当我上大学时，每次远行时书包和行李箱里面会被父母亲偷偷放满了硬币，被我姐塞满了新的衣物与各种各样的零食，要知道这些硬币除了解决旅途中突发的窘迫外可能并没有多大的用途，但这些东西属实支撑着我勇敢地面对困境，乃至不怯弱地去担当。每个人都有自己的故事，每个人都有自己的梦想，每个人都有自己的成长，鳗鱼的路无论是情感还是命运在操纵，它们乃至研究它们的科学家们至少找到了人生的使命，同样我们也要时刻问问自己有没有找到自己的使命，有没有给自己找到你希望的成长空间，人生漫长，从心就好。对于书中子与父在小溪旁的故事，说实话我是很羡慕的，但也只是如此而已。就像鳗鱼一样，每一条鳗鱼都有一个传奇的人生，有的甚至在深井中等数十年去寻求蜕变与归途，但最后它们一样向马尾藻海前进，我们同样的幸福。<br>我又要重新出发了，哈哈。还是要不停地调整自己的状态去努力的，没有全身心的投入是事实，我会努力的，哈哈。</p>]]></content>
       
       
       <categories>
@@ -222,9 +274,9 @@
             
             <tag> software </tag>
             
-            <tag> MATLAB </tag>
-            
             <tag> tecplot </tag>
+            
+            <tag> MATLAB </tag>
             
             <tag> cfl3d </tag>
             
