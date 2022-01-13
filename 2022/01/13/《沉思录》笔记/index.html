@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="zh-CN">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 3.9.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.4.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.4.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.4.0">
+  <link rel="mask-icon" href="/images/logo.svg?v=7.4.0" color="#222">
+
+<link rel="stylesheet" href="/css/main.css?v=7.4.0">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '7.4.0',
+    exturl: false,
+    sidebar: {"position":"right","display":"post","offset":12,"onmobile":true},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: '复制',
+      copy_success: '复制成功',
+      copy_failure: '复制失败'
+    },
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="《沉思录》作者：马可·奥勒留译序中国这个民族性很有意思。现在中国人应该不止于此了，在不同群体中对各种哲学宗教思想可能略有侧重，但上升到民族，儒家与佛家影响的确深远。随着社会的发展，人们有新的思考，哲学也是一样。 我们中国的民族性，以笃行实践的孔门哲学为其根基，益以佛学的圆通深邃和理学的玄妙超绝，可以说是把宗教与伦理熔于一炉。这样的民族性应该使我们容易接受这一部斯多葛派哲学最后一部杰作的启示。">
+<meta name="keywords" content="随笔">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《沉思录》笔记">
+<meta property="og:url" content="https://sxong.github.io/2022/01/13/《沉思录》笔记/index.html">
+<meta property="og:site_name" content="SXong">
+<meta property="og:description" content="《沉思录》作者：马可·奥勒留译序中国这个民族性很有意思。现在中国人应该不止于此了，在不同群体中对各种哲学宗教思想可能略有侧重，但上升到民族，儒家与佛家影响的确深远。随着社会的发展，人们有新的思考，哲学也是一样。 我们中国的民族性，以笃行实践的孔门哲学为其根基，益以佛学的圆通深邃和理学的玄妙超绝，可以说是把宗教与伦理熔于一炉。这样的民族性应该使我们容易接受这一部斯多葛派哲学最后一部杰作的启示。">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2022-01-13T03:48:09.700Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《沉思录》笔记">
+<meta name="twitter:description" content="《沉思录》作者：马可·奥勒留译序中国这个民族性很有意思。现在中国人应该不止于此了，在不同群体中对各种哲学宗教思想可能略有侧重，但上升到民族，儒家与佛家影响的确深远。随着社会的发展，人们有新的思考，哲学也是一样。 我们中国的民族性，以笃行实践的孔门哲学为其根基，益以佛学的圆通深邃和理学的玄妙超绝，可以说是把宗教与伦理熔于一炉。这样的民族性应该使我们容易接受这一部斯多葛派哲学最后一部杰作的启示。">
+  <link rel="canonical" href="https://sxong.github.io/2022/01/13/《沉思录》笔记/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>《沉思录》笔记 | SXong</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container use-motion">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">SXong</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">绝望一如希望一样虚妄</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+      
+      
+      
+        
+        <li class="menu-item menu-item-home">
+      
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-tags">
+      
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-categories">
+      
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-archives">
+      
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a href="javascript:;" class="popup-trigger">
+        
+          <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+      </li>
+    
+  </ul>
+
+    
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+      <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block post">
+    <link itemprop="mainEntityOfPage" href="https://sxong.github.io/2022/01/13/《沉思录》笔记/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="SXong">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/touxiang.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SXong">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">《沉思录》笔记
+
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2022-01-13 11:12:17 / 修改时间：11:48:09" itemprop="dateCreated datePublished" datetime="2022-01-13T11:12:17+08:00">2022-01-13</time>
+            </span>
+          
+            
+
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/生活/" itemprop="url" rel="index"><span itemprop="name">生活</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+        
+      
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2022/01/13/《沉思录》笔记/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/2022/01/13/《沉思录》笔记/" itemprop="commentCount"></span></a>
+  </span>
+  
+  
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">本文字数：</span>
+              
+              <span>13k</span>
+            </span>
+          
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              
+              <span>22 分钟</span>
+            </span>
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>《沉思录》作者：马可·奥勒留</p><h2 id="译序"><a href="#译序" class="headerlink" title="译序"></a>译序</h2><p><strong>中国这个民族性很有意思。现在中国人应该不止于此了，在不同群体中对各种哲学宗教思想可能略有侧重，但上升到民族，儒家与佛家影响的确深远。<br>随着社会的发展，人们有新的思考，哲学也是一样。</strong></p><blockquote>
+<p>我们中国的民族性，以笃行实践的孔门哲学为其根基，益以佛学的圆通深邃和理学的玄妙超绝，可以说是把宗教与伦理熔于一炉。这样的民族性应该使我们容易接受这一部斯多葛派哲学最后一部杰作的启示。</p>
+</blockquote><a id="more"></a>
+
+
+<p>在他那时代，他的地位，他压迫异教是正常的态度，不是罪恶，思之似不必更下转语。</p>
+<p>斯多葛派哲学的始祖是希腊的芝诺（Zeno），他的生卒年月不明，大概是公元前350年至公元前250年之际。他生于塞普洛斯岛，这岛位于东西交通线上，也可说是一个东西文化的接触点。东方的热情，西方的理智，无形中汇集于他一身。</p>
+<p>据斯多葛派哲学，人生最高理想即是按照宇宙自然之道去生活。所谓“自然”，不是任性放肆之意，而是上面所说的“宇宙自然”。人生中除了美德便无所谓善，除了罪恶之外便无所谓恶。所谓美德，主要有四：一是智慧，所以辨识善恶；二是公道，以便应付悉合分际；三是勇敢，借以终止苦痛；四是节制，不为物欲所役。外界之事物，如健康与疾病，财富与贫穷，快乐与苦痛，全是些无关轻重之事，全是些供人发挥美德的场合。凡事有属于吾人能力控制范围之内者，有属于吾人不能加以控制者，例如爱憎之类即属于前者，富贵尊荣即属于后者，总之在可能范围之内须要克制自己。人是宇宙的一部分，所以对宇宙整体负有义务，应随时不忘自己的本分，致力于整体的利益。有时自杀也是正当的，如果生存下去无法尽到做人的责任。</p>
+<h2 id="卷一"><a href="#卷一" class="headerlink" title="卷一"></a>卷一</h2><p>我的教师[插图]训导我：不要在竞车场中参加拥护蓝背心一派或绿背心一派，也不要在比武场中参加拥护那轻盾武士或重盾武士；不要避免劳苦，要减少欲望，凡事要自己动手做，少管别人的闲事，不可听信流言。</p>
+<p>不要关心琐细的事情；不要听信奇迹贩子与巫师们所说的有关驱鬼符咒的话，以及类似的怪话；不要养鹌鹑，不要对类似的游戏发生兴趣；听了别人的直言不要愠怒，要勤修哲学</p>
+<p>不要误入诡辩的邪途；不要写空疏的文字，不要做老生常谈，不要装作为一个健者或无私的人；要避免修辞、诗歌与绮丽的文辞；不要穿着长袍在屋里踱来踱去，以及类似的荒谬举动；写信不要装腔作势，要写得像他自己从Sinuessa写给我的母亲的那封信的样子；对于那些容易发脾气冒犯人的人们，要随时准备和平相处，并且如果他们有意悔过知返，要半路迎上去；读书要细心，不可粗枝大叶不求甚解；对于每一个鼓舌如簧的人，不可太快地表示同意；最后，由于他，我才得读到埃皮克提图的《回忆录》，这本书是他从私人庋藏中拿出来借给我的。</p>
+<p><strong>自持自立，坚定不移，理性，这是泰山崩于前而色不变的前提，也是在有深厚积累后自信的基础。当能掌控自己的身体、情绪和思想后，还能理性行事，很多问题都不是问题。</strong></p>
+<blockquote>
+<p>从阿波娄尼阿斯我学习了自持自立的精神和坚定不移的决心，任何事都不听从运气；除了理性之外，绝不仰仗任何东西；</p>
+</blockquote>
+<p>我还学得了如何接受朋友们的恩惠，既不可因此而丧失自尊，亦不可漠然地视为事之当然。</p>
+<p>他从不表现出愠怒或其他的情绪，而是完全超出情绪的影响之外，永远是和蔼可亲；对人赞美而不誉扬过分，饱学而不炫弄。</p>
+<p><strong>这不是唯一的解决方式，对于敏感之人，委婉很好；对于推心置腹或是熟络之人，较为诚恳的表述即好，但不宜频繁。相对而言委婉而不伤人是最舒适的方式</strong></p>
+<blockquote>
+<p>从文法家亚历山大[插图]我学习了避免挑剔别人的错；别人谈吐中用了粗鄙的字眼，或不合文法，或发音错误，都不要公然指责，要在回答的时候巧妙地正确地使用那个词句，或是作为同意他的意见而重复使用一次那个词句，或是作为共同研究那一件事而不是推敲某一个字，或是采用其他的委婉而不伤人的方法来提醒他。</p>
+</blockquote>
+<p>我注意到一个暴君所惯有的猜忌、狡诈与虚伪；并且一般讲来，我们所谓贵族阶级都缺乏慈爱的天性。</p>
+<p>在不必要时不可常对任何人说，或在信里说：“我太忙了！”也不可以此为借口而逃避我们对人应尽的义务。</p>
+<p>一个朋友若是对你有怨言，纵然是无理取闹，亦不可忽视，要使他回复平素的友谊；提起别人的师长，要怀有衷心的敬意，就像Domitius当年提起Athenodotus时那样；看见别人的孩子时，由衷地喜爱。</p>
+<p>我学习到自制和立志坚定；在病中，以及在其他一切情况中，保持愉快的心境；要有一个严肃与和蔼妥为配合的性格；做点什么事情不要口出怨言。</p>
+<p><strong>纯粹的理性行事似乎也有些偏颇，如果他的父亲没有从这些思量中得到发自内心的愉悦与满足，一些来自欲望的痛苦是通过一些行为来代偿，那么父亲的行为方式对自己而言不算是一种和谐的方式</strong></p>
+<blockquote>
+<p>从我的父亲，我学习到一团和气；主意打定之前仔细考虑，主意打定之后坚决不移，对于一般人所谓的尊荣并不妄求，但爱实事求是地工作；为了公共的利益，虚心听取别人的意见，毫不迟疑地给每个人应得的报酬；靠经验，他知道什么时候该坚持，什么时候该放松，他压抑了一切的青春的欲望。</p>
+</blockquote>
+<p>他之为人是成熟的、完善的、不受阿谀的，能自治亦能治人。</p>
+<p>人们评价苏格拉底的话同样地可以适用于他，那便是：有许多事他可以享受亦可以禁绝，但一般普通人则只是贪求而不能禁绝。“享受而不逾度，禁绝而不以为苦”，正是完美的坚强的意志之表现，在玛克西摩斯病时他所表现的亦正是如此。</p>
+<h2 id="卷二"><a href="#卷二" class="headerlink" title="卷二"></a>卷二</h2><p>每日清晨对你自己说：我将要遇到好管闲事的人、忘恩负义的人、狂妄无礼的人、欺骗的人、嫉妒的人、孤傲的人。他们所以如此，乃是因为不能分辨善与恶</p>
+<p>你的时间是有限期的，如果你不用以照耀你的心灵，时间便要逝去——你也要跟着逝去——良机一去不可复回。</p>
+<p>如果你在一生中做每一件事都像是做最后一件事一般，避免一切粗心大意，避免一切违反理性的感情激动，避免一切虚伪、自私，以及对自己一份命运的抱怨。你要知道，为了度过平静的一生——和神一般的一生，一个人需要具备的条件是如何的少；只要他遵守这些条件，神对他也不会再多所要求。</p>
+<p><strong>一个人能正视自己的所有的欲求，并与本我、超我相处和谐融洽，这已经是一件幸福的事情。只求之于他人，是无法是内心自然的，因为他没有好好和自己相处过。有时候诉之于人恰是内心深层渴望的映射，那么我们该怎么面对呢？每个人都有自己的答案，前提是最深层次的答案是出自于自己。</strong></p>
+<blockquote>
+<p>我的灵魂，你慢待了自己，而你荣耀自身的时机已一去不返。每个人都只有一次生命，你的生命已日薄西山，你却仍不观照自身，而是将幸福寄予别的灵魂。</p>
+</blockquote>
+<p><strong>用新兴趣的刺激去取代旧兴趣中的艰辛，用新的问题去掩盖或者回避旧的问题，有时真的只是兜兜转转。<br>其实当一个人正视并深入一个问题，作者所谓的神的法则或是自然是相通且类似的</strong></p>
+<blockquote>
+<p>身外的事烦扰你吗？忙里偷闲去再学习一些好的事物吧，不要再被外物牵惹得团团转。不过要当心别陷入另一错误，终生苦苦追求而漫无目标，每一个冲动甚至每一个念头都茫无指归，那些人也是儿戏无聊的人。</p>
+</blockquote>
+<p>如果不管别人心灵里进行着的是什么事，一个人便很难得不快乐；但是如果不密切注意自己心灵的活动，则必定是不快乐的。</p>
+<p>因为激于愤怒的人之违反理性，好像是很苦痛的，不自觉地良心不安；但是由欲望而犯过错的人，被快感所挟持，好像是在做错事之际有一点较为放纵、较为缺乏男子气的样子。他又以哲学家的身份说，很明确的，与快感有关联的过错，比起与苦痛有关联的过错，应受更严厉的谴责；并且，一般而论，一个人先受了委屈，被苦痛所驱使而生愤怒，总还有一点男子气概，至于由欲望而入邪途的人，则是自作孽了。</p>
+<p>顶长的寿命和顶短的都是一个样。因为所谓“现在”，对大家是一样长的，我们所丧失的根本便不是我们的，所以我们所放弃的显然只是很短暂的一段时间而已。所以有两件事要记取：第一，自亘古以来一切事物都是在同一模型里铸造出来的，然后一遍一遍地重复翻演，所以一个人在一百年间或二百年间或永恒不变地看同样的事物演来演去，实在是没有差别的。再一件事便是：长寿的与夭折的人所放弃的是一样的多；因为一个人所能被剥夺的只有“现今”，事实上只有这个是他所有的，而他所没有的东西，他当然也不会失掉。</p>
+<p><strong>第一个堕落有点片面。我们明白绝大多数抱怨是没有用的，需要追溯到抱怨的根源，再去判断再去取舍。而这里默认了一切都是自然的，而自然的都是对的。那如果抱怨的根源甚至抱怨本身就是神的旨意或者说是自然的警醒，那何为自然？我们不能忽略自然的规律，同样也不能放大它以至于销磨所有的棱角去迎合。</strong></p>
+<blockquote>
+<p>一个人的灵魂之堕落，莫过于把自己尽量变为宇宙的赘瘤。对任何发生的事情抱怨，便是对于自然的违逆，因为一切的事物都不过是自然的某一部分而已。另一堕落之道便是：对于某人加以嫉视，甚至意欲加害于他，许多愤怒的人便往往如是。第三个堕落之道便是：被享乐或苦痛所征服。第四：戴假面具，在言行上虚伪无诚。第五：行为或意向漫无目标，对任何事都掉以轻心不加考虑，殊不知最琐细的事也应顾虑到其结果。有理性的人应以服从那最原始的组织形式，即宇宙之理性与法则，为其终极之目标。</p>
+</blockquote>
+<p>这便是说，把内心的神明保持得纯洁无损，使之成为一切欢乐与苦痛的主宰；做起事来不要漫无目的，亦不存心作为，不受别人的有为或有所不为之影响，更进一步，要迎受一切发生的或注定的事，因为无论其为何事，都是与我们自己同一来源；最重要的是，以愉快的心情等候死亡，须知一切生物都由几种原质组成，死亡不过是那几种原质的解体而已。如果每一件东西不断地变成为另一件东西，其间并没有什么可怕，那么一个人对于一切事物之变动与解体又何须恐惧？这是合于自然之道的，自然之道是没有恶的。</p>
+<h2 id="卷三"><a href="#卷三" class="headerlink" title="卷三"></a>卷三</h2><p>奥勒留只认为一个人在不可能过一种真正的生活时才可以自杀，他自己就曾一度绝食以求速死。</p>
+<p>同样的，如果一个人有敏锐感觉，深刻地体认宇宙的活动，则任何事物，纵然是间接产生的现象，亦必会令他觉得可喜，是整体的一部分。他看野兽张着大嘴，和看画家或雕刻家所表现的，能得到同样多的快感；在老年的男人或女人身上他会看到成熟的境界，在年轻人身上他会用纯洁的眼光看到诱人的可爱处。许多类似的事物，不见得能讨每个人的欢喜，但是一个真正熟悉自然及其一切作品的人必然能彻底欣赏。</p>
+<p>不要浪费你的残生去空想别人的事，除非你能把那些空想联系到共同的目标上去，因为那实在是耽误了你做别的事情。如果你竟空想某某人是在做什么、为什么这么做、说的是什么、他心里想的是什么、打算的是什么，以及其他类似的事情，凡此皆足以把你卷走，使你不能专心守护自己的主宰的理性。所以我们应该排除我们思想链锁中之漫无目标的无益的部分，过分好奇与怀有恶意的部分尤宜摒斥，一个人应该习惯于只思索一种事，一旦有人问起“你心里想些什么”你便能立刻坦白回答“我想的是这个或那个”；你的回答要立刻能表示出你的内心是单纯的、和善的，不失人群一分子的身份，没有一点享乐纵欲的遐想，没有任何争胜、嫉妒、猜疑，或任何羞于自承的念头。</p>
+<p>所以，我说，你要直截了当地选择那较好的，并且要坚守不渝。也许有人要说，对我有益的才能算是较好的。那么，你作为一个理性的人，对你有益的你就可以坚持不放；如果你只是作为一个动物，你要大胆地拒绝它，并且毫无骄矜地坚持你的判断，只是要注意你的探讨并无错误。</p>
+<p>任何事，凡是强迫你违背诺言、放弃荣誉，令你怀恨、猜疑，或是诅咒任何人，要你扮演一个伪善者，引诱你追求需要墙壁帷幄来掩蔽的享乐，你都不要认为是于你有益的事。</p>
+<p><strong>对于个体而言确实是现在才是真要把握的，对于过去和未来人们总是用这样那样辞藻去装饰她，不可否认我们的内心世界是受其影响的，当终究是要活在当下的。因为只求之于虚幻，生命在某一刻就已经有了上限。</strong></p>
+<blockquote>
+<p>抛弃一切其他的东西，只把握住这些个吧，虽然只有这几个；要记取，人的生命只是目前这么一段时间，其余的不是业已过去，便是可能永不会来。人生实在渺小极了，他所生存的地方只是地上小小的一个角落，就是那垂诸久远的身世之誉也是微末不足道，那只是靠一些可怜的人们辗转传述，他们自己也要很快地死去，他们未必能认识他们自己，更何况老早以前死去的人。</p>
+</blockquote>
+<p><strong>这其实就是在思考，在培养自己的世界观和人生观</strong></p>
+<blockquote>
+<p>除了上述信条之外还要再加一个——“你遭遇一件事物，便要给它下一定义或作一描述，以便清晰地看出赤裸裸的真相，其全部的真相”，然后自己心里盘算其名称该是什么？其组成的分子的名称该是什么？将来要变化成为什么？</p>
+</blockquote>
+<p>最能培养高尚胸襟的事，莫过于对人生遭遇的一切，做确实而有条理的研究，从而参究这宇宙到底是怎样的一个东西；当前的事物对这宇宙有何效用、有何价值，对人有何价值。</p>
+<p>同样的你也要认定宗旨，随时处理那些有关人与神的事务，纵然是极琐细的事，也要充分地认识二者相互的关联。因为你永远不能好好地尽任何的人方面的责任，除非你把它联系到神方面去，反过去亦然。</p>
+<p><strong>妄念这种东西取决于行为，脱离了行为可以说是虚妄无谓的。但付之于行动可能就像虚无的兴奋剂，很有意思。<br>信步漫游一定程度上是放弃自己一段生命的掌握，无所谓价值与意义的有无，只是任她流去。</strong></p>
+<blockquote>
+<p>不要再信步漫游；因为你大概不会读到自己的《杞记》[插图]或《古希腊罗马事迹》[插图]，及你预备在老年阅读的群书摘录。赶快奔向目标，并且如果你珍惜你自己，赶快放弃一切妄念，趁着尚可为力的时候救救自己吧！</p>
+</blockquote>
+<p><strong>“感觉愉悦”这个词让我很反感，我们可以冷静坚强地去面对，甚至不抱怨不排斥。但敞开心胸去接受让我觉得这是对生命与自己经历的不尊重。</strong></p>
+<blockquote>
+<p>那么一个好人的特点只剩下这一点了，那对于一切发生的事和命运给他编造的事，一概地感觉愉快而且欢迎，不污损其内心的神明、不以许多妄念去烦扰它，保持其宁静肃穆，规规矩矩地事之如神，不作妄语、不为邪行。</p>
+</blockquote>
+<h2 id="卷四"><a href="#卷四" class="headerlink" title="卷四"></a>卷四</h2><p><strong>这种火不光取决于人还受目标所影响，然后多数时候是很难做到吸收一切投入之物，这是一种理想的状态。只能说久经沙场的战士越加老道。</strong></p>
+<blockquote>
+<p>在追求其崇高目标之际，固然要有若干条件的限制，但如遭过任何障碍却能改变其气质——犹如任何东西投入火内，均能被它熔化一般。小的火焰可能被它扑灭，但是熊熊的大火便能吸收一切投入之物，焚毁之，结果是火势更盛。</p>
+</blockquote>
+<p>一个人不能找到一个去处比他自己的灵魂更为清静——尤其是如果他心中自有丘壑，只消凝神一顾，立刻便可获得宁静，所谓宁静亦即有条不紊之谓。充分地利用这种退隐的方法，使你自己得到新生。你内心的宗旨要简单而切要，拿来应用要立刻能解除烦恼，回转来时对原有的事物不再有何恚意。</p>
+<p>是不是肉体方面的苦恼总是抓住你不放呢？你要这样想：人的心灵一旦收敛起来，并且发现其力量之所在，便与实际生活中的顺利与坎坷全无关系。还要想想：你所听到过的与服膺过的有关快乐与苦痛的种种道理。</p>
+<p><strong>国家和社会使我们获知一些何为理性何为应为与不应为，这件事可以理解。但把宇宙借此比作国家，说是宇宙是神赋予我们诸如理性之类的本能，实在是诡辩。我们生活在这环境里，而这些东西是环境与自我学习的共同作用，而不是神赋予的。<br>还想说在国家存在之前，在共识存在之前，人是如何习得各种智识的呢？人是大自然和自身经历中总结出来的经验，换言之是在对事件思考。这是大自然以及各种生命的伟大，国家也是人之伟大的结果。夸耀国家对智识和理性的作用而忽略人，是不能长久的。作者作为国王，显然也有自己身份造成的认知局限。</strong></p>
+<blockquote>
+<p>并且从这共同的国家我们获得了智识的、理性的与守法的本能，若不从这里获得，从哪里获得呢？我身体里面的土是从土分割出来的，水是从水来的，风是从风来的，火是从火来的；任何事物不能无中生有，犹之任何事物亦不能归于乌有，所以智力亦无疑地是其来有自。</p>
+</blockquote>
+<p><strong>这句话是极其极其残忍且现实的。</strong></p>
+<blockquote>
+<p>铲除“我是受了伤害”的观念，受伤害的感觉立刻就消灭了，铲除那感觉，伤害立刻也就消灭了。</p>
+</blockquote>
+<p><strong>哈哈，主观的力量极其强大</strong></p>
+<blockquote>
+<p>凡不能使得一个人本身变得比以前坏的，必不能使得他的生活变得比以前坏，亦必不能从外面或从内面伤害到它。</p>
+</blockquote>
+<p>你怀有的见解，不可像是害你的人所怀有的一般，亦不可像是他希冀你所怀有的那样。观察事物要根据事物本身之实在状况。</p>
+<p>你随时要有两种准备：一个是随时准备只是遵照那统摄一切的理性之吩咐，去做于人类有益之事；另一个是，准备随时改变你的主张，如果有人纠正你使你免于虚妄。不过此种改变必须以其确属正当或对公众有益为基础，并须以此为唯一之基础，不可仅凭一时高兴或出于沽名钓誉的动机。</p>
+<p>许多香灰屑纷纷落在这同一的圣坛上，有的落得早些，有的晚些，但是没有什么分别。</p>
+<p>一个人不管别人的言行思想是否正确，只管注意自己的行为是否正确，那么这个人的生涯将是何等丰富！老实讲，一个好人不是要窥察别人内心的黑暗，而是“目不斜视地直赴目标”。</p>
+<p>我也是如此：我从我的学问里得不到什么，但是我要紧紧地抓住它。</p>
+<p>研讨一下统摄人类行为的理性，看一看哲人们避免的是什么，追求的是什么。</p>
+<p>按照自然之道去排遣这短暂的时间吧，漂漂亮亮地走向这旅途的尽头，像一颗橄榄烂熟落地一般，赞美那在底下承托着的大地，感激那令它滋长的万物</p>
+<p>没有一桩不幸的事，不可由于勇敢承当而变成为幸事。</p>
+<h2 id="卷五"><a href="#卷五" class="headerlink" title="卷五"></a>卷五</h2><p>对于每一恼人的或敌意的印象加以排斥抹杀，然后立即进入完满的宁静状态，那是多么容易的事。</p>
+<p>如果有错，错在认识不清、认识太慢。这一点你也应该凭着训练而加以纠正，不可忽略你的迟钝或自甘迟钝。</p>
+<p>但还另有一种人，则行若无事，有如一棵葡萄树，一旦生出了一束葡萄，并不希望什么报酬，又好像是一匹跑完一段程途的马，一条追奔了猎物的狗，一只酿好了蜜房的蜂。他做好一件事，并不大声喊叫，只是默默继续去做第二件，就好像是葡萄树在适当的季节，再去生一束束的葡萄一般。</p>
+<p>任何事物，绝不会把不符合其本身利益的任何事物加诸其所控制的任何事物之上。</p>
+<p>哲学所要求的，正是你的本性所要求的；而你所要求的，却是不合于自然之道的。</p>
+<p>再看看和你一同生活的人们，即使其中最有修养的也令人难以忍受，至于自己是否能忍受自己就更不必提了。</p>
+<p><strong>其实是很难明辨的，“毫无疑问的好”与“一般人所认为的好的事物”也是相互影响的，谁敢说自己的世界观人生观没有收到“一般人”态度的影响？有谁又能确保“个人对某些事情的好抱有毫无疑问的坚定”这种态度中不掺杂些愚昧？</strong></p>
+<blockquote>
+<p>如果一个人认定某些事物确实是毫无疑问的好，例如智慧、节制、公道、勇敢，有此定见之后他便不屑去听诗人所说的“只因他拥有财富——”；因为那是毫无关涉的。但是，如果一个人先已决意追求一般人所认为好的事物，他便会倾听而且承认此一喜剧诗人的句子为适当，这一分别，任谁都可以明辨</p>
+</blockquote>
+<p>要珍视宇宙间那最美妙的东西，那即是利用一切控制一切的东西。同样地要珍视你自己内部最美妙的东西，那即是与前者颇为类似的东西。因为这利用一切的东西在你身上也有，你的生活便是被它统治着的。</p>
+<p>在我们身边的是无限的过去与张着大嘴的将来，一切的东西均在消逝于其间。在这种情形之下，一个人若是自鸣得意，或是感到困扰，或是觉得烦恼，好像那些恼人之事是长期永久的一般，这个人不是蠢吗？24</p>
+<p>要记住那宇宙的本质，你不过是其极微小的一部分；还有宇宙的时间，你所分到的，只是其中很短暂的，几乎是片断的一段而已；还有命运，你的那一部分是何等的渺小啊！</p>
+<p>我们生时所认为很有价值的东西实际上是空虚的、腐朽的、卑贱的，我们只像是彼此互咬的野狗，只像是哭笑无常的孩提。</p>
+<p>神的灵魂、人的灵魂，以及一切理性动物的灵魂，有两个共同点：彼此各不相妨，而且承认公道，实行公道，不以私欲超越公道的范围。</p>
+<p>如果在无关轻重的事物上遭遇挫折，也不要认为是有多大的害处；因为那是一个坏的习惯。</p>
+<p>但是所谓幸运的人乃是自己给自己安排幸运的人；所谓幸运乃是灵魂之良好的趋向，良好的动机，良好的行为。</p>
+<h2 id="卷六"><a href="#卷六" class="headerlink" title="卷六"></a>卷六</h2><p><strong>当烦恼不安时说明哪里出了问题，我们反省不光要审视自己还要审视外在，不能放大外在的影响更不能忽略或是看轻自身的问题。如果外在与内在真到无可调和的地步，按照作者之前所说的尊重自己的理性、自然的安排。自然的安排是给了你选择题而不是按部就班的完成</strong></p>
+<blockquote>
+<p>当你的环境好像是强迫你烦恼不安的时候，赶快敛神反省，切勿不必要地停留在那不和谐的状态之中。不断地返回到内省和谐的安静，你便可得到更大的控制力量。</p>
+</blockquote>
+<p><strong>时刻都要思考所从事的事情是不是如他人所说或者自己想像中的有价值，有时候痴迷或者偏执的状态，可能真的就是受他人或者自己蒙蔽的。一时并不可怕，毕竟人都要成长。短暂的一生皆是如此，可能真的就忽略有些真实而深刻的东西</strong></p>
+<blockquote>
+<p>看穿了一切事物的本来面目，不过如此，你一生便该永久保持这种警觉，一切事物都好像是非常美妙动人，要把它们剥得赤裸裸的，看看它们真实的可怜相，剥去它们的传统的尊严。因为外貌最善骗人，你自以为正在从事有价值的事情的时候，你是在受骗最烈。</p>
+</blockquote>
+<p>通过理性的灵魂结为一体。</p>
+<p>你不能停止珍视其他许多东西吗？那么你便不能获得自由，也不能知足，也不能不被欲念所动。因为你必定是要充满了艳羡嫉妒之情，猜疑那些能夺去你这许多东西的人；对于拥有你所珍视的东西的人们，你也不免要动阴谋邪念。简言之，一个人如果还需求那些东西，其心理必定不能和谐安宁，而且有时还要抱怨上天。但是如果你珍视自己的心灵，则必然能恰然自得，与人无争、与天神和谐；换言之，感激上天的一切给予与安排，这才是你该珍贵的！</p>
+<p>你自己觉得某一件事颇为棘手，莫以为别人也必无法处理；不过任何事，凡是一个人可以做到的，而且是合于人性的，你要认为你自己亦可以做。</p>
+<p>如果任何一个人能切实地证明我的某一想法或某一行为是错误的，我将改过而且感激他。因为我寻求的是真理，没有人能为真理所伤害。但是一个人若执迷不悟有过不改，则真是受伤害了。</p>
+<p>人生亦是如此，每一项责任乃是若干琐节的总和。必须注意那些节目，摆在你前面的那些节目必须要有系统地逐项去做好，别人对你发怒而你必须沉着应付，不可报以愤怒。</p>
+<p><strong>可是呢，在很多情景下人是不对等的。现实是：纵使做错了，很多事也是不以你的意志做转移的。更可怕的是多数人不受教导、无法启迪，所谓他认为适意而有益的事在错对的标尺之上。</strong></p>
+<blockquote>
+<p>不准许人们追求他们心目中认为适意而有益的事物，那实在是太不可容忍了！可是你因为他做错事而愤懑的时候，你就会不准他这样做。无疑的他们是情不自禁地去做他们认为适意而有益的事。“但是他们是错误的。”那么，就教导他们，启迪他们，而不要愤懑。</p>
+</blockquote>
+<p>死是从感觉印象中获得解放，也是从使我们成为傀儡的冲动中获得解放，也是从对肉体所服的劳役中获得解放。</p>
+<p>生活中，肉体尚未屈服而灵魂先行屈服，那是一件耻事。</p>
+<p>要记住他是如何坚定不移地做一切合于理性的事</p>
+<p><strong>都是虚妄的，当一件事占据了你整个或者大半部分的生活，你就要警惕如此是否应当，是否你就要把这件事放大到如此地步。</strong></p>
+<blockquote>
+<p>再醒来一次恢复你的知觉吧！你方从沉睡中起来并且发觉困扰你的原是一场梦幻，那么你现在就快醒醒吧！面对现实就如同你曾面对梦境那样。</p>
+</blockquote>
+<p>爱好虚名的人是认定“别人的行为便是他自己的幸福”，爱好享乐的人是认定“他自己的感觉便是幸福”，但是拥有智慧的人则认定“自己的行为才是幸福所在”。</p>
+<p>关于一件事物我们无须要有意见，不必为此自苦，因为自然并未赋予那件事物以任何权力来强迫我们下一判断。</p>
+<p>训练你自己“细心听取别人讲话”，尽可能地深入他的内心。</p>
+<p>对于蜂群无益的事，不可能对于一只蜜蜂有益。</p>
+<p><strong>所以最终还是自己没有勇气去选择那条路吗，所以发生在自己身上的事冥冥中都有迹可循。</strong></p>
+<blockquote>
+<p>没有一个人能妨碍你使你不能按照本性去生活：没有一件违反宇宙自然之道的事情会落在你的头上。</p>
+</blockquote>
+<h2 id="卷七"><a href="#卷七" class="headerlink" title="卷七"></a>卷七</h2><p><strong>对于一些观点是需要分析其根源的，无人是别人还是自己的。有些观点是片面的甚至带有很强的个人情绪，我们可以去理解并思考这些观点的存在，以便于更深刻地了解自身、他人以及世界，但不能就认为这一切都是正当的。别人的人生哲学可以启发你，而不能占据你。</strong></p>
+<blockquote>
+<p>你的信条如何能变成为死的呢？除非是与那信条有关的观念先行消灭。而如何鼓舞那些观念使之炽盛，则完全有赖于你自己——我对于一件事物能够形成一正确的概念。果能如此，我又有何忧虑？在我心灵范围以外的事物，与我的心灵毫无关涉。了解这一点，你便可昂然直立。</p>
+</blockquote>
+<p><strong>如果每一天早晨可以提醒一下自己，整理一下自己的情绪，每一天未尝不是新的一天。工作是连续的，甚至是反复的，但是可能会产生甚至发现新的想法</strong></p>
+<blockquote>
+<p>你能开始一个新生活，只要你像从前观察事物那样再重新观察一次，新生活即在其中。</p>
+</blockquote>
+<p>你置身在这样的环境之中，要心平气和，不可盛气凌人，你必须了解，每个人的价值和他所感兴趣的事物的价值是可以等量齐观的。</p>
+<p>在谈话中要注意所说的话，在行动中要注意所做的事。在后者中要于开始时洞察其所能引起的结果，在前者中要小心地把握其含义。05</p>
+<p>不要羞于受助，因为你必须要像一个攻城的士卒一般去从事加在你身上的工作。那么，如果为了跛足的缘故无法自己爬上墙堞，或者若有人帮助便可以爬上去，如何做比较好呢？</p>
+<p><strong>我为什么是翡翠？又为什么是黄金？我为什么不能是一块翡翠或是一块黄金？</strong></p>
+<blockquote>
+<p>别人随便怎样说怎样做，我自己总是要做好。就好像是一块翡翠——或是黄金或是紫袍——总会一遍一遍地重复说：“不管别人怎样说怎样做，我终归是一块翡翠，我要保持我的颜色。”</p>
+</blockquote>
+<p>我只关心一件事，我不要做人的本质所不允许做的事，或现在不允许做的事，或以不被允许的那种方式去做。</p>
+<p>在短期间，你就会忘怀一切；在短期间，一切也会忘记你。</p>
+<p>打破一只箱子，和装制一只箱子，都同样没有什么可令人感动的。</p>
+<p>生命像成熟的谷子一般被刈割。一批倒下去，一批又生出来。</p>
+<p>我可以充分地答复这样的一个问难者：你错了！如果你以为一个有点价值的人会斤斤计较生死，而不关怀自己所作所为是否公正，是否良善。</p>
+<p><strong>谈话要注意话语的含义以及其影响</strong></p>
+<blockquote>
+<p>以免未经印证的念头偷偷地闯了进去。</p>
+</blockquote>
+<p>只爱你所亲身遭遇的及命运给你所织造的。因为此外还有什么是更适合于你的呢？</p>
+<p>与其说人生像跳舞，不如说人生像摔跤，因为它需要我们立定脚跟，准备迎接不可预见的每一次攻击。</p>
+<p>要不断地想，你希望赞赏你的人是些什么样的人，具有什么样的理性。因为能如此，则有人无心开罪于你，你便不会怪他们，而且你也根本不想要他们的赞赏了，如果你洞察他们的意见与愿望之内在根源。</p>
+<p>力求自己免过，是可能的；欲令别人免过，是不可能的；薄责己而厚责于人，糊涂之至。</p>
+<p>记住这一点，在面对许多恶劣事物时，便可以在心理上有更大之宁静。</p>
+<h2 id="卷八"><a href="#卷八" class="headerlink" title="卷八"></a>卷八</h2><p>在做人性所追求的事情中</p>
+<p>在每件行为中问你自己：“对我发生什么影响？我会不会为之后悔？”</p>
+<p>因为他们观察事物，注意到其动因与实质，并且他们的理性乃是他们自己的。但是别人呢？多少事情使他们困扰，多少事物使他们身受奴役！</p>
+<p>要记住，改变主张与接受别人的矫正，并不能算是与真正的意志自由相抵触。因为只有你自己才能决心努力，使你的行为合乎你的动机、判断，甚至你的智慧。</p>
+<p>因为如果你能，就纠正那致误的根由：如果那也是办不到的，怨尤又有何用？凡无用的事都不该做。</p>
+<p>“我有力量让我的灵魂不藏邪恶或欲望，或任何使人烦扰的成分；而且我既能洞察一切事物之本性，我便该恰如其分地应付之。”</p>
+<p>在元老院里说话，或对任何人说话，都要求其适当而且自然，要说坦白的话。</p>
+<p>毫不狂妄地接受，毫不踌躇地放弃。</p>
+<p>一个人若是不满于他所遭遇的一切，自绝于人寰，或行为乖戾落落寡合，那么他也正是同样的尽其所能地在残断他自己。</p>
+<p>还要再提醒你自己，给你带来负担的不是过去，不是未来，乃是现在。</p>
+<p>所以“认识上的故障”对于有智识的人也是一种缺憾；</p>
+<p>你努力做一桩事是否遭遇了故障？如果你的努力是在希冀无条件的实现，那么对于你这个理性的动物而言，其失败立刻即是一种缺陷了</p>
+<p>我若使我自己苦痛，那是不对的，因为我从来没有故意使别人苦痛过。</p>
+<p>你遭遇外界挫折而烦恼的时候，使你困扰的不是那件事情本身，而是你自己对那件事情的判断——这判断，你能立刻就把它消灭掉。</p>
+<p>做事不可迟缓，言谈不可杂乱，思想不可模糊；心灵不可完全倾注在本身上面，亦不可任其激动。生活中总要有一点闲暇。</p>
+<p>设有一人，一小时内咒骂他自己三次，你还想受他的赞美吗？设有一人，他对自己都不满意，你还愿他对你满意吗？一个人对他自己所做之事，几乎每一桩都表示后悔，他还能算是对自己满意吗？</p>
+<p>对于我的自由意志，我的邻人的自由意志乃是无关紧要的，犹如他的呼吸与他的肉体一般地对我无关紧要。纵然人是生来彼此依赖的，我们的理性只是自家的一家之主，否则我的邻人的邪恶就会变成我的毒害——这不是上帝的意旨，上帝并不要我的不幸靠别人来决定。</p>
+<h2 id="卷九"><a href="#卷九" class="headerlink" title="卷九"></a>卷九</h2><p>“人生之值得留恋，只是与同道之人可以共居而已。”</p>
+<p>人之所以优于其他万物者，即在于他对于同类有较容易融合的能力。</p>
+<p>今天我脱离了一切烦恼，也可以说是抛弃了一切烦恼，因为烦恼不在外面，是在里面，在我自己的想象里。</p>
+<p>透穿到他们的内在的理性，你就会明白你所惧怕的裁判官，究竟是什么样的人，他们对他们自己的裁判究竟所值几何？</p>
+<p>如果你有这一份力量，不要彷徨四顾怕为人知。不要梦想乌托邦，有一点点进益就要知足，要将任何成果视为微不足道。因为谁能改变别人的意见呢？意见既不可改变，我们只能使人佯为信服之状，实则如奴隶一般被迫不得不如此罢了</p>
+<p>人也是一个样，生来就是为加惠于人的，对人有恩惠或是用任何别的方式对公共利益有所贡献时，他正是尽了本分，得到了所应得的报酬。</p>
+<h2 id="卷十"><a href="#卷十" class="headerlink" title="卷十"></a>卷十</h2><p><strong>哈哈，迷恋其实也没什么错，过分迷恋才是有些痛苦的根源。</strong></p>
+<blockquote>
+<p>因为顽固不化，便由着生活来腐蚀；这表示一个人之过分的迟钝与过分地迷恋人生，与竞技场中和野兽搏斗而被半吞噬的人们真可以等量齐观；已经血肉模糊，还要乞求再活一下，明天再被投入场中，再带着残伤，让那利爪锐牙再撕扯一顿。</p>
+</blockquote>
+<p>悠闲而不慵懒，愉快而又镇定，做一切事均追随理性者即是如此。</p>
+<p><strong>或许更应该将对别人妄加评论的时间成长自身。人这一生有太多需要学习、经历与历炼的了。生而知命几乎是不可能的，多数人忙碌一生也不曾想清楚自己为何而来又将如何而去。</strong></p>
+<blockquote>
+<p>对别人妄加毁誉的人，在床上、在饭桌上总是这个样子的；他们做的是些什么事？他们避免的与追求的又是些什么事？他们如何偷窃掠夺，不用手脚，用的是他们最珍贵的那一部分，靠那一部分一个人可以产生出信仰、谦逊、真理、规律与良好的“精神”。</p>
+</blockquote>
+<p>被悲哀或愤怒或恐惧所激动的人，总是希冀“那宇宙的主宰或支配人生命运的法则”能使“过去已经发生的、现在正在发生的或未来将要发生的”某一些事不发生。所以被恐惧或悲哀或愤怒所激动的人便是逃亡者。</p>
+<p><strong>对自己要足够坦诚，你自己清楚地明白为什么会这样，所谓阻碍可能就是你一直逃避或者捏造的。</strong></p>
+<blockquote>
+<p>到我们的人生资料，怎么说、怎样做，才算是合于健全之道呢？怎么说、怎样做，到头来还是由你自己来决定。不要推托说你受了什么阻碍。</p>
+</blockquote>
+<p>如果你这样地推论：我现在要脱离人生了，在此一生中我最亲近的人们，我曾为他们如此的辛苦、为他们祈祷、为他们烦心，他们都会愿意我离开，希望从中或可得到更多的舒适；任何人又何必在这世上恋恋不舍呢？</p>
+<h2 id="卷十一"><a href="#卷十一" class="headerlink" title="卷十一"></a>卷十一</h2><p>简言之，除了美德及其运用之外，皆要记住观察其组成分子，一加分析之后，便可加以鄙视。对于整个人生亦可同样处理。</p>
+<p>如果不在一方面对宇宙的本性有正确的认识，在另一方面对人的特殊机构有正确的认识，如何能够获得成功呢？</p>
+<p>原来悲剧之演出，乃是为了把一些真事提醒观众，告诉他们这些事件是自然发生的，在舞台上你觉得如此好玩的事，在人生大舞台上遇到时，正不必为之烦恼。</p>
+<p>有些事物，追求固然苦恼，避免也是苦恼，其实那些事物并未来找你，是你去找它们的。所以你对那些事物的判断须要保持冷静，那些事物也自然不来扰你，你也不会再去苦苦追求或竭力逃避。</p>
+<p>彼此互相轻蔑，但是他们还要彼此互相阿谀；渴望胜过对方，但是他们还互相在对方面前匍匐。</p>
+<p>你自己也和别人一样常犯错误，如果有某种错误并未犯，你未尝没有犯那错误的倾向，只是由于怯懦、爱惜名誉或其他卑鄙的考虑而没有犯错罢了。</p>
+<p>“希望坏人不做错事乃是疯狂”；因为那乃是希求不可能之事。容忍他们对别人胡作非为，却希冀他们不对你胡作非为，那乃是冷酷而残暴。</p>
+<p>第四种情形便是自怨自艾，这等于是承认：你的神圣的部分已屈服于那卑劣凡俗的肉体及其粗拙的乐趣。</p>
+<h2 id="卷十二"><a href="#卷十二" class="headerlink" title="卷十二"></a>卷十二</h2><p>只要你不拒绝给你自己</p>
+<p>对每日发生之事也不会觉得突兀而为之惊奇，也不至于东靠西靠彷徨无主。</p>
+<p>我常惊讶，我们每个人爱自己胜过爱其他的人，但是对于自己对自己的看法之重视，远不如别人对于自己的看法。</p>
+<p>你没有希望获得成功的事，也要去做。就是左手，因缺乏练习而效率较差，但是握起缰绳却比右手更抓得紧些——因为勤加练习之故。</p>
+<p>看看剥去外壳的“因果关系之原则”；一切动作的目标；苦痛是什么？快乐是什么？死是什么？名誉是什么？一个人内心不安，该怪谁？一个人怎样才不会受别人的妨碍？一切事皆由我们的看法而决定！</p>
+<p>本质、起因、目标</p>
+<p>如果是不该做的，不要做；如果是不真实的，不要说。要控制住你自己的冲动。</p>
+<p>一切事物都是按照宇宙自然之道而发生的。一个人的错误行为不干你的事。</p>
+
+    </div>
+
+    
+    
+    
+        
+      
+
+      <footer class="post-footer">
+          
+            
+          
+          <div class="post-tags">
+            
+              <a href="/tags/随笔/" rel="tag"># 随笔</a>
+            
+          </div>
+        
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/2021/07/10/爱的画像/" rel="next" title="爱的画像">
+                  <i class="fa fa-chevron-left"></i> 爱的画像
+                </a>
+              
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+              
+                <a href="/2022/01/13/《我将敢于亲吻你：阿方斯娜·斯托尔妮诗选》笔记/" rel="prev" title="《我将敢于亲吻你：阿方斯娜·斯托尔妮诗选》笔记">
+                  《我将敢于亲吻你：阿方斯娜·斯托尔妮诗选》笔记 <i class="fa fa-chevron-right"></i>
+                </a>
+              
+            </div>
+          </div>
+        
+      </footer>
+    
+  </div>
+  
+  
+  
+  </article>
+
+  </div>
+
+
+          </div>
+          
+    
+    <div class="comments" id="comments"></div>
+  
+
+        </div>
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+        
+        
+        
+        
+      
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#译序"><span class="nav-text">译序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#卷一"><span class="nav-text">卷一</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#卷二"><span class="nav-text">卷二</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#卷三"><span class="nav-text">卷三</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#卷四"><span class="nav-text">卷四</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#卷五"><span class="nav-text">卷五</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#卷六"><span class="nav-text">卷六</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#卷七"><span class="nav-text">卷七</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#卷八"><span class="nav-text">卷八</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#卷九"><span class="nav-text">卷九</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#卷十"><span class="nav-text">卷十</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#卷十一"><span class="nav-text">卷十一</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#卷十二"><span class="nav-text">卷十二</span></a></li></ol></div>
+        
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image"
+      src="/images/touxiang.jpg"
+      alt="SXong">
+  <p class="site-author-name" itemprop="name">SXong</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+  <nav class="site-state motion-element">
+      <div class="site-state-item site-state-posts">
+        
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">82</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-categories">
+        
+          
+            <a href="/categories/">
+          
+        
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">分类</span>
+        </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-tags">
+        
+          
+            <a href="/tags/">
+          
+        
+        <span class="site-state-item-count">27</span>
+        <span class="site-state-item-name">标签</span>
+        </a>
+      </div>
+    
+  </nav>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="mailto:sxnwpu@outlook.com" title="E-Mail &rarr; mailto:sxnwpu@outlook.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+    
+  </div>
+
+
+
+      </div>
+     <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=n6wiCQaFnhxlDrs8rDscZIHOztIvPz94Gam9Wj-Uhbw&cl=ffffff&w=a"></script>
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2022</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">SXong</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    <span title="站点总字数">188k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">5:13</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+  
+    <span class="post-meta-divider">|</span>
+  
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+
+
+  <script src="/lib/anime.min.js?v=3.1.0"></script>
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+<script src="/js/utils.js?v=7.4.0"></script><script src="/js/motion.js?v=7.4.0"></script>
+<script src="/js/schemes/muse.js?v=7.4.0"></script>
+
+<script src="/js/next-boot.js?v=7.4.0"></script>
+
+
+
+  
+
+
+
+
+
+
+
+
+  <script src="/js/local-search.js?v=7.4.0"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+      
+<script type="text/x-mathjax-config">
+    MathJax.Ajax.config.path['mhchem'] = '//cdn.jsdelivr.net/npm/mathjax-mhchem@3';
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+        extensions: ['[mhchem]/mhchem.js'],
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') {
+          next = next.nextSibling;
+        }
+        if (next && next.nodeName.toLowerCase() === 'br') {
+          next.parentNode.removeChild(next);
+        }
+      }
+    });
+  });
+
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      element = document.getElementById(all[i].inputID + '-Frame').parentNode;
+      if (element.nodeName.toLowerCase() == 'li') {
+        element = element.parentNode;
+      }
+      element.classList.add('has-jax');
+    }
+  });
+</script>
+<script>
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML', () => {
+    MathJax.Hub.Typeset();
+  }, window.MathJax);
+</script>
+
+    
+  
+
+  
+
+  
+
+
+<script>
+NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(item => {
+    return GUEST.includes(item);
+  });
+  new Valine({
+    el: '#comments',
+    verify: true,
+    notify: true,
+    appId: 'jgTMXobCAne2mJlV4SmhrNe8-gzGzoHsz',
+    appKey: 'N3XfB7GaNqCtl3mXuUfaOoLY',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false,
+    lang: '' || 'zh-cn',
+    path: location.pathname
+  });
+}, window.Valine);
+</script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+</body>
+</html>
